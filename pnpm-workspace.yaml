@@ -1,3 +1,13 @@
 packages:
   - 'web'
   - 'docs'
+
+# pnpm 11 moved dependency build policy out of package.json.
+# Keep the upstream allow-list; decline optional unrelated install scripts.
+allowBuilds:
+  esbuild: true
+  onnxruntime-node: true
+  sharp: true
+  msgpackr-extract: false
+  msw: false
+  protobufjs: false

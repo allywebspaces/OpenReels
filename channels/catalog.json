@@ -1,0 +1,7 @@
+[
+  {"id":"ai-money-india","name":"AI Money India","language":"English","archetype":"bold_illustration","experimental":false},
+  {"id":"silver-life-india","name":"Silver Life India","language":"English","archetype":"warm_editorial","experimental":false},
+  {"id":"kids-universe","name":"Kids Universe","language":"English","archetype":"pastoral_watercolor","experimental":true},
+  {"id":"india-explained","name":"India Explained","language":"English","archetype":"cinematic_documentary","experimental":false},
+  {"id":"micro-drama","name":"AI Micro Drama","language":"English","archetype":"moody_cinematic","experimental":true}
+]

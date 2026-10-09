@@ -1,3 +1,4 @@
+import { enforceEnglishOnly } from "../agents/english-only.js";
 import { execFileSync } from "node:child_process";
 import * as fs from "node:fs";
 import * as os from "node:os";
@@ -431,6 +432,7 @@ function buildPipelineWorkflow(
       // ── Replay mode: use provided score, skip generation + revision ──
       if (opts.replayScore) {
         const score = opts.replayScore;
+        llmUsages.push(await enforceEnglishOnly(opts.llm, score));
         directorResult.score = score;
         directorResult.config = getArchetype(score.archetype);
 
@@ -542,6 +544,8 @@ function buildPipelineWorkflow(
 
       // Use the highest-scoring revision
       score = bestScore;
+      // Hard gate outside the critic fallback: no assets on failure or uncertainty.
+      llmUsages.push(await enforceEnglishOnly(opts.llm, score));
 
       // ── Store final score on shared closure state ──
       directorResult.score = score;

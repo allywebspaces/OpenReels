@@ -1,3 +1,4 @@
+import { ENGLISH_ONLY_POLICY } from "../../agents/english-only.js";
 import type { LanguageModel } from "ai";
 import { generateText, Output, stepCountIs } from "ai";
 import type { z } from "zod";
@@ -41,6 +42,7 @@ export abstract class BaseLLM implements LLMProvider {
     schema: T;
     enableWebSearch?: boolean;
   }): Promise<LLMResult<z.infer<T>>> {
+    opts = { ...opts, systemPrompt: `${opts.systemPrompt}\n\n${ENGLISH_ONLY_POLICY}` };
     if (opts.enableWebSearch) {
       const tools = this.injectedSearchTools ?? this.createSearchTools();
       const hasTools = Object.keys(tools).length > 0;
