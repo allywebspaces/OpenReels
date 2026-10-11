@@ -81,3 +81,12 @@ The upstream project is tsensei/OpenReels. Submit project changes to the allyweb
 - The shared pipeline checks the final score before audio/visual generation for both new jobs and replayed scores. It rejects non-Latin text and asks the model to check English semantics, including French or transliterated dialogue.
 - Rejection, uncertainty, malformed responses or reviewer failure stop the pipeline. This review adds an LLM call and can incur charges even for replay or planning. Its token usage is included in full-run actual-cost accounting; upstream estimates may not include this extra call.
 - This gate checks planned text, not generated pixels/audio. AI reviewers can err, and images/video can contain incidental writing or speech. Human review of the finished MP4 is still required before publication.
+
+## Run from desktop or phone using GitHub Actions
+Save `GOOGLE_API_KEY` under Settings → Secrets and variables → Actions → New repository secret.
+Open Actions → English pilot → Run workflow. The workflow checks out a verified build commit.
+- Start with `mode: check`, leaving charge acknowledgement blank. It verifies secret presence and the offline launcher without API calls. It cannot validate key permissions, quota or billing.
+- For script only, select `plan`; for a portrait MP4 with still images and English narration, select `render`. Both can incur API charges. Type `I_APPROVE_API_CHARGES` into the acknowledgement field to authorize that run. This explicitly enables the CLI's noninteractive confirmation.
+- The first pilot is AI Money India, using Google, bundled music, no generated Veo/Kling clips and no social publishing.
+- Download outputs from the run's Artifacts section, retained for seven days. Inspect the full MP4 and actual cost report.
+The 30-minute timeout is an execution limit, not a spending cap. Updating the build requires updating the checkout SHA in the workflow.
