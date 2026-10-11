@@ -1,0 +1,36 @@
+{
+  "language": "English",
+  "title": "Turn meeting notes into actions",
+  "scenes": [
+    {
+      "heading": "Messy notes?",
+      "label": "START WITH A SAFE COPY",
+      "items": ["Remove private details", "Keep decisions and tasks"],
+      "narration": "Meeting notes are only useful when they lead to action. Start with a copy that removes private names, customer details, and confidential information."
+    },
+    {
+      "heading": "Give AI a clear job",
+      "label": "ONE SIMPLE PROMPT",
+      "items": ["Extract each action", "Find the owner", "Find the deadline"],
+      "narration": "Ask your AI tool to extract each action, its owner, and its deadline. Tell it to write not specified whenever the notes do not contain an answer."
+    },
+    {
+      "heading": "Check the result",
+      "label": "AI CAN MAKE MISTAKES",
+      "items": ["Compare with the notes", "Reject invented details", "Confirm missing information"],
+      "narration": "Compare the result with your original notes. Reject invented names or dates. Ask the team to confirm anything that is missing."
+    },
+    {
+      "heading": "Make it actionable",
+      "label": "A TASK NEEDS THREE THINGS",
+      "items": ["What needs doing?", "Who owns it?", "When is it due?"],
+      "narration": "Now place the confirmed actions in your task list. Each task needs a clear outcome, one owner, and an agreed deadline."
+    },
+    {
+      "heading": "Try it today",
+      "label": "START WITH ONE MEETING",
+      "items": ["Use a short sample", "Review before sharing", "Save your prompt"],
+      "narration": "Try this with one short meeting. Review the result before sharing it, and save the prompt for next time."
+    }
+  ]
+}

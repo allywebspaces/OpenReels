@@ -90,3 +90,6 @@ Open Actions → English pilot → Run workflow. The workflow checks out a verif
 - The first pilot is AI Money India, using Google, bundled music, no generated Veo/Kling clips and no social publishing.
 - Download outputs from the run's Artifacts section, retained for seven days. Inspect the full MP4 and actual cost report.
 The 30-minute timeout is an execution limit, not a spending cap. Updating the build requires updating the checkout SHA in the workflow.
+
+## Free alternative (no generation API charges)
+Use **FREE English pilot**, described in [FREE_PILOT.md](FREE_PILOT.md). It renders a fixed reviewed English script using local Kokoro and template graphics. It requires no GOOGLE_API_KEY and cannot fall back to a paid provider. The earlier **English pilot** workflow remains the explicitly paid option; it is not the free workflow.
