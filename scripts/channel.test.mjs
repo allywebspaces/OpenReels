@@ -49,3 +49,16 @@ test('research plan execution is marked as potentially billable', () => {
   assert.ok(p.args.includes('--dry-run'));
   assert.match(p.notice, /can incur API charges/i);
 });
+test('default pilot arguments are accepted by the actual CLI and disable generated video', () => {
+  const preview = JSON.parse(call('ai-money-india', 'Meeting notes').stdout);
+  const code = `import { parseArgs } from './src/cli/args.ts'; process.execArgv = []; process.argv = ['node', 'openreels', ...JSON.parse(process.env.CLI_TEST_ARGS)]; console.log(JSON.stringify(parseArgs()));`;
+  const r = spawnSync(process.execPath, ['--import', 'tsx', '--input-type=module', '--eval', code], {
+    cwd: root, encoding: 'utf8', env: { ...process.env, CLI_TEST_ARGS: JSON.stringify([...preview.args, '--yes']) },
+  });
+  assert.equal(r.status, 0, r.stderr);
+  const parsed = JSON.parse(r.stdout);
+  assert.equal(parsed.noVideo, true);
+  assert.equal(parsed.provider, 'gemini');
+  assert.equal(parsed.musicProvider, 'bundled');
+  assert.equal(parsed.ttsProvider, 'gemini-tts');
+});

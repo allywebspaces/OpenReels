@@ -169,6 +169,7 @@ export function parseArgs(): CLIOptions {
       "Video model override (e.g. veo-3.1-lite-preview, fal-ai/kling-video/v2.1/standard/image-to-video)",
     )
     .option("--video", "Enable AI video generation (use --no-video to disable)", true)
+    .option("--no-video", "Disable AI video generation; use still images")
     .option(
       "--direction <file>",
       "Creative brief file (markdown). Describe visual style, script notes, music mood, scene ideas. The AI reads it like a human editor would. See examples/direction-brief.md",
