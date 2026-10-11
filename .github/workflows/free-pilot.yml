@@ -1,0 +1,60 @@
+name: FREE English pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/free-pilot.yml']
+permissions:
+  contents: read
+concurrency:
+  group: openreels-free-pilot
+  cancel-in-progress: false
+jobs:
+  free-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout verified free build
+        uses: actions/checkout@v4
+        with:
+          ref: 2e515a75248339f3b3d0b1275f996fcb3a7b512c
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11'
+      - name: Install CPU dependencies
+        env:
+          ONNXRUNTIME_NODE_INSTALL: skip
+          ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+        run: pnpm install --frozen-lockfile
+      - name: Check free English policy and types
+        run: |
+          node --test src/free-pilot/policy.test.mjs
+          node scripts/free-pilot.mjs --check
+          pnpm exec tsc --noEmit
+      - name: Install media verification tools
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Render using local Kokoro and template graphics
+        run: node scripts/free-pilot.mjs
+      - name: Verify MP4
+        run: |
+          test -s output/free-pilot/pilot.mp4
+          ffprobe -v error -show_entries stream=codec_name,width,height -show_entries format=duration -of json output/free-pilot/pilot.mp4
+      - name: Save free pilot for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: free-english-pilot-${{ github.run_id }}
+          path: |
+            output/free-pilot/pilot.mp4
+            output/free-pilot/preview.png
+            output/free-pilot/pilot.json
+            output/free-pilot/report.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Result
+        run: |
+          echo 'Free English pilot: local Kokoro voice, original graphics, scene captions. No paid APIs or secrets used.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Download the artifact to review the MP4. No social publishing is configured.' >> "$GITHUB_STEP_SUMMARY"
