@@ -1,0 +1,79 @@
+name: English pilot
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check is free; plan and render can incur Google API charges'
+        type: choice
+        options: [check, plan, render]
+        default: check
+      topic:
+        description: English pilot topic
+        type: string
+        default: Turn messy meeting notes into a clear action list
+      approve_api_charges:
+        description: 'For plan/render, type I_APPROVE_API_CHARGES. No hard spending cap.'
+        type: string
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: openreels-english-pilot
+  cancel-in-progress: false
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout verified pilot build
+        uses: actions/checkout@v4
+        with:
+          ref: b57fcfaddc36a993f55285d10c342395ccc0c402
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate manual cost acknowledgement
+        env:
+          PILOT_MODE: ${{ inputs.mode }}
+          APPROVE_API_CHARGES: ${{ inputs.approve_api_charges }}
+        run: |
+          node --input-type=module -e 'if (process.env.PILOT_MODE !== "check" && process.env.APPROVE_API_CHARGES !== "I_APPROVE_API_CHARGES") { console.error("Paid modes require I_APPROVE_API_CHARGES; estimates are not caps."); process.exit(1); }'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11'
+      - name: Install CPU dependencies
+        env:
+          ONNXRUNTIME_NODE_INSTALL: skip
+          ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+        run: pnpm install --frozen-lockfile
+      - name: Verify launcher and language guardrail
+        run: |
+          node --test scripts/channel.test.mjs scripts/github-pilot.test.mjs
+          pnpm exec vitest run src/agents/english-only.test.ts src/pipeline/english-only.integration.test.ts
+      - name: Install media tools
+        if: inputs.mode == 'render'
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Check secret or generate approved pilot
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          PILOT_MODE: ${{ inputs.mode }}
+          PILOT_TOPIC: ${{ inputs.topic }}
+          APPROVE_API_CHARGES: ${{ inputs.approve_api_charges }}
+        run: node scripts/github-pilot.mjs
+      - name: Save pilot outputs for review
+        if: always() && inputs.mode != 'check'
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-pilot-${{ github.run_id }}
+          path: output/ai-money-india/youtube/
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Summarize result
+        if: always()
+        env:
+          PILOT_MODE: ${{ inputs.mode }}
+        run: |
+          echo 'English pilot workflow completed. Check step results above.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Check mode makes no provider requests. Plan/render may incur API charges.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Review any MP4 and cost report before publishing. No publishing is configured.' >> "$GITHUB_STEP_SUMMARY"
