@@ -28,7 +28,7 @@ jobs:
       - name: Checkout verified pilot build
         uses: actions/checkout@v4
         with:
-          ref: b57fcfaddc36a993f55285d10c342395ccc0c402
+          ref: 2ea0dcb5d28ca677a372d30c73e04ebb851befd8
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
