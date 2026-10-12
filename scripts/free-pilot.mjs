@@ -1,5 +1,5 @@
 // Reviewed English pilot. No paid SDK, LLM call, API key or provider fallback.
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadReviewedPilot, sceneDurationFrames, REVIEWED_PILOT_HASH } from '../src/free-pilot/policy.mjs';
@@ -19,11 +19,15 @@ try {
   const scenes=[];
   for (const [i,scene] of pilot.scenes.entries()) {
     console.log(`Local English narration ${i+1}/${pilot.scenes.length}`);
-    const audio=await tts.generate(scene.narration, {voice:'af_heart'});
+    const audio=await tts.generate(scene.narration, {voice:'af_bella', speed:1.1});
     const filename=`scene-${i+1}.wav`;
     await writeFile(resolve(assets,filename),Buffer.from(audio.toWav()));
     scenes.push({...scene,audio:filename,durationInFrames:sceneDurationFrames(audio.audio.length,audio.sampling_rate)});
   }
+  const comparisonText = pilot.scenes[0].narration;
+  const calm = await tts.generate(comparisonText, {voice:'af_heart', speed:1});
+  await writeFile(resolve(output,'comparison-calm.wav'),Buffer.from(calm.toWav()));
+  await copyFile(resolve(assets,'scene-1.wav'),resolve(output,'comparison-energetic.wav'));
   const inputProps={scenes};
   await writeFile(resolve(output,'pilot.json'),JSON.stringify(inputProps,null,2));
   const {bundle} = await import('@remotion/bundler');
@@ -33,7 +37,7 @@ try {
   const composition=await selectComposition({serveUrl,id:'FreeEnglishPilot',inputProps});
   await renderStill({serveUrl,composition,inputProps,frame:60,output:resolve(output,'preview.png')});
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
-  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_heart',visuals:'original template graphics',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',published:false};
+  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:'original template graphics',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.wav','comparison-energetic.wav'],published:false};
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {

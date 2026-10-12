@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-export const REVIEWED_PILOT_HASH = 'c7f2e1d381e662cfc0dafd0437e2a2d968a8ee4cf2f23112faff9120dd8e3062';
+export const REVIEWED_PILOT_HASH = 'f29a1fdba849bd173ad215fa194c7dd09e3e0052bdf714d12d40d0e78981e886';
 export function loadReviewedPilot(path = new URL('./pilot.json', import.meta.url)) {
   const raw = readFileSync(path);
   if (createHash('sha256').update(raw).digest('hex') !== REVIEWED_PILOT_HASH) {

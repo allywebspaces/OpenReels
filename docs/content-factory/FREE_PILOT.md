@@ -5,7 +5,7 @@ Produce one portrait English explainer MP4 without paid generation APIs. Keep th
 
 ## What runs
 - Fixed, reviewed English script: turning meeting notes into confirmed actions.
-- Kokoro q8 model downloaded from Hugging Face and run locally on CPU, using the English af_heart voice.
+- Kokoro q8 model downloaded from Hugging Face and run locally on CPU, using the English af_bella voice at 1.1 speed (revised after user feedback).
 - Original animated template graphics rendered by Remotion at 720×1280, 30 fps.
 - Scene captions shown during each scene's actual narration; these are not word-level Whisper captions.
 - No LLM, image/video generation API, stock search, credentials, paid fallback, or upload to a social platform.
@@ -28,3 +28,6 @@ The first render downloads the local voice model and Remotion browser. Internet 
 
 ## Scope and next step
 This pilot validates local narration and rendering. It uses graphics instead of stock footage, so no new account is needed. Broader topics need a free script process, English review, and optional Pexels footage with licensing review. Automatically publishing to YouTube/Instagram is a separate integration. Do not claim earnings or monetization eligibility from this technical pilot.
+
+## Voice revision
+See [VOICE_AND_MONETIZATION_RESEARCH.md](VOICE_AND_MONETIZATION_RESEARCH.md) for sources, monetization evidence limits and the controlled voice comparison. The revised narration is manually reviewed English; changing it requires a new review and checksum.
