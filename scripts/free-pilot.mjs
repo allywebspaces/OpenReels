@@ -3,7 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadReviewedPilot, sceneDurationFrames, REVIEWED_PILOT_HASH } from '../src/free-pilot/policy.mjs';
+import { loadReviewedPilot, sceneDurationFrames, REVIEWED_PILOT_HASH, REVIEWED_VISUAL_HASH } from '../src/free-pilot/policy.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const pilot = loadReviewedPilot();
 const output = resolve(root, 'output/free-pilot');
@@ -40,8 +40,14 @@ try {
   const serveUrl=await bundle({entryPoint:resolve(root,'src/free-pilot/Root.tsx'),publicDir:assets});
   const composition=await selectComposition({serveUrl,id:'FreeEnglishPilot',inputProps});
   await renderStill({serveUrl,composition,inputProps,frame:60,output:resolve(output,'preview.png')});
+  let sceneStart = 0;
+  for (const [index, scene] of scenes.entries()) {
+    const frame = sceneStart + Math.max(0, scene.durationInFrames - 12);
+    await renderStill({serveUrl,composition,inputProps,frame,output:resolve(output,`review-scene-${index+1}.png`)});
+    sceneStart += scene.durationInFrames;
+  }
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
-  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:'original template graphics',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
+  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,reviewedVisualHash:REVIEWED_VISUAL_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:'original fictional meeting notes, extraction prompt and action table',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {

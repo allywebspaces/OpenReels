@@ -21,3 +21,11 @@ test('scene duration covers the full audio and a short pause without cutting spe
   assert.equal(sceneDurationFrames(240000, 24000), 309);
   assert.throws(() => sceneDurationFrames(0, 24000), /Invalid/);
 });
+test('free pilot rejects unreviewed visual text before downloading assets', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'free-visual-policy-'));
+  try {
+    const path = join(dir, 'Root.tsx');
+    writeFileSync(path, 'export const caption = "Bonjour";');
+    assert.throws(() => loadReviewedPilot(undefined, path), /reviewed English visuals/);
+  } finally { rmSync(dir, {recursive:true}); }
+});
