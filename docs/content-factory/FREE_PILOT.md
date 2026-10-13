@@ -31,3 +31,5 @@ This pilot validates local narration and rendering. It uses graphics instead of 
 
 ## Voice revision
 See [VOICE_AND_MONETIZATION_RESEARCH.md](VOICE_AND_MONETIZATION_RESEARCH.md) for sources, monetization evidence limits and the controlled voice comparison. The revised narration is manually reviewed English; changing it requires a new review and checksum.
+
+Voice comparison exports now include MP3 versions for broader player compatibility. The original WAV samples use 32-bit float audio and some players may not open them. A compatible revised opening is committed at `examples/free-pilot/energetic-opening.mp3`. Local rendering now also requires ffmpeg on PATH (for example, `brew install ffmpeg` on macOS).

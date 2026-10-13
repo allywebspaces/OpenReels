@@ -1,4 +1,5 @@
 // Reviewed English pilot. No paid SDK, LLM call, API key or provider fallback.
+import { execFileSync } from 'node:child_process';
 import { mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -28,6 +29,9 @@ try {
   const calm = await tts.generate(comparisonText, {voice:'af_heart', speed:1});
   await writeFile(resolve(output,'comparison-calm.wav'),Buffer.from(calm.toWav()));
   await copyFile(resolve(assets,'scene-1.wav'),resolve(output,'comparison-energetic.wav'));
+  for (const name of ['comparison-calm', 'comparison-energetic']) {
+    execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', resolve(output, `${name}.wav`), '-codec:a', 'libmp3lame', '-b:a', '128k', resolve(output, `${name}.mp3`)], {stdio:'inherit'});
+  }
   const inputProps={scenes};
   await writeFile(resolve(output,'pilot.json'),JSON.stringify(inputProps,null,2));
   const {bundle} = await import('@remotion/bundler');
@@ -37,7 +41,7 @@ try {
   const composition=await selectComposition({serveUrl,id:'FreeEnglishPilot',inputProps});
   await renderStill({serveUrl,composition,inputProps,frame:60,output:resolve(output,'preview.png')});
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
-  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:'original template graphics',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.wav','comparison-energetic.wav'],published:false};
+  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:'original template graphics',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {
