@@ -17,7 +17,7 @@ jobs:
       - name: Checkout verified free build
         uses: actions/checkout@v4
         with:
-          ref: adc1a41a9274f1be1080660baf29fa49bc787f30
+          ref: 22e5ee48eb5b202fc30bed39736ce239c2ee2295
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -54,6 +54,8 @@ jobs:
             output/free-pilot/report.json
             output/free-pilot/comparison-calm.wav
             output/free-pilot/comparison-energetic.wav
+            output/free-pilot/comparison-calm.mp3
+            output/free-pilot/comparison-energetic.mp3
           retention-days: 7
           if-no-files-found: error
       - name: Result
