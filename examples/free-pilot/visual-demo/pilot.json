@@ -1,0 +1,62 @@
+{
+  "scenes": [
+    {
+      "heading": "Who is doing what?",
+      "label": "FIX THE FOLLOW-UP",
+      "items": [
+        "Clear actions",
+        "Named owners",
+        "Confirmed deadlines"
+      ],
+      "narration": "Your meeting ended. But who is doing what? Turn messy notes into a clear action list.",
+      "audio": "scene-1.wav",
+      "durationInFrames": 185
+    },
+    {
+      "heading": "Give AI one clear job",
+      "label": "USE A SAFE COPY",
+      "items": [
+        "Remove confidential details",
+        "Action · owner · deadline"
+      ],
+      "narration": "First, remove private and confidential details. Then ask AI: list each action, its owner, and its deadline.",
+      "audio": "scene-2.wav",
+      "durationInFrames": 246
+    },
+    {
+      "heading": "Never let AI guess",
+      "label": "MISSING DOES NOT MEAN GUESS",
+      "items": [
+        "Write: not specified",
+        "Ask your team to confirm"
+      ],
+      "narration": "Missing a name or date? Tell AI to write not specified. Never let it guess.",
+      "audio": "scene-3.wav",
+      "durationInFrames": 174
+    },
+    {
+      "heading": "Check before sharing",
+      "label": "A TASK NEEDS THREE THINGS",
+      "items": [
+        "What needs doing?",
+        "Who owns it?",
+        "When is it due?"
+      ],
+      "narration": "Now check every task against your notes. Confirm the owners and dates with your team.",
+      "audio": "scene-4.wav",
+      "durationInFrames": 177
+    },
+    {
+      "heading": "Turn notes into action",
+      "label": "START WITH ONE MEETING",
+      "items": [
+        "Use a short sample",
+        "Review before sharing",
+        "Save your prompt"
+      ],
+      "narration": "You now have actions you can actually follow. Try one meeting, and save this prompt for next time.",
+      "audio": "scene-5.wav",
+      "durationInFrames": 204
+    }
+  ]
+}

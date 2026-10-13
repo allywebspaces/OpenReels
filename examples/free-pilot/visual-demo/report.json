@@ -1,0 +1,22 @@
+{
+  "mode": "free-pilot",
+  "language": "English",
+  "paidApiCalls": 0,
+  "paidApiCostUsd": 0,
+  "reviewedScriptHash": "f29a1fdba849bd173ad215fa194c7dd09e3e0052bdf714d12d40d0e78981e886",
+  "reviewedVisualHash": "44e0777bda9fb07964aa1120302ea8b79b1579cae0d99a2b660cdd884a225d0c",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "durationSeconds": 32.86666666666667,
+  "voice": "local Kokoro af_bella",
+  "voiceSpeed": 1.1,
+  "visuals": "original fictional meeting notes, extraction prompt and action table",
+  "captions": "scene text synchronized to each scene audio; not word-level transcription",
+  "script": "fixed reviewed English preset",
+  "comparisonSamples": [
+    "comparison-calm.mp3",
+    "comparison-energetic.mp3"
+  ],
+  "published": false
+}

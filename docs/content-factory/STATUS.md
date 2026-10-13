@@ -41,7 +41,7 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-Improve the current pilot visuals with fictional meeting notes, an exact AI extraction prompt and an action table, then provide one full video for review. Keep approved local af_bella at 1.1, English-only content and no paid generation API calls. Arbitrary free topic generation is not implemented. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.
+User review of the completed visual pilot: examples/free-pilot/visual-demo/pilot.mp4. The notes → prompt → action-table upgrade is rendered and checked. Keep approved local af_bella at 1.1, English-only content and no paid generation API calls. Complete one video review before expanding channels; arbitrary free topic generation and social publishing remain unimplemented.
 
 ## Agent workflow and project memory — 13 October 2026
 - Added lead/builder/researcher/reviewer workflow in AGENT_WORKFLOW.md and resume guidance in AGENTS.md. Superpowers skills are available in this host; this is not a separately hosted or scheduled agent service.
@@ -49,3 +49,11 @@ Improve the current pilot visuals with fictional meeting notes, an exact AI extr
 - Project-only sourced facts live in memory/project.jsonl, with a compact INDEX.md. The real stdio MCP server is callable through the local retrieval wrapper; no global ChatGPT connector was installed and no account-wide history was imported.
 - Wrapper refuses empty search, reports missing matches and caps complete JSON responses at 6,000 bytes. No model/embedding service, API key or paid inference call is used. Unlimited memory, guaranteed recall and measured token savings are not claimed.
 - Fresh verification: 5 real-server memory tests, 431 Vitest tests, 12 existing Node tests and TypeScript passed. Existing provider-failure test logs and pnpm configuration warnings remain; no failing tests.
+
+## Visual pilot completed — 13 October 2026
+- Free run 38367456660 succeeded from build 031534686e25e453de18ad2cde7dde180d4bf205: https://github.com/allywebspaces/OpenReels/actions/runs/38367456660.
+- Added clearly fictional notes, exact English extraction prompt, missing-field table, source verification and final action list. No missing owner/deadline is invented. Narration and approved voice remain unchanged.
+- SHA256 pins now protect both script JSON and visual source before model downloads. Unreviewed visual text regression test passed.
+- Inspected all five rendered scene stills: English text legible, no clipping/overlap. H264/AAC 720x1280, approximately 33 seconds; complete MP4 decode passed. No claim of complete human listening or retention testing.
+- Fresh checks: 431 Vitest tests, 18 Node tests (including policy and memory), TypeScript and offline free check passed. No paid API calls; no social publication.
+- Durable MP4, five review PNGs, props and report: examples/free-pilot/visual-demo/. GitHub main now pins this build in the FREE English pilot workflow. The separate upstream main CI/Docker workflows were already failing and are not part of this successful free render.

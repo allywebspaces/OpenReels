@@ -11,7 +11,7 @@ Goal: finish one English-only free video pilot before expanding to five channels
 | PilotEvidence | Prior renders and verification limits |
 | NextMilestone | Current task and immediate next action |
 
-Current checkpoint (13 October 2026): energetic voice approved; successful ~33-second video archived. Agent workflow and official MCP memory integration implemented; 5 real-server retrieval tests, 431 existing Vitest tests, 12 existing Node tests and TypeScript passed. Next product milestone: visual demonstration of notes → prompt → action table. No social publication authorized.
+Current checkpoint (13 October 2026): visual pilot completed and checked; approved energetic voice unchanged. Free render 38367456660 succeeded, all five scene stills inspected, full MP4 decode passed, 449 tests and TypeScript passed. Durable review video: examples/free-pilot/visual-demo/pilot.mp4. Next: user reviews this completed video before expanding channels. No social publication authorized.
 
 Retrieve a small slice:
 
