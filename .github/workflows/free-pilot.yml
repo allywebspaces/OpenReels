@@ -17,7 +17,7 @@ jobs:
       - name: Checkout verified free build
         uses: actions/checkout@v4
         with:
-          ref: 031534686e25e453de18ad2cde7dde180d4bf205
+          ref: 7cb3fe7e63e820bb326f74b81a45e9e3450e9ab8
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -33,30 +33,30 @@ jobs:
       - name: Check free English policy and types
         run: |
           node --test src/free-pilot/policy.test.mjs
-          node scripts/free-pilot.mjs --check
+          node scripts/free-pilot.mjs --preset micro-drama --check
           pnpm exec tsc --noEmit
       - name: Install media verification tools
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Render using local Kokoro and template graphics
-        run: node scripts/free-pilot.mjs
+        run: node scripts/free-pilot.mjs --preset micro-drama
       - name: Verify MP4
         run: |
-          test -s output/free-pilot/pilot.mp4
-          ffprobe -v error -show_entries stream=codec_name,width,height -show_entries format=duration -of json output/free-pilot/pilot.mp4
+          test -s output/micro-drama/pilot.mp4
+          ffprobe -v error -show_entries stream=codec_name,width,height -show_entries format=duration -of json output/micro-drama/pilot.mp4
       - name: Save free pilot for review
         uses: actions/upload-artifact@v4
         with:
           name: free-english-pilot-${{ github.run_id }}
           path: |
-            output/free-pilot/pilot.mp4
-            output/free-pilot/preview.png
-            output/free-pilot/review-scene-*.png
-            output/free-pilot/pilot.json
-            output/free-pilot/report.json
-            output/free-pilot/comparison-calm.wav
-            output/free-pilot/comparison-energetic.wav
-            output/free-pilot/comparison-calm.mp3
-            output/free-pilot/comparison-energetic.mp3
+            output/micro-drama/pilot.mp4
+            output/micro-drama/preview.png
+            output/micro-drama/review-scene-*.png
+            output/micro-drama/pilot.json
+            output/micro-drama/report.json
+            output/micro-drama/comparison-calm.wav
+            output/micro-drama/comparison-energetic.wav
+            output/micro-drama/comparison-calm.mp3
+            output/micro-drama/comparison-energetic.mp3
           retention-days: 7
           if-no-files-found: error
       - name: Result
