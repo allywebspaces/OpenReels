@@ -2,6 +2,8 @@
 
 This is an adaptation of OpenReels, not a replacement video engine. Start with one pilot for AI Money India. Channel names are provisional; English-only output is mandatory. These are not registered social accounts.
 
+For an agent resuming the build, read [memory/INDEX.md](memory/INDEX.md) and [AGENT_WORKFLOW.md](AGENT_WORKFLOW.md) first. The current default is the free preset described in [FREE_PILOT.md](FREE_PILOT.md); the provider setup below is only for explicitly authorized paid modes.
+
 ## Setup
 Requires Node.js 22+, pnpm and ffprobe. Docker is optional for CLI use; Docker Compose is required for the supplied Redis/API/worker web stack. The build environment used Node 24 and pnpm 11. The workspace build policy now supports pnpm 11 while preserving upstream's allowed native packages.
 

@@ -1,0 +1,10 @@
+{
+  "name": "openreels-agent-memory",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test memory.test.mjs" },
+  "dependencies": {
+    "@modelcontextprotocol/server-memory": "1.0.0",
+    "@modelcontextprotocol/sdk": "1.31.0"
+  }
+}

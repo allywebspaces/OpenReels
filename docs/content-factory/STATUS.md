@@ -41,4 +41,11 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-Use the user-approved local af_bella voice at 1.1 speed as the default. Next, review the complete pilot and develop one new English topic using the free pipeline. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.
+Improve the current pilot visuals with fictional meeting notes, an exact AI extraction prompt and an action table, then provide one full video for review. Keep approved local af_bella at 1.1, English-only content and no paid generation API calls. Arbitrary free topic generation is not implemented. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.
+
+## Agent workflow and project memory — 13 October 2026
+- Added lead/builder/researcher/reviewer workflow in AGENT_WORKFLOW.md and resume guidance in AGENTS.md. Superpowers skills are available in this host; this is not a separately hosted or scheduled agent service.
+- Installed official @modelcontextprotocol/server-memory 1.0.0 with SDK 1.31.0 in tools/agent-memory, separately from video dependencies, with npm lockfile and install scripts disabled.
+- Project-only sourced facts live in memory/project.jsonl, with a compact INDEX.md. The real stdio MCP server is callable through the local retrieval wrapper; no global ChatGPT connector was installed and no account-wide history was imported.
+- Wrapper refuses empty search, reports missing matches and caps complete JSON responses at 6,000 bytes. No model/embedding service, API key or paid inference call is used. Unlimited memory, guaranteed recall and measured token savings are not claimed.
+- Fresh verification: 5 real-server memory tests, 431 Vitest tests, 12 existing Node tests and TypeScript passed. Existing provider-failure test logs and pnpm configuration warnings remain; no failing tests.
