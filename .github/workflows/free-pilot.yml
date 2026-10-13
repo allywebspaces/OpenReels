@@ -17,7 +17,7 @@ jobs:
       - name: Checkout verified free build
         uses: actions/checkout@v4
         with:
-          ref: 22e5ee48eb5b202fc30bed39736ce239c2ee2295
+          ref: 031534686e25e453de18ad2cde7dde180d4bf205
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -50,6 +50,7 @@ jobs:
           path: |
             output/free-pilot/pilot.mp4
             output/free-pilot/preview.png
+            output/free-pilot/review-scene-*.png
             output/free-pilot/pilot.json
             output/free-pilot/report.json
             output/free-pilot/comparison-calm.wav
