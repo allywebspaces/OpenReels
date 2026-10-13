@@ -1,4 +1,4 @@
-# Build status — 12 October 2026 (India)
+# Build status — 13 October 2026 (India)
 
 ## Implemented
 - Upstream: tsensei/OpenReels at edc1c973634a3e179a527d00857b85de7b52a1dd.
@@ -18,6 +18,14 @@
 - Free mode currently supports only this preset, with scene captions; arbitrary topics, stock footage and word-level captions remain future work.
 - 431 Vitest plus 12 Node tests passed (443 total); TypeScript check passed.
 
+## Voice revision and research completed
+- User requested more energetic narration. Reviewed three adjacent education creators using primary monetization sources; distinguish historical self-reports and sponsorship rate cards from audited earnings.
+- Revised preset: 81 words, local af_bella voice at 1.1 speed, stronger opening and shorter sentences. Keep the English checksum guard and no paid fallback.
+- Run 38213658270 succeeded: https://github.com/allywebspaces/OpenReels/actions/runs/38213658270.
+- New composition: approximately 32.87 seconds, 720×1280, H.264/AAC; preview inspected. Voice preference and complete human review are pending.
+- Permanent video/voice comparison package: examples/free-pilot/energetic-pilot-review.zip.
+- Sources, methodology, limits and voice comparison: docs/content-factory/VOICE_AND_MONETIZATION_RESEARCH.md.
+
 ## Verified
 - Native install completed using ONNXRUNTIME_NODE_INSTALL=skip and ONNXRUNTIME_NODE_INSTALL_CUDA=skip (optional extra GPU binary downloads unavailable through environment proxy).
 - 431 Vitest tests passed across 49 files, including 8 English-policy unit/integration tests.
@@ -33,4 +41,4 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-Watch the free pilot and review narration, captions and pacing before extending the free workflow. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.
+Watch the revised energetic pilot and compare the two opening WAVs before choosing the default voice. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.
