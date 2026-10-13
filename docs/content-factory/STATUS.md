@@ -41,7 +41,7 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-User review of the completed visual pilot: examples/free-pilot/visual-demo/pilot.mp4. The notes → prompt → action-table upgrade is rendered and checked. Keep approved local af_bella at 1.1, English-only content and no paid generation API calls. Complete one video review before expanding channels; arbitrary free topic generation and social publishing remain unimplemented.
+User selected micro-drama as the first channel focus on 14 October 2026. Review the finished first episode, The Message at Midnight: examples/micro-drama/episode-01/pilot.mp4. Target original English suspense shorts, illustrated narration initially, approved local af_bella 1.1 and no paid API calls. Preserve the productivity pilot for later; do not publish or expand five channels without further scope.
 
 ## Agent workflow and project memory — 13 October 2026
 - Added lead/builder/researcher/reviewer workflow in AGENT_WORKFLOW.md and resume guidance in AGENTS.md. Superpowers skills are available in this host; this is not a separately hosted or scheduled agent service.
@@ -57,3 +57,10 @@ User review of the completed visual pilot: examples/free-pilot/visual-demo/pilot
 - Inspected all five rendered scene stills: English text legible, no clipping/overlap. H264/AAC 720x1280, approximately 33 seconds; complete MP4 decode passed. No claim of complete human listening or retention testing.
 - Fresh checks: 431 Vitest tests, 18 Node tests (including policy and memory), TypeScript and offline free check passed. No paid API calls; no social publication.
 - Durable MP4, five review PNGs, props and report: examples/free-pilot/visual-demo/. GitHub main now pins this build in the FREE English pilot workflow. The separate upstream main CI/Docker workflows were already failing and are not part of this successful free render.
+
+## First micro-drama — 14 October 2026
+- Added separate reviewed micro-drama preset; default local productivity invocation remains available. New CLI: node scripts/free-pilot.mjs --preset micro-drama. Unknown presets fail before model downloads.
+- Original five-scene mystery The Message at Midnight, with procedural phone, hallway, matching photo clue and clock-reset payoff. Clearly labelled Original Fiction. No external visual assets or actor generation; Midnight Stories is a provisional series label.
+- Successful free run 38473576384 from source 7cb3fe7e63e820bb326f74b81a45e9e3450e9ab8: https://github.com/allywebspaces/OpenReels/actions/runs/38473576384. Approximately 37 seconds, 720x1280 H264/AAC.
+- All five scene stills inspected for legibility and clipping; complete MP4 decode passed. Fresh 431 Vitest plus 20 Node tests and TypeScript passed. English script and visual checksum gates verified. Zero paid API calls, no public publication.
+- Video, scene PNGs, props and report saved under examples/micro-drama/episode-01/. User story/style review remains pending. Existing separate upstream main CI/Docker failures do not indicate failure of this successful free render.

@@ -1,0 +1,24 @@
+{
+  "mode": "free-pilot",
+  "preset": "micro-drama",
+  "title": "The Message at Midnight",
+  "language": "English",
+  "paidApiCalls": 0,
+  "paidApiCostUsd": 0,
+  "reviewedScriptHash": "088cddf7582e617bdfad82f2d6739a39560f57c5abc1fce358d41c2aef8d85df",
+  "reviewedVisualHash": "0648ad3d0cca97c77430a943f63b4e290d327ce217123fb51a57534cd5353ecd",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "durationSeconds": 36.86666666666667,
+  "voice": "local Kokoro af_bella",
+  "voiceSpeed": 1.1,
+  "visuals": "original illustrated phone, clock and door mystery",
+  "captions": "scene text synchronized to each scene audio; not word-level transcription",
+  "script": "fixed reviewed English preset",
+  "comparisonSamples": [
+    "comparison-calm.mp3",
+    "comparison-energetic.mp3"
+  ],
+  "published": false
+}

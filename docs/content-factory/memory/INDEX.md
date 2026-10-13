@@ -1,6 +1,6 @@
 # Project memory — read this first
 
-Goal: finish one English-only free video pilot before expanding to five channels.
+Goal: establish original English micro-drama shorts first; user selected this focus on 14 October 2026.
 
 | Entity | Retrieve when |
 |---|---|
@@ -10,8 +10,9 @@ Goal: finish one English-only free video pilot before expanding to five channels
 | ApprovedVoice | Speech and review media |
 | PilotEvidence | Prior renders and verification limits |
 | NextMilestone | Current task and immediate next action |
+| MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (13 October 2026): visual pilot completed and checked; approved energetic voice unchanged. Free render 38367456660 succeeded, all five scene stills inspected, full MP4 decode passed, 449 tests and TypeScript passed. Durable review video: examples/free-pilot/visual-demo/pilot.mp4. Next: user reviews this completed video before expanding channels. No social publication authorized.
+Current checkpoint (14 October 2026): first micro-drama The Message at Midnight rendered successfully in free run 38473576384, approximately 37 seconds. Five scene stills inspected, full MP4 decode passed, 451 tests and TypeScript passed. Durable episode: examples/micro-drama/episode-01/pilot.mp4. Next: user story/style review. Productivity pilot preserved. No social publication authorized.
 
 Retrieve a small slice:
 
