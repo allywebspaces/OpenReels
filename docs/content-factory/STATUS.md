@@ -22,7 +22,7 @@
 - User requested more energetic narration. Reviewed three adjacent education creators using primary monetization sources; distinguish historical self-reports and sponsorship rate cards from audited earnings.
 - Revised preset: 81 words, local af_bella voice at 1.1 speed, stronger opening and shorter sentences. Keep the English checksum guard and no paid fallback.
 - Run 38213658270 succeeded: https://github.com/allywebspaces/OpenReels/actions/runs/38213658270.
-- New composition: approximately 32.87 seconds, 720×1280, H.264/AAC; preview inspected. Voice preference and complete human review are pending.
+- New composition: approximately 32.87 seconds, 720×1280, H.264/AAC; preview inspected. User approved the energetic opening on 13 October 2026; complete video review remains pending.
 - Permanent video/voice comparison package: examples/free-pilot/energetic-pilot-review.zip.
 - Sources, methodology, limits and voice comparison: docs/content-factory/VOICE_AND_MONETIZATION_RESEARCH.md.
 
@@ -41,4 +41,4 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-Watch the revised energetic pilot and compare the two opening WAVs before choosing the default voice. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.
+Use the user-approved local af_bella voice at 1.1 speed as the default. Next, review the complete pilot and develop one new English topic using the free pipeline. Actions → FREE English pilot reruns the preset without API keys. Code and setup notes are on build/five-channel-starter in https://github.com/allywebspaces/OpenReels. Do not use the older paid English pilot workflow when seeking free generation.

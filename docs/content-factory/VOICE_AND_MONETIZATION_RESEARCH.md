@@ -48,3 +48,6 @@ No actual Shorts earnings, same-format performance or causal voice effect has be
 The revised free pilot completed successfully in GitHub run 38213658270: https://github.com/allywebspaces/OpenReels/actions/runs/38213658270. The composition is approximately 32.87 seconds (container duration may differ slightly), 720×1280 at 30 fps, with H.264 video and AAC audio. The first-scene preview was inspected for English legibility. Paid API calls: zero. Full listening/retention validation remains pending.
 
 The permanent repository archive `examples/free-pilot/energetic-pilot-review.zip` contains the MP4, equal-text calm and energetic opening WAVs, preview, render props and report. Its SHA-256 is `58b45e54e5ba798db0850465ddcb12fe13dc58c678a91e11954002562fed1483`. It is independent of the workflow artifact expiration. Code, reviewed-script checksum and research sources are committed on `build/five-channel-starter`.
+
+## User decision — 13 October 2026
+After listening to the compatible energetic-opening MP3, the user said “I'm good with it.” Keep local Kokoro af_bella at 1.1 as the approved default. This approval is for the narration choice; it does not establish retention performance or authorize social publishing.
