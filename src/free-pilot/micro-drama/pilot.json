@@ -1,0 +1,36 @@
+{
+  "language": "English",
+  "title": "The Message at Midnight",
+  "scenes": [
+    {
+      "heading": "The Message at Midnight",
+      "label": "MIDNIGHT · MAYA'S APARTMENT",
+      "items": ["My number", "Don't open the door."],
+      "narration": "At midnight, Maya received a message from her own number. Four words: Don't open the door."
+    },
+    {
+      "heading": "Then came the knock",
+      "label": "THE DOOR STAYED CLOSED",
+      "items": ["KNOCK", "KNOCK", "KNOCK"],
+      "narration": "Three knocks. Maya reached for the lock. Her phone lit up again. This time, it was a photograph."
+    },
+    {
+      "heading": "Her hallway. Right now.",
+      "label": "THE SAME CROOKED FRAME",
+      "items": ["Received photo", "00:00"],
+      "narration": "Her hallway. The crooked picture. The blue slipper she had just dropped. Whoever sent it was already inside."
+    },
+    {
+      "heading": "You opened it last time.",
+      "label": "ANOTHER MESSAGE",
+      "items": ["My number", "You opened it last time."],
+      "narration": "Then came the final message: You opened it last time. The clock flickered backward. Maya finally understood the warning."
+    },
+    {
+      "heading": "This time, she listened",
+      "label": "ORIGINAL FICTION",
+      "items": ["23:59", "00:00", "Would you open it?"],
+      "narration": "She left the lock untouched. Midnight returned. Her own warning appeared again. This time, the knocking stopped. Would you open it?"
+    }
+  ]
+}

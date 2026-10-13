@@ -4,6 +4,7 @@ import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { loadReviewedPilot, sceneDurationFrames } from './policy.mjs';
+import * as policy from './policy.mjs';
 test('free pilot accepts the pinned English script', () => {
   const p = loadReviewedPilot(); assert.equal(p.language, 'English');
   assert.equal(p.scenes.length, 5); assert.ok(p.scenes.every(s => s.narration.length > 10));
@@ -28,4 +29,16 @@ test('free pilot rejects unreviewed visual text before downloading assets', () =
     writeFileSync(path, 'export const caption = "Bonjour";');
     assert.throws(() => loadReviewedPilot(undefined, path), /reviewed English visuals/);
   } finally { rmSync(dir, {recursive:true}); }
+});
+test('loads a separate reviewed English micro-drama without replacing productivity', () => {
+  assert.equal(typeof policy.loadReviewedPreset, 'function');
+  const p = policy.loadReviewedPreset('micro-drama');
+  assert.equal(p.language, 'English');
+  assert.equal(p.scenes.length, 5);
+  assert.match(p.title, /Midnight/);
+  assert.equal(loadReviewedPilot().title, 'Turn meeting notes into actions');
+});
+test('unknown free presets fail before provider execution', () => {
+  assert.equal(typeof policy.loadReviewedPreset, 'function');
+  assert.throws(() => policy.loadReviewedPreset('unknown'), /Unknown free preset/);
 });

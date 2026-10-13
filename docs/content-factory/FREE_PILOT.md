@@ -36,3 +36,13 @@ Voice comparison exports now include MP3 versions for broader player compatibili
 
 ## Visual demonstration
 The five scenes show a fictional meeting: Alex sends the draft by Friday, Sam reviews the budget with no stated deadline, and a demo must be booked by Monday with no stated owner. The exact prompt requires English, extraction only from notes, and “Not specified” for gaps. Tables preserve both missing fields; no team confirmation is invented. These are original illustrative graphics, not an actual model response. The renderer exports review-scene-1.png through review-scene-5.png for layout review, alongside the complete MP4.
+
+## Micro-drama preset
+The user selected micro-drama as the first channel focus on 14 October 2026. Original fictional episode: The Message at Midnight. Five scenes follow Maya, her own-number warning, a matching hallway photograph, a backward clock and her decision to leave the lock closed. The free style is illustrated suspense, not realistic generated actors. Midnight Stories is a provisional on-screen series label, not a registered channel.
+
+```bash
+node scripts/free-pilot.mjs --preset micro-drama --check
+node scripts/free-pilot.mjs --preset micro-drama
+```
+
+Outputs are under output/micro-drama/. Both its script and visual source are checksum-pinned. Default local invocation still renders the preserved productivity preset; GitHub FREE English pilot currently selects the user's micro-drama focus. No paid fallback or social upload.

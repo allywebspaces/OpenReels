@@ -3,11 +3,20 @@ import { execFileSync } from 'node:child_process';
 import { mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadReviewedPilot, sceneDurationFrames, REVIEWED_PILOT_HASH, REVIEWED_VISUAL_HASH } from '../src/free-pilot/policy.mjs';
+import { loadReviewedPreset, reviewedPresetConfig, sceneDurationFrames } from '../src/free-pilot/policy.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const pilot = loadReviewedPilot();
-const output = resolve(root, 'output/free-pilot');
-if (process.argv.includes('--check')) {
+const args = process.argv.slice(2);
+let presetName = 'productivity';
+let check = false;
+for (let i = 0; i < args.length; i++) {
+  if (args[i] === '--check') check = true;
+  else if (args[i] === '--preset' && args[i+1]) presetName = args[++i];
+  else { console.error('Use --check and/or --preset productivity|micro-drama'); process.exit(1); }
+}
+const config = reviewedPresetConfig(presetName);
+const pilot = loadReviewedPreset(presetName);
+const output = resolve(root, 'output', config.output);
+if (check) {
   console.log(JSON.stringify({mode:'free-pilot-check', language:'English', apiCalls:0, paidApiCostUsd:0, title:pilot.title}));
   process.exit(0);
 }
@@ -37,7 +46,7 @@ try {
   const {bundle} = await import('@remotion/bundler');
   const {selectComposition,renderMedia,renderStill} = await import('@remotion/renderer');
   console.log('Rendering template visuals and scene captions.');
-  const serveUrl=await bundle({entryPoint:resolve(root,'src/free-pilot/Root.tsx'),publicDir:assets});
+  const serveUrl=await bundle({entryPoint:resolve(root,`src/free-pilot/${config.folder}Root.tsx`),publicDir:assets});
   const composition=await selectComposition({serveUrl,id:'FreeEnglishPilot',inputProps});
   await renderStill({serveUrl,composition,inputProps,frame:60,output:resolve(output,'preview.png')});
   let sceneStart = 0;
@@ -47,7 +56,7 @@ try {
     sceneStart += scene.durationInFrames;
   }
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
-  const report={mode:'free-pilot',language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:REVIEWED_PILOT_HASH,reviewedVisualHash:REVIEWED_VISUAL_HASH,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:'original fictional meeting notes, extraction prompt and action table',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
+  const report={mode:'free-pilot',preset:presetName,title:pilot.title,language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:config.scriptHash,reviewedVisualHash:config.visualHash,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:presetName==='micro-drama'?'original illustrated phone, clock and door mystery':'original fictional meeting notes, extraction prompt and action table',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {
