@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (14 October 2026): user wants video quality research before channel creation; channel setup and publication are on hold. Reviewed 12 improvement/generation repositories and inspected three cloned review tools. Findings in VIDEO_IMPROVEMENT_RESEARCH.md: keep OpenReels; evaluate structured review, expressive speech and caption alignment. Gemini/Bailian reviewers depend on hosted inference; local Qwen models need hardware validation. No new tools/models installed or executed. Next: review packet and controlled private pilot improvements. Approved episode preserved; name recommendation remains provisional.
+Current checkpoint (15 October 2026): user requested an experimental copy before improving videos. Work on experiment/video-quality in the separate openreels-video-quality worktree, copied from 7d7224b67db3694dcd4b7f3708eff36c13621abf. Original build/five-channel-starter remains unchanged. Fresh copied-workspace checks: 454 tests, TypeScript and English preset check passed. See EXPERIMENT_WORKSPACE.md for setup limits and the five pending ideas. First: timestamped quality review, then one controlled visual/pacing alternative. No new video implementation, paid inference or channel creation.
 
 Retrieve a small slice:
 
