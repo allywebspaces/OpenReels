@@ -1,0 +1,33 @@
+{
+  "method": "40ms autocorrelation windows, 10ms hop, 90\u2013400Hz range; approximate and not a naturalness score",
+  "results": [
+    {
+      "sample": "original-question",
+      "durationSeconds": 3.0,
+      "lastVoicedTime": 2.01,
+      "tailMedianF0Hz": 170.2,
+      "priorMedianF0Hz": 196.7
+    },
+    {
+      "sample": "isolated-same-speed",
+      "durationSeconds": 1.625,
+      "lastVoicedTime": 1.03,
+      "tailMedianF0Hz": 195.2,
+      "priorMedianF0Hz": 223.3
+    },
+    {
+      "sample": "isolated-slower",
+      "durationSeconds": 1.8,
+      "lastVoicedTime": 1.15,
+      "tailMedianF0Hz": 172.7,
+      "priorMedianF0Hz": 233.0
+    },
+    {
+      "sample": "isolated-paused",
+      "durationSeconds": 2.25,
+      "lastVoicedTime": 1.61,
+      "tailMedianF0Hz": 184.6,
+      "priorMedianF0Hz": 181.8
+    }
+  ]
+}

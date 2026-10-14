@@ -1,0 +1,135 @@
+[
+  {
+    "scene": 1,
+    "text": "At midnight, Maya received a message from her own number.",
+    "startFrame": 0,
+    "endFrame": 117,
+    "startSeconds": 0.0
+  },
+  {
+    "scene": 1,
+    "text": "Four words: Don't open the door.",
+    "startFrame": 121,
+    "endFrame": 200,
+    "startSeconds": 4.033333333333333
+  },
+  {
+    "scene": 2,
+    "text": "Three knocks.",
+    "startFrame": 209,
+    "endFrame": 254,
+    "startSeconds": 6.966666666666667
+  },
+  {
+    "scene": 2,
+    "text": "Maya reached for the lock.",
+    "startFrame": 258,
+    "endFrame": 320,
+    "startSeconds": 8.6
+  },
+  {
+    "scene": 2,
+    "text": "Her phone lit up again.",
+    "startFrame": 323,
+    "endFrame": 382,
+    "startSeconds": 10.766666666666667
+  },
+  {
+    "scene": 2,
+    "text": "This time, it was a photograph.",
+    "startFrame": 385,
+    "endFrame": 463,
+    "startSeconds": 12.833333333333334
+  },
+  {
+    "scene": 3,
+    "text": "Her hallway.",
+    "startFrame": 472,
+    "endFrame": 516,
+    "startSeconds": 15.733333333333333
+  },
+  {
+    "scene": 3,
+    "text": "The crooked picture.",
+    "startFrame": 520,
+    "endFrame": 574,
+    "startSeconds": 17.333333333333332
+  },
+  {
+    "scene": 3,
+    "text": "The blue slipper she had just dropped.",
+    "startFrame": 577,
+    "endFrame": 650,
+    "startSeconds": 19.233333333333334
+  },
+  {
+    "scene": 3,
+    "text": "Whoever sent it was already inside.",
+    "startFrame": 654,
+    "endFrame": 731,
+    "startSeconds": 21.8
+  },
+  {
+    "scene": 4,
+    "text": "Then came the final message.",
+    "startFrame": 740,
+    "endFrame": 807,
+    "startSeconds": 24.666666666666668
+  },
+  {
+    "scene": 4,
+    "text": "You opened it last time.",
+    "startFrame": 811,
+    "endFrame": 872,
+    "startSeconds": 27.033333333333335
+  },
+  {
+    "scene": 4,
+    "text": "The clock flickered backward.",
+    "startFrame": 876,
+    "endFrame": 937,
+    "startSeconds": 29.2
+  },
+  {
+    "scene": 4,
+    "text": "Maya finally understood the warning.",
+    "startFrame": 941,
+    "endFrame": 1029,
+    "startSeconds": 31.366666666666667
+  },
+  {
+    "scene": 5,
+    "text": "She left the lock untouched.",
+    "startFrame": 1038,
+    "endFrame": 1104,
+    "startSeconds": 34.6
+  },
+  {
+    "scene": 5,
+    "text": "Midnight returned.",
+    "startFrame": 1107,
+    "endFrame": 1161,
+    "startSeconds": 36.9
+  },
+  {
+    "scene": 5,
+    "text": "Her own warning appeared again.",
+    "startFrame": 1165,
+    "endFrame": 1233,
+    "startSeconds": 38.833333333333336
+  },
+  {
+    "scene": 5,
+    "text": "This time, the knocking stopped.",
+    "startFrame": 1237,
+    "endFrame": 1312,
+    "startSeconds": 41.233333333333334
+  },
+  {
+    "scene": 5,
+    "text": "Would you open it?",
+    "startFrame": 1328,
+    "endFrame": 1383,
+    "startSeconds": 44.266666666666666
+  }
+]

@@ -1,0 +1,272 @@
+{
+  "scenes": [
+    {
+      "heading": "The Message at Midnight",
+      "label": "MIDNIGHT · MAYA'S APARTMENT",
+      "items": [
+        "My number",
+        "Don't open the door."
+      ],
+      "narration": "At midnight, Maya received a message from her own number. Four words: Don't open the door.",
+      "speechParts": [
+        {
+          "text": "At midnight, Maya received a message from her own number.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Four words: Don't open the door.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ],
+      "audio": "scene-1.wav",
+      "cues": [
+        {
+          "text": "At midnight, Maya received a message from her own number.",
+          "startFrame": 0,
+          "endFrame": 117
+        },
+        {
+          "text": "Four words: Don't open the door.",
+          "startFrame": 121,
+          "endFrame": 200
+        }
+      ],
+      "durationInFrames": 209
+    },
+    {
+      "heading": "Then came the knock",
+      "label": "THE DOOR STAYED CLOSED",
+      "items": [
+        "KNOCK",
+        "KNOCK",
+        "KNOCK"
+      ],
+      "narration": "Three knocks. Maya reached for the lock. Her phone lit up again. This time, it was a photograph.",
+      "speechParts": [
+        {
+          "text": "Three knocks.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Maya reached for the lock.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Her phone lit up again.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "This time, it was a photograph.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ],
+      "audio": "scene-2.wav",
+      "cues": [
+        {
+          "text": "Three knocks.",
+          "startFrame": 0,
+          "endFrame": 45
+        },
+        {
+          "text": "Maya reached for the lock.",
+          "startFrame": 49,
+          "endFrame": 111
+        },
+        {
+          "text": "Her phone lit up again.",
+          "startFrame": 114,
+          "endFrame": 173
+        },
+        {
+          "text": "This time, it was a photograph.",
+          "startFrame": 176,
+          "endFrame": 254
+        }
+      ],
+      "durationInFrames": 263
+    },
+    {
+      "heading": "Her hallway. Right now.",
+      "label": "THE SAME CROOKED FRAME",
+      "items": [
+        "Received photo",
+        "00:00"
+      ],
+      "narration": "Her hallway. The crooked picture. The blue slipper she had just dropped. Whoever sent it was already inside.",
+      "speechParts": [
+        {
+          "text": "Her hallway.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "The crooked picture.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "The blue slipper she had just dropped.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Whoever sent it was already inside.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ],
+      "audio": "scene-3.wav",
+      "cues": [
+        {
+          "text": "Her hallway.",
+          "startFrame": 0,
+          "endFrame": 44
+        },
+        {
+          "text": "The crooked picture.",
+          "startFrame": 48,
+          "endFrame": 102
+        },
+        {
+          "text": "The blue slipper she had just dropped.",
+          "startFrame": 105,
+          "endFrame": 178
+        },
+        {
+          "text": "Whoever sent it was already inside.",
+          "startFrame": 182,
+          "endFrame": 259
+        }
+      ],
+      "durationInFrames": 268
+    },
+    {
+      "heading": "You opened it last time.",
+      "label": "ANOTHER MESSAGE",
+      "items": [
+        "My number",
+        "You opened it last time."
+      ],
+      "narration": "Then came the final message. You opened it last time. The clock flickered backward. Maya finally understood the warning.",
+      "speechParts": [
+        {
+          "text": "Then came the final message.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "You opened it last time.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "The clock flickered backward.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Maya finally understood the warning.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ],
+      "audio": "scene-4.wav",
+      "cues": [
+        {
+          "text": "Then came the final message.",
+          "startFrame": 0,
+          "endFrame": 67
+        },
+        {
+          "text": "You opened it last time.",
+          "startFrame": 71,
+          "endFrame": 132
+        },
+        {
+          "text": "The clock flickered backward.",
+          "startFrame": 136,
+          "endFrame": 197
+        },
+        {
+          "text": "Maya finally understood the warning.",
+          "startFrame": 201,
+          "endFrame": 289
+        }
+      ],
+      "durationInFrames": 298
+    },
+    {
+      "heading": "This time, she listened",
+      "label": "ORIGINAL FICTION",
+      "items": [
+        "23:59",
+        "00:00",
+        "Would you open it?"
+      ],
+      "narration": "She left the lock untouched. Midnight returned. Her own warning appeared again. This time, the knocking stopped. Would you open it?",
+      "speechParts": [
+        {
+          "text": "She left the lock untouched.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Midnight returned.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Her own warning appeared again.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "This time, the knocking stopped.",
+          "speed": 1.1,
+          "pauseAfterMs": 550
+        },
+        {
+          "text": "Would you open it?",
+          "speed": 1,
+          "pauseAfterMs": 0,
+          "phonemes": "wʊd jˈuː ˈoʊpən ɪt?"
+        }
+      ],
+      "audio": "scene-5.wav",
+      "cues": [
+        {
+          "text": "She left the lock untouched.",
+          "startFrame": 0,
+          "endFrame": 66
+        },
+        {
+          "text": "Midnight returned.",
+          "startFrame": 69,
+          "endFrame": 123
+        },
+        {
+          "text": "Her own warning appeared again.",
+          "startFrame": 127,
+          "endFrame": 195
+        },
+        {
+          "text": "This time, the knocking stopped.",
+          "startFrame": 199,
+          "endFrame": 274
+        },
+        {
+          "text": "Would you open it?",
+          "startFrame": 290,
+          "endFrame": 345
+        }
+      ],
+      "durationInFrames": 354
+    }
+  ]
+}

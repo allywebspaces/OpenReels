@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (14 October 2026): first micro-drama The Message at Midnight rendered successfully in free run 38473576384, approximately 37 seconds. Five scene stills inspected, full MP4 decode passed, 451 tests and TypeScript passed. Durable episode: examples/micro-drama/episode-01/pilot.mp4. Next: user story/style review. Productivity pilot preserved. No social publication authorized.
+Current checkpoint (14 October 2026): user flagged closing-question delivery. Agent Reach downloaded and inspected; local frame extraction plus review agents identified timing issues. Revised take succeeded in free run 38528230169: 46.4 seconds, separate question with pause/slower speed/stress on “you,” cue-aligned captions and reveals.454 tests, TypeScript, MP4 decode and selected visual checks passed. Next: user listens to examples/micro-drama/episode-01-question-revision/question-revised.mp3. Naturalness remains a human judgment; no publishing authorized.
 
 Retrieve a small slice:
 
