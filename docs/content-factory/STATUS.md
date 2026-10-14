@@ -1,4 +1,4 @@
-# Build status — 13 October 2026 (India)
+# Build status — 14 October 2026
 
 ## Implemented
 - Upstream: tsensei/OpenReels at edc1c973634a3e179a527d00857b85de7b52a1dd.
@@ -41,7 +41,7 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-User review of the revised closing question: examples/micro-drama/episode-01-question-revision/question-revised.mp3, then the46.4-second revised episode if needed. User flagged unnatural question weighting; separate delivery, slower question, pause and phonetic stress on “you” are implemented. Do not claim audible naturalness is proven by technical tests. Micro-drama remains first focus; no paid API calls or social publication authorized.
+User approved the revised closing question and episode with “looks good” on 14 October 2026. English title, description, Instagram caption and existing-frame cover candidate are ready in examples/micro-drama/episode-01-publication/. Next: choose destination account/channel and obtain explicit publication authorization. No paid APIs or public posting authorized. Approval is creative feedback, not proof of retention or monetization.
 
 ## Agent workflow and project memory — 13 October 2026
 - Added lead/builder/researcher/reviewer workflow in AGENT_WORKFLOW.md and resume guidance in AGENTS.md. Superpowers skills are available in this host; this is not a separately hosted or scheduled agent service.
@@ -63,11 +63,11 @@ User review of the revised closing question: examples/micro-drama/episode-01-que
 - Original five-scene mystery The Message at Midnight, with procedural phone, hallway, matching photo clue and clock-reset payoff. Clearly labelled Original Fiction. No external visual assets or actor generation; Midnight Stories is a provisional series label.
 - Successful free run 38473576384 from source 7cb3fe7e63e820bb326f74b81a45e9e3450e9ab8: https://github.com/allywebspaces/OpenReels/actions/runs/38473576384. Approximately 37 seconds, 720x1280 H264/AAC.
 - All five scene stills inspected for legibility and clipping; complete MP4 decode passed. Fresh 431 Vitest plus 20 Node tests and TypeScript passed. English script and visual checksum gates verified. Zero paid API calls, no public publication.
-- Video, scene PNGs, props and report saved under examples/micro-drama/episode-01/. User story/style review remains pending. Existing separate upstream main CI/Docker failures do not indicate failure of this successful free render.
+- Video, scene PNGs, props and report saved under examples/micro-drama/episode-01/. Original version superseded for approval by the revised episode below. Existing separate upstream main CI/Docker failures do not indicate failure of this successful free render.
 
 ## Question and frame review — 14 October 2026
 - Agent Reach downloaded at94f06c1969dfc1834001269d79d3ad0972d9dee6. Its web/API-transcription tools do not perform local visual/prosody review; no installer, credentials or transcription executed. Source metadata is in tools/agent-reach/.
 - Extracted all 1,106 original video frames; two agents inspected 0.5-second contact sheets, boundaries and selected full-resolution frames, not every frame manually. Found read-ahead captions, premature question/twist reveals, repeated knock pulses and a small photo clue. Complete frame manifest, all-frame thumbnail pack and findings are in examples/micro-drama/episode-01-frame-review/.
 - Corrected sentence captions/reveals using measured audio cues, question arrival, three knock pulses, clue size and repeated-warning visual. Same af_bella voice; separate question at 1.0 with 550 ms preceding pause and reviewed primary stress on “you.” No artificial pitch shift or paid API.
 - Local narration generation succeeded, but local Chromium startup failed with uv_interface_addresses. Free GitHub run 38528230169 succeeded instead. Revised episode 46.4 seconds, 720x1280 H264/AAC; full decode passed. All five scene stills and question-boundary images inspected.
-- Fresh 431 Vitest  + 23 Node tests (454 total), TypeScript and reviewed-preset checks passed. Human audible naturalness remains pending. Revised media and cue timeline: examples/micro-drama/episode-01-question-revision/.
+- Fresh 431 Vitest  + 23 Node tests (454 total), TypeScript and reviewed-preset checks passed. User approved revised delivery and episode on 14 October 2026. Revised media and cue timeline: examples/micro-drama/episode-01-question-revision/.

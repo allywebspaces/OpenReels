@@ -1,0 +1,18 @@
+{
+  "episode": "The Message at Midnight",
+  "language": "English",
+  "status": "prepared_not_published",
+  "creative_approval": {
+    "date": "2026-10-14",
+    "source": "User reply: looks good",
+    "scope": "Revised closing question and episode; not publication authorization"
+  },
+  "title": "She Got a Text From Her Own Number",
+  "description": "At midnight, Maya receives a warning from her own number: Don't open the door. Then someone knocks.\n\nWould you open it?\n\nThe Message at Midnight \u2014 an original fictional micro-drama. Illustrated visuals and synthetic English narration.\n\n#MicroDrama #Mystery #ShortStory",
+  "instagram_caption": "A warning from her own number. A knock at midnight. Would you open it?\n\nOriginal fiction: The Message at Midnight. Illustrated visuals and synthetic English narration.\n\n#MicroDrama #Mystery #ShortStory",
+  "video": "../episode-01-question-revision/pilot.mp4",
+  "video_sha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+  "cover": "../episode-01-question-revision/review-scene-1.png",
+  "cover_note": "Existing illustrated opening frame; a cover candidate, not a separately generated thumbnail.",
+  "next_required": "Select destination account/channel and obtain explicit publication authorization."
+}

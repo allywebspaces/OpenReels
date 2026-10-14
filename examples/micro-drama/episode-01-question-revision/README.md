@@ -10,3 +10,7 @@ Successful free [run 38528230169](https://github.com/allywebspaces/OpenReels/act
 
 Video SHA256: 9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7
 Question MP3 SHA256: 47b963c46c4f772264ed2b4d0dfcac2ad3fec5d59243ae6c80f337550a2e851a
+
+## User approval
+
+On 14 October 2026, the user replied “looks good” after receiving the revised question and episode. Creative revision approved; no public posting authorized. [Publication package](../episode-01-publication/README.md) contains the proposed English title, descriptions and cover candidate.
