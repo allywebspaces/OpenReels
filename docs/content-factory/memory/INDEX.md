@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (14 October 2026): user approved the revised closing question and episode with “looks good.” The approved free render is 46.4 seconds; 454 tests, TypeScript, MP4 decode and selected visual checks passed before approval. English title, description, Instagram caption and existing-frame cover candidate are prepared in examples/micro-drama/episode-01-publication/. Next: select destination account/channel and obtain explicit publication authorization. No public posting authorized; technical checks do not establish retention or earnings.
+Current checkpoint (14 October 2026): revised micro-drama episode approved; publication metadata prepared and committed. User requested channel-name research. Recommendation: Twist Harbor / @twistharbor; backups Plot Afterglow and Minute Masquerade. Two-engine and platform-restricted searches found no exact indexed finalist identity, but direct profile retrieval was blocked. No handle registered or confirmed available. See CHANNEL_NAME_RESEARCH.md. Next: user chooses name, then confirm live platform handle acceptance before branding/render changes or public publication.
 
 Retrieve a small slice:
 
