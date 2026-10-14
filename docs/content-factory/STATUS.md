@@ -41,7 +41,7 @@
 - No social channel creation, upload, scheduling, analytics or monetization integration.
 
 ## Next action
-User approved the revised closing question and episode with “looks good” on 14 October 2026. English title, description, Instagram caption and existing-frame cover candidate are ready in examples/micro-drama/episode-01-publication/. Next: choose destination account/channel and obtain explicit publication authorization. No paid APIs or public posting authorized. Approval is creative feedback, not proof of retention or monetization.
+User wants video quality improvements before channel creation. Channel setup and publication are on hold. Research of 12 repositories and inspection of three cloned review candidates is documented in VIDEO_IMPROVEMENT_RESEARCH.md. Recommendation: retain OpenReels and evaluate a structured review packet, caption alignment and a short expressive-voice comparison after hardware validation. No new tool installed, provider call made or MP4 modified. Name remains provisional.
 
 ## Agent workflow and project memory — 13 October 2026
 - Added lead/builder/researcher/reviewer workflow in AGENT_WORKFLOW.md and resume guidance in AGENTS.md. Superpowers skills are available in this host; this is not a separately hosted or scheduled agent service.

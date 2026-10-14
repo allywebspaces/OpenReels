@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (14 October 2026): revised micro-drama episode approved; publication metadata prepared and committed. User requested channel-name research. Recommendation: Twist Harbor / @twistharbor; backups Plot Afterglow and Minute Masquerade. Two-engine and platform-restricted searches found no exact indexed finalist identity, but direct profile retrieval was blocked. No handle registered or confirmed available. See CHANNEL_NAME_RESEARCH.md. Next: user chooses name, then confirm live platform handle acceptance before branding/render changes or public publication.
+Current checkpoint (14 October 2026): user wants video quality research before channel creation; channel setup and publication are on hold. Reviewed 12 improvement/generation repositories and inspected three cloned review tools. Findings in VIDEO_IMPROVEMENT_RESEARCH.md: keep OpenReels; evaluate structured review, expressive speech and caption alignment. Gemini/Bailian reviewers depend on hosted inference; local Qwen models need hardware validation. No new tools/models installed or executed. Next: review packet and controlled private pilot improvements. Approved episode preserved; name recommendation remains provisional.
 
 Retrieve a small slice:
 
