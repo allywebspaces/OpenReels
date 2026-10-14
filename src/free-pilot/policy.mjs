@@ -2,8 +2,8 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 export const REVIEWED_PILOT_HASH = 'f29a1fdba849bd173ad215fa194c7dd09e3e0052bdf714d12d40d0e78981e886';
 export const REVIEWED_VISUAL_HASH = '44e0777bda9fb07964aa1120302ea8b79b1579cae0d99a2b660cdd884a225d0c';
-export const MICRO_DRAMA_SCRIPT_HASH = '088cddf7582e617bdfad82f2d6739a39560f57c5abc1fce358d41c2aef8d85df';
-export const MICRO_DRAMA_VISUAL_HASH = '0648ad3d0cca97c77430a943f63b4e290d327ce217123fb51a57534cd5353ecd';
+export const MICRO_DRAMA_SCRIPT_HASH = '62a958b400ce80790fd558a086d4af172eca1b2a7b487adeb20627024e3bd096';
+export const MICRO_DRAMA_VISUAL_HASH = 'f2ed12cbb5ec850d036a9c5a2885ce9cf7d6488ddc7560094a60cbd5c0228041';
 export function reviewedPresetConfig(name = 'productivity') {
   if (name === 'productivity') return {folder:'', output:'free-pilot', scriptHash:REVIEWED_PILOT_HASH, visualHash:REVIEWED_VISUAL_HASH};
   if (name === 'micro-drama') return {folder:'micro-drama/', output:'micro-drama', scriptHash:MICRO_DRAMA_SCRIPT_HASH, visualHash:MICRO_DRAMA_VISUAL_HASH};

@@ -5,32 +5,155 @@
     {
       "heading": "The Message at Midnight",
       "label": "MIDNIGHT · MAYA'S APARTMENT",
-      "items": ["My number", "Don't open the door."],
-      "narration": "At midnight, Maya received a message from her own number. Four words: Don't open the door."
+      "items": [
+        "My number",
+        "Don't open the door."
+      ],
+      "narration": "At midnight, Maya received a message from her own number. Four words: Don't open the door.",
+      "speechParts": [
+        {
+          "text": "At midnight, Maya received a message from her own number.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Four words: Don't open the door.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ]
     },
     {
       "heading": "Then came the knock",
       "label": "THE DOOR STAYED CLOSED",
-      "items": ["KNOCK", "KNOCK", "KNOCK"],
-      "narration": "Three knocks. Maya reached for the lock. Her phone lit up again. This time, it was a photograph."
+      "items": [
+        "KNOCK",
+        "KNOCK",
+        "KNOCK"
+      ],
+      "narration": "Three knocks. Maya reached for the lock. Her phone lit up again. This time, it was a photograph.",
+      "speechParts": [
+        {
+          "text": "Three knocks.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Maya reached for the lock.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Her phone lit up again.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "This time, it was a photograph.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ]
     },
     {
       "heading": "Her hallway. Right now.",
       "label": "THE SAME CROOKED FRAME",
-      "items": ["Received photo", "00:00"],
-      "narration": "Her hallway. The crooked picture. The blue slipper she had just dropped. Whoever sent it was already inside."
+      "items": [
+        "Received photo",
+        "00:00"
+      ],
+      "narration": "Her hallway. The crooked picture. The blue slipper she had just dropped. Whoever sent it was already inside.",
+      "speechParts": [
+        {
+          "text": "Her hallway.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "The crooked picture.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "The blue slipper she had just dropped.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Whoever sent it was already inside.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ]
     },
     {
       "heading": "You opened it last time.",
       "label": "ANOTHER MESSAGE",
-      "items": ["My number", "You opened it last time."],
-      "narration": "Then came the final message: You opened it last time. The clock flickered backward. Maya finally understood the warning."
+      "items": [
+        "My number",
+        "You opened it last time."
+      ],
+      "narration": "Then came the final message. You opened it last time. The clock flickered backward. Maya finally understood the warning.",
+      "speechParts": [
+        {
+          "text": "Then came the final message.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "You opened it last time.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "The clock flickered backward.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Maya finally understood the warning.",
+          "speed": 1.1,
+          "pauseAfterMs": 0
+        }
+      ]
     },
     {
       "heading": "This time, she listened",
       "label": "ORIGINAL FICTION",
-      "items": ["23:59", "00:00", "Would you open it?"],
-      "narration": "She left the lock untouched. Midnight returned. Her own warning appeared again. This time, the knocking stopped. Would you open it?"
+      "items": [
+        "23:59",
+        "00:00",
+        "Would you open it?"
+      ],
+      "narration": "She left the lock untouched. Midnight returned. Her own warning appeared again. This time, the knocking stopped. Would you open it?",
+      "speechParts": [
+        {
+          "text": "She left the lock untouched.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Midnight returned.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "Her own warning appeared again.",
+          "speed": 1.1,
+          "pauseAfterMs": 120
+        },
+        {
+          "text": "This time, the knocking stopped.",
+          "speed": 1.1,
+          "pauseAfterMs": 550
+        },
+        {
+          "text": "Would you open it?",
+          "speed": 1,
+          "pauseAfterMs": 0,
+          "phonemes": "wʊd jˈuː ˈoʊpən ɪt?"
+        }
+      ]
     }
   ]
 }

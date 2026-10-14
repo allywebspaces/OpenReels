@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/Panniantong/Agent-Reach",
+  "commit": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+  "version": "1.5.0",
+  "license": "MIT",
+  "downloadedOn": "2026-10-14",
+  "purpose": "User-requested repository inspection; local clone outside OpenReels.",
+  "installation": "Downloaded only; broad installer, accounts, cookies and API transcription not run.",
+  "capability": "Internet-access tooling and optional API audio transcription, not local visual frame review."
+}

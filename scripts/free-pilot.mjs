@@ -4,6 +4,7 @@ import { mkdir, writeFile, copyFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadReviewedPreset, reviewedPresetConfig, sceneDurationFrames } from '../src/free-pilot/policy.mjs';
+import { speechPlan, assembleSpeech } from '../src/free-pilot/speech.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 let presetName = 'productivity';
@@ -15,6 +16,7 @@ for (let i = 0; i < args.length; i++) {
 }
 const config = reviewedPresetConfig(presetName);
 const pilot = loadReviewedPreset(presetName);
+for (const scene of pilot.scenes) speechPlan(scene);
 const output = resolve(root, 'output', config.output);
 if (check) {
   console.log(JSON.stringify({mode:'free-pilot-check', language:'English', apiCalls:0, paidApiCostUsd:0, title:pilot.title}));
@@ -27,12 +29,27 @@ try {
   const {KokoroTTS} = await import('kokoro-js');
   const tts = await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {dtype:'q8', device:'cpu'});
   const scenes=[];
+  const { default: wavefile } = await import('wavefile');
   for (const [i,scene] of pilot.scenes.entries()) {
     console.log(`Local English narration ${i+1}/${pilot.scenes.length}`);
-    const audio=await tts.generate(scene.narration, {voice:'af_bella', speed:1.1});
+    const clips=[];
+    for (const part of speechPlan(scene)) {
+      const options={voice:'af_bella',speed:part.speed};
+      const audio=part.phonemes
+        ? await tts.generate_from_ids(tts.tokenizer(part.phonemes).input_ids, options)
+        : await tts.generate(part.text, options);
+      if (part.text.endsWith('?') && presetName === 'micro-drama') {
+        await writeFile(resolve(output,'question-revised.wav'),Buffer.from(audio.toWav()));
+        execFileSync('ffmpeg', ['-hide_banner','-loglevel','error','-y','-i',resolve(output,'question-revised.wav'),'-codec:a','libmp3lame','-b:a','128k',resolve(output,'question-revised.mp3')],{stdio:'inherit'});
+      }
+      clips.push({text:part.text,audio:audio.audio,sampleRate:audio.sampling_rate,pauseAfterMs:part.pauseAfterMs});
+    }
+    const combined=assembleSpeech(clips);
+    const wav=new wavefile.WaveFile();
+    wav.fromScratch(1,combined.sampleRate,'32f',combined.audio);
     const filename=`scene-${i+1}.wav`;
-    await writeFile(resolve(assets,filename),Buffer.from(audio.toWav()));
-    scenes.push({...scene,audio:filename,durationInFrames:sceneDurationFrames(audio.audio.length,audio.sampling_rate)});
+    await writeFile(resolve(assets,filename),Buffer.from(wav.toBuffer()));
+    scenes.push({...scene,audio:filename,cues:combined.cues,durationInFrames:sceneDurationFrames(combined.audio.length,combined.sampleRate)});
   }
   const comparisonText = pilot.scenes[0].narration;
   const calm = await tts.generate(comparisonText, {voice:'af_heart', speed:1});
@@ -56,7 +73,7 @@ try {
     sceneStart += scene.durationInFrames;
   }
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
-  const report={mode:'free-pilot',preset:presetName,title:pilot.title,language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:config.scriptHash,reviewedVisualHash:config.visualHash,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:presetName==='micro-drama'?'original illustrated phone, clock and door mystery':'original fictional meeting notes, extraction prompt and action table',captions:'scene text synchronized to each scene audio; not word-level transcription',script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
+  const report={mode:'free-pilot',preset:presetName,title:pilot.title,language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:config.scriptHash,reviewedVisualHash:config.visualHash,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:presetName==='micro-drama'?'original illustrated phone, clock and door mystery':'original fictional meeting notes, extraction prompt and action table',captions:presetName==='micro-drama'?'sentence captions at measured speech-clip boundaries; not word-level transcription':'scene text synchronized to each scene audio; not word-level transcription',questionDelivery:presetName==='micro-drama'?{speed:1,pauseBeforeMs:550,phoneticStress:'you',separateClip:true}:null,script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {
