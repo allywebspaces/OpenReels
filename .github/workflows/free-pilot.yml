@@ -17,7 +17,7 @@ jobs:
       - name: Checkout verified free build
         uses: actions/checkout@v4
         with:
-          ref: 7cb3fe7e63e820bb326f74b81a45e9e3450e9ab8
+          ref: 558c0263911e9f578adf2c21a3a29a02d90d4555
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -32,7 +32,7 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Check free English policy and types
         run: |
-          node --test src/free-pilot/policy.test.mjs
+          node --test src/free-pilot/policy.test.mjs src/free-pilot/speech.test.mjs
           node scripts/free-pilot.mjs --preset micro-drama --check
           pnpm exec tsc --noEmit
       - name: Install media verification tools
@@ -49,6 +49,7 @@ jobs:
           name: free-english-pilot-${{ github.run_id }}
           path: |
             output/micro-drama/pilot.mp4
+            output/micro-drama/question-revised.mp3
             output/micro-drama/preview.png
             output/micro-drama/review-scene-*.png
             output/micro-drama/pilot.json
