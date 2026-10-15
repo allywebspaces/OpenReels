@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (16 October 2026): controlled visual alternative completed: source4b7155c, successful free GitHub run38816182643, matching approved AAC stream, full candidate decode, sampled warning/clue/question MP4 review. Archive: examples/micro-drama/episode-01-visual-experiment/.458 software tests and TypeScript passed. Not user-approved; no retention/listening claim. Local os.networkInterfaces render blocker persists, GitHub path works. Next: free expressive-voice feasibility/audition; preserve approved Kokoro and candidate. See PROJECT_STATE.json. No paid inference/public posting.
+Current checkpoint (16 October 2026): controlled visual alternative archived with matching approved AAC, full decode and sampled MP4 review (run38816182643; 458 software tests previously passed). No new user approval/listening/retention claim. Expressive-voice feasibility assessed: 8 GiB cgroup limit, no exposed GPU observed, Python Qwen stack absent; audition deferred for resource risk, not benchmarked or proven impossible. See EXPRESSIVE_VOICE_FEASIBILITY.md. Next: second original English private pilot using existing Kokoro/free GitHub rendering; then third. Preserve approved episode/candidate and baseline. No paid inference/public posting.
 
 Retrieve a small slice:
 

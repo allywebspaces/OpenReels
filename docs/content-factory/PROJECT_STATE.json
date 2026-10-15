@@ -42,16 +42,25 @@
       "evidence": "../../examples/micro-drama/episode-01-visual-experiment/README.md",
       "candidateVideoSha256": "44b16bea81cf5eecb3e2686a2e2e94d30e45e0e584c3b6c4b40b6c239fb8c40b",
       "audioStreamIdentical": true
+    },
+    {
+      "id": "expressive_voice_feasibility",
+      "status": "assessed_audition_deferred",
+      "evidence": "EXPRESSIVE_VOICE_FEASIBILITY.md",
+      "reason": "8 GiB cgroup limit, no exposed GPU observed, Python inference stack absent; large unbenchmarked model setup deferred as resource risk, not proven impossible",
+      "auditionRendered": false,
+      "approvedVoiceChanged": false
     }
   ],
   "next": {
-    "id": "expressive_voice_feasibility_and_short_audition",
+    "id": "second_original_private_pilot",
     "status": "not_started",
-    "instructions": "Assess actual local hardware/model runtime and existing dependencies for a short free expressive English voice audition. Keep original approved Kokoro unchanged; do not use paid APIs or clone a real person. If infeasible without new spending, document evidence and continue to second/third private pilots."
+    "instructions": "Implement one original English emotional-drama fixed reviewed preset, preserving episode 01 and baseline. Reuse approved local Kokoro, enforce reviewed script/source pins before assets, render through the proven free GitHub path, decode/hash and inspect actual scene/key boundaries. Do not claim arbitrary-topic generation. See EXPRESSIVE_VOICE_FEASIBILITY.md; Qwen audition deferred, not completed."
   },
   "later": [
     "caption_alignment_if_justified",
-    "second_and_third_original_private_pilots"
+    "third_original_private_pilot",
+    "expressive_voice_audition_if_suitable_free_resources_available"
   ],
   "blockers": [
     {
