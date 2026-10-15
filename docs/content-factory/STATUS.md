@@ -1,3 +1,9 @@
+# Current audited scope — 16 October 2026
+
+Read [ARCHITECTURE_HANDOVER.md](ARCHITECTURE_HANDOVER.md) and [AUDIT_EVIDENCE.json](AUDIT_EVIDENCE.json) before the historical log below. Working fixed-preset renderer verified; arbitrary-topic paid generation and deployed web stack are not demonstrated. Fresh 454 software tests, TypeScript, preset check and approved MP4 decode passed. Experiment contains no quality-upgrade implementation. Channel creation remains on hold.
+
+---
+
 # Build status — 14 October 2026
 
 ## Implemented

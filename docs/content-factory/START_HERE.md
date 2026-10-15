@@ -1,6 +1,6 @@
 # OpenReels — five-channel starter
 
-This is an adaptation of OpenReels, not a replacement video engine. Start with one pilot for AI Money India. Channel names are provisional; English-only output is mandatory. These are not registered social accounts.
+This is an adaptation of OpenReels. Current focus: a fixed, reviewed English micro-drama prototype; channel creation is on hold. Read [ARCHITECTURE_HANDOVER.md](ARCHITECTURE_HANDOVER.md) first for audited scope and corrections. The preserved baseline is build/five-channel-starter; ongoing experiments belong on experiment/video-quality. Channel names are provisional and no social accounts are registered by this project.
 
 For an agent resuming the build, read [memory/INDEX.md](memory/INDEX.md) and [AGENT_WORKFLOW.md](AGENT_WORKFLOW.md) first. The current default is the free preset described in [FREE_PILOT.md](FREE_PILOT.md); the provider setup below is only for explicitly authorized paid modes.
 

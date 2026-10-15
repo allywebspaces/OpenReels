@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (15 October 2026): user requested an experimental copy before improving videos. Work on experiment/video-quality in the separate openreels-video-quality worktree, copied from 7d7224b67db3694dcd4b7f3708eff36c13621abf. Original build/five-channel-starter remains unchanged. Fresh copied-workspace checks: 454 tests, TypeScript and English preset check passed. See EXPERIMENT_WORKSPACE.md for setup limits and the five pending ideas. First: timestamped quality review, then one controlled visual/pacing alternative. No new video implementation, paid inference or channel creation.
+Current checkpoint (16 October 2026): architecture audited against source commit 7768748 and live GitHub branches. Read ARCHITECTURE_HANDOVER.md and AUDIT_EVIDENCE.json first. Verified two fixed-preset renderer routes; general paid/web pipeline not demonstrated end to end. Existing critic grades plan JSON, not MP4. Fresh 454 software tests, TypeScript, preset check and existing MP4 decode passed; no fresh render. Experiment has no video/code upgrades yet. Prior experiment local path was absent; GitHub checkpoint survives and audit checkout restored. Memory is explicit curated retrieval, not hallucination prevention. Next: timestamped quality review, then a controlled alternative; no channel setup or paid inference.
 
 Retrieve a small slice:
 

@@ -1,0 +1,45 @@
+{
+  "audited_source_commit": "77687483cc0b6dbd735c6c08dc81e9a67b2a44c2",
+  "baseline_commit": "7d7224b67db3694dcd4b7f3708eff36c13621abf",
+  "main_commit": "fa970d544ce039298a99ea1b049f234f2c1d3a1e",
+  "audit_scope": "Code inspection, branch/API checks, existing media verification and software checks; no fresh full render or paid-provider run",
+  "verification": {
+    "vitest": {
+      "tests": 431,
+      "files": 49,
+      "passed": true
+    },
+    "node_tests": {
+      "tests": 23,
+      "passed": true
+    },
+    "typescript_exit": 0,
+    "micro_drama_check_exit": 0,
+    "video_decode_exit": 0,
+    "video_container_seconds": 46.464,
+    "composition_seconds": 46.4,
+    "video_sha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+    "video_bytes": 3557883
+  },
+  "experiment_pre_audit_diff": [
+    "docs/content-factory/EXPERIMENT_WORKSPACE.md",
+    "docs/content-factory/memory/INDEX.md",
+    "docs/content-factory/memory/project.jsonl"
+  ],
+  "successful_render": {
+    "run_id": 38528230169,
+    "workflow_head": "fa970d544ce039298a99ea1b049f234f2c1d3a1e",
+    "checked_out_source": "558c0263911e9f578adf2c21a3a29a02d90d4555"
+  },
+  "not_verified": [
+    "fresh dependency install",
+    "full generation in this audit",
+    "paid provider generation",
+    "deployed web stack",
+    "perceptual audio quality",
+    "viewer retention",
+    "revenue",
+    "handle registration availability"
+  ],
+  "temporary_audit_dependencies": "Existing original-checkout dependencies linked for tests; not a clean install; links removed after audit"
+}
