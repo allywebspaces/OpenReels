@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (16 October 2026): user authorized autonomous routine decisions and continuation. Read AUTOPILOT.md and PROJECT_STATE.json. Hourly Advance OpenReels build task configured; first scheduled execution is not yet verified and no next-run timestamp returned. Focused review of three approved stills/timeline completed in CURRENT_EPISODE_REVIEW.md. Next: separate controlled visual alternative preserving approved script/audio. No new render this turn. Keep free-first/English-only and preserved baseline; no channel creation, public posting or paid inference. GitHub is the durable state; local worktrees may be absent.
+Current checkpoint (16 October 2026): first autonomous execution has implemented a separate visual-only candidate and pinned English source/props/approved-video checks. Reuses approved AAC via stream copy and verifies audio hash. New source/type/policy checks passed; GitHub Free visual experiment job will render on this branch. Local render failed twice at os.networkInterfaces; no more identical retries. Next: verify remote render, inspect actual clue/question boundary frames and archive candidate. Baseline unchanged; no paid inference or public posting. See PROJECT_STATE.json and VISUAL_EXPERIMENT_RUN.md.
 
 Retrieve a small slice:
 

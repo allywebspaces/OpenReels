@@ -1,0 +1,12 @@
+{
+  "language": "English",
+  "reviewedChanges": [
+    "Reduced opening decoration and larger warning",
+    "Full-context photograph with cue-bound clue outlines",
+    "One final question in caption area"
+  ],
+  "visualSha256": "88e1b6b6ae63aa42ec355f57445cd0a64e5fa34e8cb18b3150b6d76531341f9d",
+  "propsSha256": "e6dc7d3ba748e64d571467179442fee68d5848b89953884d664fd2847b46c11b",
+  "baselineVideoSha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+  "audioPolicy": "Copy approved AAC stream; never synthesize or re-encode it"
+}

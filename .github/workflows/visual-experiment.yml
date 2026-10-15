@@ -1,0 +1,52 @@
+name: Free visual experiment
+on:
+  workflow_dispatch:
+  push:
+    branches: ['experiment/video-quality']
+    paths:
+      - '.github/workflows/visual-experiment.yml'
+      - 'scripts/visual-experiment.mjs'
+      - 'src/free-pilot/visual-experiment-policy*'
+      - 'src/free-pilot/visual-experiment/**'
+permissions:
+  contents: read
+concurrency:
+  group: openreels-visual-experiment
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11'
+      - name: Install locked CPU dependencies
+        env:
+          ONNXRUNTIME_NODE_INSTALL: skip
+          ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+        run: pnpm install --frozen-lockfile
+      - name: Verify reviewed visual source and original audio source
+        run: |
+          node --test src/free-pilot/policy.test.mjs src/free-pilot/speech.test.mjs src/free-pilot/visual-experiment-policy.test.mjs
+          node scripts/visual-experiment.mjs --check
+          pnpm exec tsc --noEmit
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Render visual candidate and preserve approved AAC
+        run: node scripts/visual-experiment.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: micro-drama-visual-experiment-${{ github.run_id }}
+          path: |
+            output/micro-drama-visual-experiment/pilot.mp4
+            output/micro-drama-visual-experiment/frame-*.png
+            output/micro-drama-visual-experiment/report.json
+          retention-days: 7
+          if-no-files-found: error

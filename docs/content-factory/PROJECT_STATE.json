@@ -16,8 +16,9 @@
     "schedule": "hourly",
     "timezone": "Asia/Kolkata",
     "configured": true,
-    "firstScheduledExecutionVerified": false,
-    "nextRunTimestampReturned": false
+    "firstScheduledExecutionVerified": true,
+    "nextRunTimestampReturned": false,
+    "verifiedScope": "GitHub checkpoint read, source implementation, local policy/type/unit checks; rendered-output result pending"
   },
   "completed": [
     {
@@ -36,19 +37,26 @@
   ],
   "next": {
     "id": "controlled_visual_alternative",
-    "status": "not_started",
+    "status": "implemented_render_pending",
     "spec": "CURRENT_EPISODE_REVIEW.md",
-    "instructions": "Implement a separate candidate with reduced opening clutter, cue-timed clue focus and one closing-question display. Preserve script/audio and baseline. Render, decode and inspect actual boundary frames before claiming completion."
+    "instructions": "Inspect Free visual experiment workflow from the implementation commit; archive and visually inspect actual output before marking complete. Local renderer fails os.networkInterfaces; use GitHub runner."
   },
   "later": [
     "expressive_voice_feasibility_and_short_audition",
     "caption_alignment_if_justified",
     "second_and_third_original_private_pilots"
   ],
-  "blockers": [],
+  "blockers": [
+    {
+      "scope": "local_remotion_render",
+      "error": "ERR_SYSTEM_ERROR uv_interface_addresses during Remotion static server initialization",
+      "attempts": 2,
+      "fallback": "Free visual experiment GitHub workflow"
+    }
+  ],
   "evidenceLimits": [
-    "No new video generated in the autonomy-setup turn",
-    "Scheduled task configured but no execution outcome verified",
-    "No claim of perfect decisions or uninterrupted 24/7 execution"
+    "Candidate source implemented; no finished candidate render yet",
+    "No listening/retention assessment",
+    "No claim of perfect decisions or uninterrupted execution"
   ]
 }
