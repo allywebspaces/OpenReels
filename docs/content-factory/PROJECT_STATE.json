@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-10-16",
+  "branch": "experiment/video-quality",
+  "preservedBranch": "build/five-channel-starter",
+  "goal": "Three original English micro-drama pilots for private review with reproducible free rendering and evidence-backed reviews",
+  "status": "in_progress",
+  "constraints": {
+    "language": "English",
+    "paidInferenceAuthorized": false,
+    "publicPostingAuthorized": false,
+    "channelCreationOnHold": true
+  },
+  "continuation": {
+    "taskTitle": "Advance OpenReels build",
+    "schedule": "hourly",
+    "timezone": "Asia/Kolkata",
+    "configured": true,
+    "firstScheduledExecutionVerified": false,
+    "nextRunTimestampReturned": false
+  },
+  "completed": [
+    {
+      "id": "architecture_audit",
+      "evidence": "ARCHITECTURE_HANDOVER.md"
+    },
+    {
+      "id": "baseline_verification",
+      "evidence": "AUDIT_EVIDENCE.json"
+    },
+    {
+      "id": "focused_episode_review",
+      "evidence": "CURRENT_EPISODE_REVIEW.md",
+      "scope": "Three selected stills plus timeline/source; no listening/retention assessment"
+    }
+  ],
+  "next": {
+    "id": "controlled_visual_alternative",
+    "status": "not_started",
+    "spec": "CURRENT_EPISODE_REVIEW.md",
+    "instructions": "Implement a separate candidate with reduced opening clutter, cue-timed clue focus and one closing-question display. Preserve script/audio and baseline. Render, decode and inspect actual boundary frames before claiming completion."
+  },
+  "later": [
+    "expressive_voice_feasibility_and_short_audition",
+    "caption_alignment_if_justified",
+    "second_and_third_original_private_pilots"
+  ],
+  "blockers": [],
+  "evidenceLimits": [
+    "No new video generated in the autonomy-setup turn",
+    "Scheduled task configured but no execution outcome verified",
+    "No claim of perfect decisions or uninterrupted 24/7 execution"
+  ]
+}

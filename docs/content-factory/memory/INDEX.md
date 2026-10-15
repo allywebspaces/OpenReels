@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (16 October 2026): architecture audited against source commit 7768748 and live GitHub branches. Read ARCHITECTURE_HANDOVER.md and AUDIT_EVIDENCE.json first. Verified two fixed-preset renderer routes; general paid/web pipeline not demonstrated end to end. Existing critic grades plan JSON, not MP4. Fresh 454 software tests, TypeScript, preset check and existing MP4 decode passed; no fresh render. Experiment has no video/code upgrades yet. Prior experiment local path was absent; GitHub checkpoint survives and audit checkout restored. Memory is explicit curated retrieval, not hallucination prevention. Next: timestamped quality review, then a controlled alternative; no channel setup or paid inference.
+Current checkpoint (16 October 2026): user authorized autonomous routine decisions and continuation. Read AUTOPILOT.md and PROJECT_STATE.json. Hourly Advance OpenReels build task configured; first scheduled execution is not yet verified and no next-run timestamp returned. Focused review of three approved stills/timeline completed in CURRENT_EPISODE_REVIEW.md. Next: separate controlled visual alternative preserving approved script/audio. No new render this turn. Keep free-first/English-only and preserved baseline; no channel creation, public posting or paid inference. GitHub is the durable state; local worktrees may be absent.
 
 Retrieve a small slice:
 
