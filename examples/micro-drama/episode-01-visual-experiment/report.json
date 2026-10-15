@@ -1,0 +1,50 @@
+{
+  "language": "English",
+  "mode": "visual-only-experiment",
+  "baselineVideoSha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+  "candidateVideoSha256": "44b16bea81cf5eecb3e2686a2e2e94d30e45e0e584c3b6c4b40b6c239fb8c40b",
+  "baselineAudioSha256": "1ef27a4437db92cae385763b67bb56fbf266c5f6d6fa1f8231eacaaed8a4493e",
+  "candidateAudioSha256": "1ef27a4437db92cae385763b67bb56fbf266c5f6d6fa1f8231eacaaed8a4493e",
+  "audioStreamIdentical": true,
+  "compositionSeconds": 46.4,
+  "media": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "30/1",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "46.464000"
+    }
+  },
+  "reviewFrames": [
+    0,
+    120,
+    121,
+    196,
+    519,
+    520,
+    560,
+    576,
+    577,
+    620,
+    1327,
+    1338
+  ],
+  "decodePassed": true,
+  "visualInspection": "pending; frame export alone is not visual review",
+  "listeningAssessment": "not performed; approved encoded audio stream preserved",
+  "paidApiCalls": 0,
+  "published": false
+}

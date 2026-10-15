@@ -1,0 +1,45 @@
+{
+  "status": "rendered_and_sampled_visual_review_complete",
+  "userApproved": false,
+  "sourceCommit": "4b7155c725a7126b46de2cf3d62ac35dce5065b4",
+  "runId": 38816182643,
+  "decodePassedAfterDownload": true,
+  "audioStreamIdentical": true,
+  "actualMp4FramesInspected": [
+    120,
+    121,
+    519,
+    520,
+    576,
+    577,
+    1327,
+    1338
+  ],
+  "additionalExportedPngReview": [
+    0,
+    120,
+    121,
+    196,
+    519,
+    520,
+    560,
+    576,
+    577,
+    620,
+    1327,
+    1338
+  ],
+  "findings": [
+    "Warning absent at120/present121",
+    "Picture outline absent519/present520",
+    "Slipper outline absent576/present577",
+    "Question absent1327/once at1338",
+    "No observed clipping/overlap in inspected samples"
+  ],
+  "limits": [
+    "Not every frame inspected",
+    "No new listening or viewer retention assessment",
+    "Some standalone PNGs differ from MP4 static text; actual MP4 samples take precedence"
+  ],
+  "candidateVideoSha256": "44b16bea81cf5eecb3e2686a2e2e94d30e45e0e584c3b6c4b40b6c239fb8c40b"
+}

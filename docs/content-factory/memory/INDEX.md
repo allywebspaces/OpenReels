@@ -12,7 +12,7 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (16 October 2026): first autonomous execution has implemented a separate visual-only candidate and pinned English source/props/approved-video checks. Reuses approved AAC via stream copy and verifies audio hash. New source/type/policy checks passed; GitHub Free visual experiment job will render on this branch. Local render failed twice at os.networkInterfaces; no more identical retries. Next: verify remote render, inspect actual clue/question boundary frames and archive candidate. Baseline unchanged; no paid inference or public posting. See PROJECT_STATE.json and VISUAL_EXPERIMENT_RUN.md.
+Current checkpoint (16 October 2026): controlled visual alternative completed: source4b7155c, successful free GitHub run38816182643, matching approved AAC stream, full candidate decode, sampled warning/clue/question MP4 review. Archive: examples/micro-drama/episode-01-visual-experiment/.458 software tests and TypeScript passed. Not user-approved; no retention/listening claim. Local os.networkInterfaces render blocker persists, GitHub path works. Next: free expressive-voice feasibility/audition; preserve approved Kokoro and candidate. See PROJECT_STATE.json. No paid inference/public posting.
 
 Retrieve a small slice:
 

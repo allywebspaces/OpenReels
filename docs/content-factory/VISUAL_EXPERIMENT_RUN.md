@@ -19,3 +19,7 @@ Chrome Headless Shell downloaded and started successfully. Full local rendering 
 ## Pending output checks
 
 Inspect exported frames 0,120,121,196; 519,520,560; 576,577,620; 1327,1338. Check no premature warning/highlights/question, no clipping, one final question, full-context photo. Archive candidate MP4/report plus selected evidence and source hashes in examples/micro-drama/episode-01-visual-experiment/. Record sampling limits and no new listening/retention assessment.
+
+## Completed result
+
+GitHub run38816182643 succeeded from4b7155c725a7126b46de2cf3d62ac35dce5065b4. Artifact12010079437 downloaded and ZIP digestc544e29fdc611a8d9897247b6a769be073c9cd28ba1ecddf8f55a1524512244e verified. Candidate full decode passed again; encoded AAC hash matches baseline. Actual MP4 warning, clue and question boundary frames inspected, with no observed clipping/overlap or premature reveals in those samples. Some standalone opening PNG exports omit static headers; actual MP4 frames retain them. Archive and review limits: examples/micro-drama/episode-01-visual-experiment/README.md. No user approval or audience-quality claim. Next: short expressive-voice feasibility check; do not keep rerendering this unchanged candidate.

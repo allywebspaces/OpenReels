@@ -18,7 +18,7 @@
     "configured": true,
     "firstScheduledExecutionVerified": true,
     "nextRunTimestampReturned": false,
-    "verifiedScope": "GitHub checkpoint read, source implementation, local policy/type/unit checks; rendered-output result pending"
+    "verifiedScope": "Checkpoint read, implementation/tests, successful GitHub render, artifact download/hash/decode, sampled output review and archive"
   },
   "completed": [
     {
@@ -33,16 +33,23 @@
       "id": "focused_episode_review",
       "evidence": "CURRENT_EPISODE_REVIEW.md",
       "scope": "Three selected stills plus timeline/source; no listening/retention assessment"
+    },
+    {
+      "id": "controlled_visual_alternative",
+      "status": "rendered_and_sampled_visual_review_complete",
+      "sourceCommit": "4b7155c725a7126b46de2cf3d62ac35dce5065b4",
+      "runId": 38816182643,
+      "evidence": "../../examples/micro-drama/episode-01-visual-experiment/README.md",
+      "candidateVideoSha256": "44b16bea81cf5eecb3e2686a2e2e94d30e45e0e584c3b6c4b40b6c239fb8c40b",
+      "audioStreamIdentical": true
     }
   ],
   "next": {
-    "id": "controlled_visual_alternative",
-    "status": "implemented_render_pending",
-    "spec": "CURRENT_EPISODE_REVIEW.md",
-    "instructions": "Inspect Free visual experiment workflow from the implementation commit; archive and visually inspect actual output before marking complete. Local renderer fails os.networkInterfaces; use GitHub runner."
+    "id": "expressive_voice_feasibility_and_short_audition",
+    "status": "not_started",
+    "instructions": "Assess actual local hardware/model runtime and existing dependencies for a short free expressive English voice audition. Keep original approved Kokoro unchanged; do not use paid APIs or clone a real person. If infeasible without new spending, document evidence and continue to second/third private pilots."
   },
   "later": [
-    "expressive_voice_feasibility_and_short_audition",
     "caption_alignment_if_justified",
     "second_and_third_original_private_pilots"
   ],
@@ -51,12 +58,13 @@
       "scope": "local_remotion_render",
       "error": "ERR_SYSTEM_ERROR uv_interface_addresses during Remotion static server initialization",
       "attempts": 2,
-      "fallback": "Free visual experiment GitHub workflow"
+      "fallback": "Free visual experiment GitHub workflow",
+      "fallbackStatus": "successful GitHub render38816182643"
     }
   ],
   "evidenceLimits": [
-    "Candidate source implemented; no finished candidate render yet",
-    "No listening/retention assessment",
-    "No claim of perfect decisions or uninterrupted execution"
+    "Controlled visual candidate rendered and visually sampled, not user-approved",
+    "No new listening/retention assessment",
+    "Local network-interface blocker persists; GitHub rendering verified"
   ]
 }
