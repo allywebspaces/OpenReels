@@ -1,0 +1,53 @@
+name: Free twist drama pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: ['experiment/video-quality']
+    paths:
+      - '.github/workflows/twist-drama.yml'
+      - 'src/free-pilot/twist-drama/**'
+permissions:
+  contents: read
+concurrency:
+  group: openreels-twist-drama
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11'
+      - name: Install locked CPU dependencies
+        env:
+          ONNXRUNTIME_NODE_INSTALL: skip
+          ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+        run: pnpm install --frozen-lockfile
+      - name: Check English source pins before model download
+        run: |
+          node --test src/free-pilot/policy.test.mjs src/free-pilot/speech.test.mjs src/free-pilot/twist-drama.test.mjs
+          node scripts/free-pilot.mjs --preset twist-drama --check
+          pnpm exec vitest run src/free-pilot/twist-drama/Root.test.ts
+          pnpm exec tsc --noEmit
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Render fixed English twist drama using local CPU speech
+        run: node scripts/free-pilot.mjs --preset twist-drama
+      - name: Verify MP4 decodes and preserve digests
+        run: |
+          ffmpeg -v error -i output/twist-drama/pilot.mp4 -f null -
+          ffprobe -v error -show_format -show_streams -of json output/twist-drama/pilot.mp4 > output/twist-drama/ffprobe.json
+          sha256sum src/free-pilot/twist-drama/pilot.json src/free-pilot/twist-drama/Root.tsx output/twist-drama/pilot.mp4 output/twist-drama/assets/*.wav > output/twist-drama/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: twist-drama-${{ github.run_id }}
+          path: output/twist-drama/
+          retention-days: 7
+          if-no-files-found: error

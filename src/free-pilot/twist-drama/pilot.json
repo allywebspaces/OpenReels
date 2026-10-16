@@ -1,0 +1,59 @@
+{
+  "language": "English",
+  "title": "The Waiting Room",
+  "scenes": [
+    {
+      "heading": "The Waiting Room",
+      "label": "TWENTY MINUTES EARLY",
+      "items": ["Interview", "Toolbox"],
+      "narration": "Leo arrived twenty minutes early for his interview. The man beside him wore muddy boots and carried a dented toolbox.",
+      "speechParts": [
+        {"text": "Leo arrived twenty minutes early for his interview.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "The man beside him wore muddy boots", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "and carried a dented toolbox.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "A little room",
+      "label": "STILL WAITING",
+      "items": ["An empty chair"],
+      "narration": "Leo moved his bag off the next chair. They talked while they waited.",
+      "speechParts": [
+        {"text": "Leo moved his bag off the next chair.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "They talked while they waited.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "The next room",
+      "label": "CALLED IN",
+      "items": ["ID badge"],
+      "narration": "When the receptionist called Leo's name, the man stood too. Leo realised the stranger was the founder.",
+      "speechParts": [
+        {"text": "When the receptionist called Leo's name, the man stood too.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "Leo realised the stranger was the founder.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "The conversation",
+      "label": "TEN MINUTES OF HONESTY",
+      "items": ["Website"],
+      "narration": "Leo swallowed. He had spent ten minutes explaining everything wrong with the company's website.",
+      "speechParts": [
+        {"text": "Leo swallowed.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "He had spent ten minutes explaining everything wrong", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "with the company's website.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "The notebook",
+      "label": "ACROSS THE DESK",
+      "items": ["How soon can you start?"],
+      "narration": "The founder opened his notebook. He had written down every complaint. Then he asked Leo how soon he could start.",
+      "speechParts": [
+        {"text": "The founder opened his notebook.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "He had written down every complaint.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "Then he asked Leo how soon he could start.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    }
+  ]
+}

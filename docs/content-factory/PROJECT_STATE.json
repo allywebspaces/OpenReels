@@ -66,7 +66,8 @@
   ],
   "next": {
     "id": "third_original_private_pilot",
-    "status": "not_started",
+    "status": "implemented_pending_render",
+    "evidence": "EPISODE_03_RUN.md",
     "instructions": "Create one distinct original English twist micro-drama fixed reviewed preset using existing Kokoro and original programmed visuals. Preserve episodes 01/02, exact archived audio and baseline branch. Apply reviewed script/source pins before assets, tests, free GitHub render, full decode/hash and actual scene/reveal-boundary visual review; record listening limits. Do not repeat the completed Folded Notes render or claim arbitrary-topic generation. After third pilot, audit AUTOPILOT acceptance criteria and stop feature expansion when met."
   },
   "later": [

@@ -6,11 +6,14 @@ export const MICRO_DRAMA_SCRIPT_HASH = '62a958b400ce80790fd558a086d4af172eca1b2a
 export const MICRO_DRAMA_VISUAL_HASH = 'f2ed12cbb5ec850d036a9c5a2885ce9cf7d6488ddc7560094a60cbd5c0228041';
 export const EMOTIONAL_DRAMA_SCRIPT_HASH = 'ee163f59cbe7b2559f01f0d9a5133b18f160f04de41c0933cf09c8143d07f472';
 export const EMOTIONAL_DRAMA_VISUAL_HASH = 'b9aea2c6aed2a192daddb27c3aaa1c3bfdfe60c95988484835a29059bef24492';
+export const TWIST_DRAMA_SCRIPT_HASH = '6ae65e7c93b224f2f20f516b3c22a174f05e153d80d98eb954c112273a580a4d';
+export const TWIST_DRAMA_VISUAL_HASH = 'c25ba3d11d33687f1e4ab1141454b0a288d1b51de45b3ea39b37b1d09312817b';
 export function reviewedPresetConfig(name = 'productivity') {
   if (name === 'productivity') return {folder:'', output:'free-pilot', scriptHash:REVIEWED_PILOT_HASH, visualHash:REVIEWED_VISUAL_HASH};
   if (name === 'micro-drama') return {folder:'micro-drama/', output:'micro-drama', scriptHash:MICRO_DRAMA_SCRIPT_HASH, visualHash:MICRO_DRAMA_VISUAL_HASH};
   if (name === 'emotional-drama') return {folder:'emotional-drama/', output:'emotional-drama', scriptHash:EMOTIONAL_DRAMA_SCRIPT_HASH, visualHash:EMOTIONAL_DRAMA_VISUAL_HASH};
-  throw new Error('Unknown free preset. Use productivity, micro-drama or emotional-drama.');
+  if (name === 'twist-drama') return {folder:'twist-drama/', output:'twist-drama', scriptHash:TWIST_DRAMA_SCRIPT_HASH, visualHash:TWIST_DRAMA_VISUAL_HASH};
+  throw new Error('Unknown free preset. Use productivity, micro-drama, emotional-drama or twist-drama.');
 }
 export function loadReviewedPreset(name = 'productivity') {
   const config = reviewedPresetConfig(name);
