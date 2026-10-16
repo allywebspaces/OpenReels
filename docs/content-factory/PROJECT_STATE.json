@@ -4,7 +4,7 @@
   "branch": "experiment/video-quality",
   "preservedBranch": "build/five-channel-starter",
   "goal": "Three original English micro-drama pilots for private review with reproducible free rendering and evidence-backed reviews",
-  "status": "in_progress",
+  "status": "ready_for_review",
   "constraints": {
     "language": "English",
     "paidInferenceAuthorized": false,
@@ -16,6 +16,8 @@
     "schedule": "hourly",
     "timezone": "Asia/Kolkata",
     "configured": true,
+    "paused": false,
+    "pauseStatus": "pending confirmation after durable acceptance checkpoint",
     "firstScheduledExecutionVerified": true,
     "nextRunTimestampReturned": false,
     "verifiedScope": "Checkpoint read, implementation/tests, successful GitHub render, artifact download/hash/decode, sampled output review and archive"
@@ -62,15 +64,28 @@
       "evidence": "../../examples/micro-drama/episode-02-folded-notes/README.md",
       "listeningAssessed": false,
       "userApproved": false
+    },
+    {
+      "id": "third_original_private_pilot",
+      "status": "rendered_and_sampled_visual_review_complete",
+      "title": "The Waiting Room",
+      "sourceCommit": "d07fe3938b6dbba30aae7e9c40b412d65f9e99a6",
+      "runId": 38845440707,
+      "artifactId": 12022333874,
+      "videoSha256": "f378ccd089e30313dd3273bb10bc4add5a0afebc6926221aed46c98ef3511469",
+      "evidence": "../../examples/micro-drama/episode-03-waiting-room/README.md",
+      "listeningAssessed": false,
+      "userApproved": false
     }
   ],
   "next": {
-    "id": "third_original_private_pilot",
-    "status": "implemented_pending_render",
-    "evidence": "EPISODE_03_RUN.md",
-    "instructions": "Create one distinct original English twist micro-drama fixed reviewed preset using existing Kokoro and original programmed visuals. Preserve episodes 01/02, exact archived audio and baseline branch. Apply reviewed script/source pins before assets, tests, free GitHub render, full decode/hash and actual scene/reveal-boundary visual review; record listening limits. Do not repeat the completed Folded Notes render or claim arbitrary-topic generation. After third pilot, audit AUTOPILOT acceptance criteria and stop feature expansion when met."
+    "id": "private_pilot_creative_review",
+    "status": "awaiting_review_no_automatic_build",
+    "evidence": "PRIVATE_PILOT_REVIEW.md",
+    "instructions": "The three-original-pilot target is met. Stop generating new work, pause continuation and preserve all media/baseline. User may review videos and listening quality; do not resume features, more pilots, paid inference or social publication without new direction. If pause confirmation is still pending, complete only that checkpoint action."
   },
-  "later": [
+  "later": [],
+  "deferredOptionalNotAutomatic": [
     "caption_alignment_if_justified",
     "expressive_voice_audition_if_suitable_free_resources_available"
   ],
@@ -80,13 +95,23 @@
       "error": "ERR_SYSTEM_ERROR uv_interface_addresses during Remotion static server initialization",
       "attempts": 2,
       "fallback": "Free visual experiment GitHub workflow",
-      "fallbackStatus": "successful GitHub renders38816182643 and38829602666"
+      "fallbackStatus": "successful GitHub renders38816182643,38829602666 and38845440707"
     }
   ],
   "evidenceLimits": [
     "Controlled visual candidate rendered and visually sampled, not user-approved",
     "No new listening/retention assessment",
     "Episode02 has 21 inspected MP4 frame samples, not every-frame review; no listening, final ASR or user approval",
+    "Episode03 has 18 inspected MP4 frame samples; prop-only art and final-caption paraphrase documented, no listening/final ASR/user approval",
     "Local network-interface blocker persists; GitHub rendering verified"
-  ]
+  ],
+  "acceptance": {
+    "assessedOn": "2026-10-16",
+    "originalPilotCount": 3,
+    "evidence": "PRIVATE_PILOT_REVIEW.md",
+    "deliverableConditionsMet": true,
+    "publicationApproved": false,
+    "stopFeatureExpansion": true,
+    "pauseConfirmed": false
+  }
 }

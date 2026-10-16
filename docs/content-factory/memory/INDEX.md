@@ -10,10 +10,11 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | ApprovedVoice | Speech and review media |
 | PilotEvidence | Prior renders and verification limits |
 | Episode02 | Folded Notes archive, hashes and output-review limits |
+| Episode03 | Waiting Room archive, hashes and output-review limits |
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (16 October 2026): second original pilot The Folded Notes rendered in free run38829602666 from b549d2d, decoded, hashes matched and 21 actual-MP4 frame samples inspected. Durable MP4/WAV/props/review: examples/micro-drama/episode-02-folded-notes/.465 software tests and TypeScript passed pre-render. No listening/final ASR/user approval/retention claim. Controlled episode-01 alternative and approved AAC unchanged. Qwen audition remains deferred after resource assessment. Next: third original English private twist pilot; do not rerender unchanged episodes. Preserve baseline. See PROJECT_STATE.json. No paid inference/social posting.
+Current checkpoint (16 October 2026): three original English pilots rendered/decoded and sampled visually; target ready_for_review. Episode03 The Waiting Room: sourced07fe39, run38845440707,18 actual-MP4 frame samples; MP4/exact WAVs/props/review archived under examples/micro-drama/episode-03-waiting-room/.474 software tests and TypeScript passed. See PRIVATE_PILOT_REVIEW.md for all three videos and acceptance. No new listening/final ASR/user approval/retention claim; prop-only art limits explicit. Approved episode01/candidate and baseline preserved. Stop feature expansion and pause continuation; if confirmation pending, finish only that checkpoint. Do not create more content automatically. Optional Qwen/word alignment remain deferred; no paid inference/social posting.
 
 Retrieve a small slice:
 

@@ -1,0 +1,25 @@
+{
+  "mode": "free-pilot",
+  "preset": "twist-drama",
+  "title": "The Waiting Room",
+  "language": "English",
+  "paidApiCalls": 0,
+  "paidApiCostUsd": 0,
+  "reviewedScriptHash": "6ae65e7c93b224f2f20f516b3c22a174f05e153d80d98eb954c112273a580a4d",
+  "reviewedVisualHash": "c25ba3d11d33687f1e4ab1141454b0a288d1b51de45b3ea39b37b1d09312817b",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "durationSeconds": 38.13333333333333,
+  "voice": "local Kokoro af_bella",
+  "voiceSpeed": 1.1,
+  "visuals": "original illustrated waiting-room bench, toolbox, founder badge and notebook",
+  "captions": "sentence captions at measured speech-clip boundaries; not word-level transcription",
+  "questionDelivery": null,
+  "script": "fixed reviewed English preset",
+  "comparisonSamples": [
+    "comparison-calm.mp3",
+    "comparison-energetic.mp3"
+  ],
+  "published": false
+}
