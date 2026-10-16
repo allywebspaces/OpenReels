@@ -1,0 +1,25 @@
+{
+  "mode": "free-pilot",
+  "preset": "emotional-drama",
+  "title": "The Folded Notes",
+  "language": "English",
+  "paidApiCalls": 0,
+  "paidApiCostUsd": 0,
+  "reviewedScriptHash": "ee163f59cbe7b2559f01f0d9a5133b18f160f04de41c0933cf09c8143d07f472",
+  "reviewedVisualHash": "b9aea2c6aed2a192daddb27c3aaa1c3bfdfe60c95988484835a29059bef24492",
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "durationSeconds": 40.06666666666667,
+  "voice": "local Kokoro af_bella",
+  "voiceSpeed": 1.1,
+  "visuals": "original illustrated lunchbox, drawer and folded notes",
+  "captions": "sentence captions at measured speech-clip boundaries; not word-level transcription",
+  "questionDelivery": null,
+  "script": "fixed reviewed English preset",
+  "comparisonSamples": [
+    "comparison-calm.mp3",
+    "comparison-energetic.mp3"
+  ],
+  "published": false
+}

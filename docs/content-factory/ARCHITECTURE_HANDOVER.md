@@ -2,6 +2,8 @@
 
 Audit date: 16 October 2026 (India). Intended reader: Alistair or a developer taking over. This document supersedes broad progress summaries where they conflict with the evidence below.
 
+This is the audit-time architecture snapshot. Later verified video work is summarized in section 8 and linked by PROJECT_STATE.json; historical counts/next steps below are not the current milestone queue.
+
 ## 1. Verdict
 
 **We have built a working, narrow video prototype—not an autonomous five-channel content business.** The strongest evidence is a saved English micro-drama rendered from a fixed script with local synthetic narration and programmed illustrated visuals. A broader inherited AI video pipeline exists in code, but its paid-provider and web-stack operation has not been validated end to end in this project.
@@ -138,3 +140,7 @@ node node_modules/typescript/bin/tsc --noEmit
 To render the reviewed preset, use `node scripts/free-pilot.mjs --preset micro-drama` only in a prepared environment. Do not use generic `pnpm start`, channel `--run`, general `--dry-run` or the paid English pilot workflow as free smoke tests. Do not copy keys into this public handover.
 
 Recommended next milestone: one evidence-based, timestamped review of the approved episode, then one controlled alternative. Voice model audition, word alignment and three private pilot reviews remain subsequent experiments. Keep the original video and branch unchanged. Channel creation/public posting and paid inference remain on hold. The handover audit itself makes no new video-quality claim and no product-code changes.
+
+## 8. Verified post-audit progress — 16 October 2026
+
+The controlled visual alternative is archived under `examples/micro-drama/episode-01-visual-experiment/`, with approved AAC preserved. Expressive Qwen voice audition was deferred after measured resource assessment, not performed. Episode 02, The Folded Notes, rendered from source `b549d2d` in run38829602666; full decode, hashes and 21 actual-MP4 frame samples reviewed. Video, exact WAVs, props and review are in `examples/micro-drama/episode-02-folded-notes/`. There are now three fixed reviewed renderer presets: productivity, micro-drama and emotional-drama, but only two original micro-drama stories. The episode-01 visual alternative is not a third story. Arbitrary-topic generation is still unsupported in free mode. New video listening/user approval and audience metrics remain unverified. Current next milestone: the third original private pilot. See PROJECT_STATE.json and EPISODE_02_RUN.md, not the historical recommendations above.

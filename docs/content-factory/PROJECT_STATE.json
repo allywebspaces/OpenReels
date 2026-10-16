@@ -50,17 +50,27 @@
       "reason": "8 GiB cgroup limit, no exposed GPU observed, Python inference stack absent; large unbenchmarked model setup deferred as resource risk, not proven impossible",
       "auditionRendered": false,
       "approvedVoiceChanged": false
+    },
+    {
+      "id": "second_original_private_pilot",
+      "status": "rendered_and_sampled_visual_review_complete",
+      "title": "The Folded Notes",
+      "sourceCommit": "b549d2df72625bceca6884a19d29497ccc04f9d8",
+      "runId": 38829602666,
+      "artifactId": 12016627237,
+      "videoSha256": "7661beeefc86aae807ad1811a6e5564d6cb3e29f04e05b132aea7f0379ea626e",
+      "evidence": "../../examples/micro-drama/episode-02-folded-notes/README.md",
+      "listeningAssessed": false,
+      "userApproved": false
     }
   ],
   "next": {
-    "id": "second_original_private_pilot",
-    "status": "implemented_pending_render",
-    "evidence": "EPISODE_02_RUN.md",
-    "instructions": "Implement one original English emotional-drama fixed reviewed preset, preserving episode 01 and baseline. Reuse approved local Kokoro, enforce reviewed script/source pins before assets, render through the proven free GitHub path, decode/hash and inspect actual scene/key boundaries. Do not claim arbitrary-topic generation. See EXPRESSIVE_VOICE_FEASIBILITY.md; Qwen audition deferred, not completed."
+    "id": "third_original_private_pilot",
+    "status": "not_started",
+    "instructions": "Create one distinct original English twist micro-drama fixed reviewed preset using existing Kokoro and original programmed visuals. Preserve episodes 01/02, exact archived audio and baseline branch. Apply reviewed script/source pins before assets, tests, free GitHub render, full decode/hash and actual scene/reveal-boundary visual review; record listening limits. Do not repeat the completed Folded Notes render or claim arbitrary-topic generation. After third pilot, audit AUTOPILOT acceptance criteria and stop feature expansion when met."
   },
   "later": [
     "caption_alignment_if_justified",
-    "third_original_private_pilot",
     "expressive_voice_audition_if_suitable_free_resources_available"
   ],
   "blockers": [
@@ -69,12 +79,13 @@
       "error": "ERR_SYSTEM_ERROR uv_interface_addresses during Remotion static server initialization",
       "attempts": 2,
       "fallback": "Free visual experiment GitHub workflow",
-      "fallbackStatus": "successful GitHub render38816182643"
+      "fallbackStatus": "successful GitHub renders38816182643 and38829602666"
     }
   ],
   "evidenceLimits": [
     "Controlled visual candidate rendered and visually sampled, not user-approved",
     "No new listening/retention assessment",
+    "Episode02 has 21 inspected MP4 frame samples, not every-frame review; no listening, final ASR or user approval",
     "Local network-interface blocker persists; GitHub rendering verified"
   ]
 }

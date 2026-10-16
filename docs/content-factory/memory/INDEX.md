@@ -9,10 +9,11 @@ Goal: establish original English micro-drama shorts first; user selected this fo
 | FreeFirst | Rendering, provider or spending decisions |
 | ApprovedVoice | Speech and review media |
 | PilotEvidence | Prior renders and verification limits |
+| Episode02 | Folded Notes archive, hashes and output-review limits |
 | NextMilestone | Current task and immediate next action |
 | MicroDramaFocus | First-channel choice, format and episode |
 
-Current checkpoint (16 October 2026): controlled visual alternative archived with matching approved AAC, full decode and sampled MP4 review (run38816182643; 458 software tests previously passed). No new user approval/listening/retention claim. Expressive-voice feasibility assessed: 8 GiB cgroup limit, no exposed GPU observed, Python Qwen stack absent; audition deferred for resource risk, not benchmarked or proven impossible. See EXPRESSIVE_VOICE_FEASIBILITY.md. Next: second original English private pilot using existing Kokoro/free GitHub rendering; then third. Preserve approved episode/candidate and baseline. No paid inference/public posting.
+Current checkpoint (16 October 2026): second original pilot The Folded Notes rendered in free run38829602666 from b549d2d, decoded, hashes matched and 21 actual-MP4 frame samples inspected. Durable MP4/WAV/props/review: examples/micro-drama/episode-02-folded-notes/.465 software tests and TypeScript passed pre-render. No listening/final ASR/user approval/retention claim. Controlled episode-01 alternative and approved AAC unchanged. Qwen audition remains deferred after resource assessment. Next: third original English private twist pilot; do not rerender unchanged episodes. Preserve baseline. See PROJECT_STATE.json. No paid inference/social posting.
 
 Retrieve a small slice:
 
