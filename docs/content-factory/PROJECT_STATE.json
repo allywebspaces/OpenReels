@@ -16,8 +16,8 @@
     "schedule": "hourly",
     "timezone": "Asia/Kolkata",
     "configured": true,
-    "paused": false,
-    "pauseStatus": "pending confirmation after durable acceptance checkpoint",
+    "paused": true,
+    "pauseStatus": "confirmed disabled after durable three-pilot acceptance checkpoint on 2026-10-16",
     "firstScheduledExecutionVerified": true,
     "nextRunTimestampReturned": false,
     "verifiedScope": "Checkpoint read, implementation/tests, successful GitHub render, artifact download/hash/decode, sampled output review and archive"
@@ -112,6 +112,6 @@
     "deliverableConditionsMet": true,
     "publicationApproved": false,
     "stopFeatureExpansion": true,
-    "pauseConfirmed": false
+    "pauseConfirmed": true
   }
 }

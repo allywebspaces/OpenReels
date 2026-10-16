@@ -20,9 +20,9 @@ All are H.264/AAC720×1280/30fps and independently decoded. Episode01's [separat
 | Scene/key-boundary inspection and timestamped reviews; listening limits explicit | Episode01 README and original-frame review; alternative review.json. Episode02:21 actual-MP4 samples. Episode03:18 actual-MP4 samples. No claim of every-frame viewing or listening for the new pilots. |
 | Controlled alternative preserves approved script/audio and baseline | Alternative source4b7155c/run38816182643, matching AAC hashes in review/report. Approved/candidate media hashes unchanged. build/five-channel-starter remains7d7224b. |
 | Relevant checks, English gates and reproducible free route | Latest439Vitest/51files +35Node =474 software tests, TypeScript and all reviewed-preset checks. Clean locked installs and renders demonstrated by GitHub runs38528230169,38829602666,38845440707; alternative38816182643. No paid provider/fallback in the inspected fixed route. |
-| Stop expansion, mark review-ready, pause continuation | PROJECT_STATE.json marks ready_for_review. Pause is to be confirmed after this durable checkpoint; do not start another content milestone. |
+| Stop expansion, mark review-ready, pause continuation | PROJECT_STATE.json marks ready_for_review. Continuation confirmed disabled on16October2026 after durable archive3b73d6d and remote video/hash verification. Do not start another content milestone. |
 
-The first four deliverable conditions are met. The stop-state and pause confirmation complete the handover; they do not authorize publication. Optional expressive voice and word alignment are deferred, not silently implemented. No source/downloaded repository can guarantee creative perfection, retention, monetization or unlimited free compute.
+All five bounded acceptance conditions are met, including confirmed pause. This completes the pilot handover, not production/audience validation or publication authorization. Optional expressive voice and word alignment are deferred, not silently implemented. No source/downloaded repository can guarantee creative perfection, retention, monetization or unlimited free compute.
 
 ## What remains unverified
 
