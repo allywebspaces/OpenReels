@@ -1,0 +1,61 @@
+{
+  "language": "English",
+  "title": "The Folded Notes",
+  "scenes": [
+    {
+      "heading": "The Folded Notes",
+      "label": "ORIGINAL FICTION",
+      "items": ["Nina", "Lunch"],
+      "narration": "Nina stopped opening the notes her father tucked into her lunch.",
+      "speechParts": [
+        {"text": "Nina stopped opening the notes her father tucked into her lunch.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "The drawer",
+      "label": "SEVENTEEN",
+      "items": ["Folded notes"],
+      "narration": "She was seventeen. His little drawings felt embarrassing. Each afternoon, she dropped the folded paper into a drawer.",
+      "speechParts": [
+        {"text": "She was seventeen.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "His little drawings felt embarrassing.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "Each afternoon, she dropped the folded paper into a drawer.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "An empty space",
+      "label": "YEARS LATER",
+      "items": ["First day"],
+      "narration": "On her first day at work, years later, she reached for a note. There was none. Her father had died that winter.",
+      "speechParts": [
+        {"text": "On her first day at work, years later,", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "she reached for a note.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "There was none.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "Her father had died that winter.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "The line underneath",
+      "label": "THAT EVENING",
+      "items": ["I am proud of you."],
+      "narration": "That evening, she opened the drawer. Beneath the jokes was one line, written again and again: I am proud of you.",
+      "speechParts": [
+        {"text": "That evening, she opened the drawer.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "Beneath the jokes was one line,", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "written again and again:", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "I am proud of you.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    },
+    {
+      "heading": "A note of her own",
+      "label": "THE NEXT MORNING",
+      "items": ["Lunch"],
+      "narration": "The next morning, Nina packed her little brother's lunch. She could not draw like Dad. She folded a note anyway.",
+      "speechParts": [
+        {"text": "The next morning, Nina packed her little brother's lunch.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "She could not draw like Dad.", "speed": 1.1, "pauseAfterMs": 120},
+        {"text": "She folded a note anyway.", "speed": 1.1, "pauseAfterMs": 0}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+name: Free emotional drama pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: ['experiment/video-quality']
+    paths:
+      - '.github/workflows/emotional-drama.yml'
+      - 'src/free-pilot/emotional-drama/**'
+permissions:
+  contents: read
+concurrency:
+  group: openreels-emotional-drama
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11'
+      - name: Install locked CPU dependencies
+        env:
+          ONNXRUNTIME_NODE_INSTALL: skip
+          ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+        run: pnpm install --frozen-lockfile
+      - name: Check English source pins before model download
+        run: |
+          node --test src/free-pilot/policy.test.mjs src/free-pilot/speech.test.mjs src/free-pilot/emotional-drama.test.mjs
+          node scripts/free-pilot.mjs --preset emotional-drama --check
+          pnpm exec vitest run src/free-pilot/emotional-drama/Root.test.ts
+          pnpm exec tsc --noEmit
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Render fixed English emotional drama using local CPU speech
+        run: node scripts/free-pilot.mjs --preset emotional-drama
+      - name: Verify MP4 decodes and preserve digests
+        run: |
+          ffmpeg -v error -i output/emotional-drama/pilot.mp4 -f null -
+          ffprobe -v error -show_format -show_streams -of json output/emotional-drama/pilot.mp4 > output/emotional-drama/ffprobe.json
+          sha256sum src/free-pilot/emotional-drama/pilot.json src/free-pilot/emotional-drama/Root.tsx output/emotional-drama/pilot.mp4 output/emotional-drama/assets/*.wav > output/emotional-drama/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: emotional-drama-${{ github.run_id }}
+          path: output/emotional-drama/
+          retention-days: 7
+          if-no-files-found: error

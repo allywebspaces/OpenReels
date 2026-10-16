@@ -54,7 +54,8 @@
   ],
   "next": {
     "id": "second_original_private_pilot",
-    "status": "not_started",
+    "status": "implemented_pending_render",
+    "evidence": "EPISODE_02_RUN.md",
     "instructions": "Implement one original English emotional-drama fixed reviewed preset, preserving episode 01 and baseline. Reuse approved local Kokoro, enforce reviewed script/source pins before assets, render through the proven free GitHub path, decode/hash and inspect actual scene/key boundaries. Do not claim arbitrary-topic generation. See EXPRESSIVE_VOICE_FEASIBILITY.md; Qwen audition deferred, not completed."
   },
   "later": [

@@ -12,7 +12,7 @@ let check = false;
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--check') check = true;
   else if (args[i] === '--preset' && args[i+1]) presetName = args[++i];
-  else { console.error('Use --check and/or --preset productivity|micro-drama'); process.exit(1); }
+  else { console.error('Use --check and/or --preset productivity|micro-drama|emotional-drama'); process.exit(1); }
 }
 const config = reviewedPresetConfig(presetName);
 const pilot = loadReviewedPreset(presetName);
@@ -73,7 +73,7 @@ try {
     sceneStart += scene.durationInFrames;
   }
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
-  const report={mode:'free-pilot',preset:presetName,title:pilot.title,language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:config.scriptHash,reviewedVisualHash:config.visualHash,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:presetName==='micro-drama'?'original illustrated phone, clock and door mystery':'original fictional meeting notes, extraction prompt and action table',captions:presetName==='micro-drama'?'sentence captions at measured speech-clip boundaries; not word-level transcription':'scene text synchronized to each scene audio; not word-level transcription',questionDelivery:presetName==='micro-drama'?{speed:1,pauseBeforeMs:550,phoneticStress:'you',separateClip:true}:null,script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
+  const report={mode:'free-pilot',preset:presetName,title:pilot.title,language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:config.scriptHash,reviewedVisualHash:config.visualHash,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:presetName==='micro-drama'?'original illustrated phone, clock and door mystery':presetName==='emotional-drama'?'original illustrated lunchbox, drawer and folded notes':'original fictional meeting notes, extraction prompt and action table',captions:presetName!=='productivity'?'sentence captions at measured speech-clip boundaries; not word-level transcription':'scene text synchronized to each scene audio; not word-level transcription',questionDelivery:presetName==='micro-drama'?{speed:1,pauseBeforeMs:550,phoneticStress:'you',separateClip:true}:null,script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {
