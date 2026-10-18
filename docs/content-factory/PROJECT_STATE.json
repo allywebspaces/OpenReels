@@ -79,10 +79,10 @@
     }
   ],
   "next": {
-    "id": "visual_format_diagnosis",
-    "status": "comparison_available_character_reaction_audition_proposed",
-    "evidence": "VISUAL_COMPARISON_REVIEW.md",
-    "instructions": "Use the existing-video side-by-side comparison to isolate visual presentation from identical narration. Browser UI checks remain blocked by execution-host loopback reachability; no full listening assessment. A short character-reaction visual audition with unchanged narration is proposed but not implemented. Preserve all original media and baseline; no paid inference/public posting. Schedule stays paused."
+    "id": "character_reaction_format_review",
+    "status": "rendered_sampled_visual_review_complete_listening_unverified",
+    "evidence": "REACTION_ANIMATIC_REVIEW.md",
+    "instructions": "Review the 12.83-second character-reaction animatic and same-audio control before expanding the format. Host ImageGen stills with camera moves, not acted video. Original media and baseline preserved; schedule stays paused. No paid inference or publication."
   },
   "later": [],
   "deferredOptionalNotAutomatic": [
@@ -106,7 +106,8 @@
     "Local network-interface blocker persists; GitHub rendering verified",
     "New video review tool exercised on SHA-matched MP4s; 340 samples extracted, only nine preliminary samples inspected this turn; no new listening/ASR/AI QA.",
     "Browser smoke probe blocked by absent Chromium executable. Playback, search/seek/note-export UI and phone layout require browser validation.",
-    "Supported connected and cloud browser attempts both returned connection refused for execution-host loopback. Viewer UI remains unverified. Existing-video A/B comparison rendered/decoded; six actual comparison samples inspected; no full watch/listening."
+    "Supported connected and cloud browser attempts both returned connection refused for execution-host loopback. Viewer UI remains unverified. Existing-video A/B comparison rendered/decoded; six actual comparison samples inspected; no full watch/listening.",
+    "Character-reaction animatic uses host-generated photographic stills with camera moves. Fourteen encoded frame samples reviewed; no complete playback/listening, acted motion, phone test or engagement proof. Two Python/FFmpeg tests,439 Vitest tests and TypeScript passed using existing dependencies."
   ],
   "acceptance": {
     "assessedOn": "2026-10-16",
@@ -120,7 +121,7 @@
   "userDirectedFollowUp": {
     "id": "actual_video_review_integration",
     "authorizedOn": "2026-10-19",
-    "status": "comparison_rendered_and_sampled_browser_listening_unverified",
+    "status": "reaction_animatic_rendered_and_sampled_listening_unverified",
     "evidence": "VIDEO_QA_VALIDATION.md",
     "integrationDesign": "VIDEO_QA_INTEGRATION.md",
     "thirdPartyRuntimeIntegrations": 0,
@@ -136,6 +137,20 @@
       "samplesInspected": 6,
       "completeWatch": false,
       "listeningAssessed": false
+    },
+    "characterReaction": {
+      "evidence": "REACTION_ANIMATIC_REVIEW.md",
+      "frames": 385,
+      "fps": 30,
+      "videoSha256": "bd282da907061bf6286f54686e2291557e2794adae4b1925fcd36915fd1b15cc",
+      "comparisonSha256": "a01720cddbc20e8fd62098c70a0011a47e5792b488209c5eed9f33c60c1e1930",
+      "sameEncodedAudioBetweenConditions": true,
+      "originalAudioReencoded": true,
+      "hostImageGenerationCalls": 2,
+      "samplesInspected": 14,
+      "listeningAssessed": false,
+      "userApproved": false,
+      "originalMediaUnchanged": true
     }
   }
 }

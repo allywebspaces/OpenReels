@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "kind": "host_imagegen_assisted_still_animatic_not_acted_video",
+  "language": "English",
+  "plan": {
+    "fps": 30,
+    "endFrameExclusive": 385,
+    "sourcePinsVerified": true,
+    "shots": [
+      {
+        "panel": 0,
+        "frames": 209,
+        "meaning": "Read the phone"
+      },
+      {
+        "panel": 1,
+        "frames": 49,
+        "meaning": "React towards the closed door"
+      },
+      {
+        "panel": 2,
+        "frames": 65,
+        "meaning": "Reach towards the lock without turning it"
+      },
+      {
+        "panel": 0,
+        "frames": 62,
+        "meaning": "Return to the phone before the photograph line"
+      }
+    ],
+    "captions": [
+      {
+        "scene": 1,
+        "text": "At midnight, Maya received a message from her own number.",
+        "startFrame": 0,
+        "endFrame": 117,
+        "startSeconds": 0.0
+      },
+      {
+        "scene": 1,
+        "text": "Four words: Don't open the door.",
+        "startFrame": 121,
+        "endFrame": 200,
+        "startSeconds": 4.033333333333333
+      },
+      {
+        "scene": 2,
+        "text": "Three knocks.",
+        "startFrame": 209,
+        "endFrame": 254,
+        "startSeconds": 6.966666666666667
+      },
+      {
+        "scene": 2,
+        "text": "Maya reached for the lock.",
+        "startFrame": 258,
+        "endFrame": 320,
+        "startSeconds": 8.6
+      },
+      {
+        "scene": 2,
+        "text": "Her phone lit up again.",
+        "startFrame": 323,
+        "endFrame": 382,
+        "startSeconds": 10.766666666666667
+      }
+    ]
+  },
+  "sourcePins": {
+    "examples/micro-drama/episode-01-question-revision/pilot.mp4": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+    "examples/micro-drama/episode-01-question-revision/cues.json": "0e424b9d580f6b19bbe3692121f5c76f2446e407e3248237cd167935940c51ee"
+  },
+  "artworkSha256": "d0230c4df8ff011e9814287546c913f6710be913670c0f77ef8fc499c54d2d65",
+  "generatorSha256": "ead0c486bdb9bad083bb4c48a22833810359a69decf2328c03f196c3d3fb9b26",
+  "narrationReferenceWavSha256": "82461c5e8231e275b1e942b841c4243ed6e6ea8c53a5580c60aa01c0fa06d727",
+  "narrationSampleCount": 616000,
+  "narrationSampleRate": 48000,
+  "audioReencodedForExcerpt": true,
+  "conditionsShareIdenticalEncodedAudio": true,
+  "checks": {
+    "character-reaction.mp4": {
+      "sha256": "bd282da907061bf6286f54686e2291557e2794adae4b1925fcd36915fd1b15cc",
+      "fullDecode": true,
+      "video": {
+        "width": 720,
+        "height": 1280,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "385"
+      },
+      "aacAdtsSha256": "97bf8ef1ed445b3f29e3891640d507ec2db407de1827595a3e92fae8b92cffaa"
+    },
+    "prop-reference.mp4": {
+      "sha256": "be0d7282b8eb5a7c6bcd61ed86104a81c8d0efe49d219eb3f8bda427c7fa029f",
+      "fullDecode": true,
+      "video": {
+        "width": 720,
+        "height": 1280,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "385",
+        "side_data_list": [
+          {}
+        ]
+      },
+      "aacAdtsSha256": "97bf8ef1ed445b3f29e3891640d507ec2db407de1827595a3e92fae8b92cffaa"
+    },
+    "comparison.mp4": {
+      "sha256": "a01720cddbc20e8fd62098c70a0011a47e5792b488209c5eed9f33c60c1e1930",
+      "fullDecode": true,
+      "video": {
+        "width": 1440,
+        "height": 1344,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "385"
+      },
+      "aacAdtsSha256": "97bf8ef1ed445b3f29e3891640d507ec2db407de1827595a3e92fae8b92cffaa"
+    }
+  },
+  "limits": [
+    "Photographic stills plus camera moves are not acted footage, lip-sync or generated motion.",
+    "Source narration is unchanged, but excerpt AAC is re-encoded from the shared reference PCM.",
+    "Image assets required the built-in host image tool; no offline arbitrary-script asset generator was added.",
+    "New layout, photography and human depiction change together. This is a visual-format test, not isolated causal proof.",
+    "No complete listening, phone playback or audience testing is inferred."
+  ]
+}
