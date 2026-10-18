@@ -1,0 +1,1982 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-18T20:57:42.249894+00:00",
+  "generatorSha256": "2c9faee81460eaebd4c4a769f6e4ce8bae64da67a4b4dac127790109271e2f15",
+  "templateSha256": "96b119c3faa158d89838ffac6defd3d4066a466edb7d59b2d02ced4ded7aa0b3",
+  "video": {
+    "sha256": "7661beeefc86aae807ad1811a6e5564d6cb3e29f04e05b132aea7f0379ea626e",
+    "file": "video.mp4",
+    "duration": 40.128,
+    "width": 720,
+    "height": 1280,
+    "fps": 30.0,
+    "pictureDuration": 40.066667
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "ffprobe": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers"
+  },
+  "checks": {
+    "fullDecode": true,
+    "decodeOptions": "-v error -xerror; video and optional audio mapped; stderr must be empty"
+  },
+  "audio": {
+    "status": "measured_mono_16khz_pcm",
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 0.25,
+        "rmsDbfs": -120.31,
+        "peakDbfs": -90.31,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 0.25,
+        "end": 0.5,
+        "rmsDbfs": -22.77,
+        "peakDbfs": -9.03,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 0.5,
+        "end": 0.75,
+        "rmsDbfs": -16.41,
+        "peakDbfs": -8.85,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 0.75,
+        "end": 1.0,
+        "rmsDbfs": -27.79,
+        "peakDbfs": -13.13,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.0,
+        "end": 1.25,
+        "rmsDbfs": -27.57,
+        "peakDbfs": -13.52,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.25,
+        "end": 1.5,
+        "rmsDbfs": -23.92,
+        "peakDbfs": -13.11,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.5,
+        "end": 1.75,
+        "rmsDbfs": -25.54,
+        "peakDbfs": -15.67,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.75,
+        "end": 2.0,
+        "rmsDbfs": -43.61,
+        "peakDbfs": -27.49,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.0,
+        "end": 2.25,
+        "rmsDbfs": -26.86,
+        "peakDbfs": -9.8,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.25,
+        "end": 2.5,
+        "rmsDbfs": -23.73,
+        "peakDbfs": -9.58,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.5,
+        "end": 2.75,
+        "rmsDbfs": -26.47,
+        "peakDbfs": -13.95,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.75,
+        "end": 3.0,
+        "rmsDbfs": -28.3,
+        "peakDbfs": -15.54,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 3.0,
+        "end": 3.25,
+        "rmsDbfs": -29.18,
+        "peakDbfs": -18.0,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 3.25,
+        "end": 3.5,
+        "rmsDbfs": -33.61,
+        "peakDbfs": -20.55,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 3.5,
+        "end": 3.75,
+        "rmsDbfs": -37.37,
+        "peakDbfs": -22.28,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 3.75,
+        "end": 4.0,
+        "rmsDbfs": -86.78,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.0,
+        "end": 4.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.25,
+        "end": 4.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.5,
+        "end": 4.75,
+        "rmsDbfs": -92.07,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.75,
+        "end": 5.0,
+        "rmsDbfs": -22.02,
+        "peakDbfs": -11.24,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.0,
+        "end": 5.25,
+        "rmsDbfs": -23.74,
+        "peakDbfs": -10.48,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.25,
+        "end": 5.5,
+        "rmsDbfs": -24.68,
+        "peakDbfs": -11.45,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.5,
+        "end": 5.75,
+        "rmsDbfs": -36.77,
+        "peakDbfs": -25.25,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.75,
+        "end": 6.0,
+        "rmsDbfs": -80.08,
+        "peakDbfs": -66.79,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 6.0,
+        "end": 6.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 6.25,
+        "end": 6.5,
+        "rmsDbfs": -105.4,
+        "peakDbfs": -80.77,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 6.5,
+        "end": 6.75,
+        "rmsDbfs": -22.97,
+        "peakDbfs": -7.07,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 6.75,
+        "end": 7.0,
+        "rmsDbfs": -22.01,
+        "peakDbfs": -10.09,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 7.0,
+        "end": 7.25,
+        "rmsDbfs": -25.0,
+        "peakDbfs": -11.81,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 7.25,
+        "end": 7.5,
+        "rmsDbfs": -30.84,
+        "peakDbfs": -19.59,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 7.5,
+        "end": 7.75,
+        "rmsDbfs": -28.78,
+        "peakDbfs": -12.94,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 7.75,
+        "end": 8.0,
+        "rmsDbfs": -25.65,
+        "peakDbfs": -13.59,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 8.0,
+        "end": 8.25,
+        "rmsDbfs": -31.04,
+        "peakDbfs": -18.53,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 8.25,
+        "end": 8.5,
+        "rmsDbfs": -43.93,
+        "peakDbfs": -26.9,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 8.5,
+        "end": 8.75,
+        "rmsDbfs": -82.15,
+        "peakDbfs": -69.48,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 8.75,
+        "end": 9.0,
+        "rmsDbfs": -102.71,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 9.0,
+        "end": 9.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 9.25,
+        "end": 9.5,
+        "rmsDbfs": -23.89,
+        "peakDbfs": -10.05,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 9.5,
+        "end": 9.75,
+        "rmsDbfs": -22.85,
+        "peakDbfs": -5.48,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 9.75,
+        "end": 10.0,
+        "rmsDbfs": -23.34,
+        "peakDbfs": -10.07,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 10.0,
+        "end": 10.25,
+        "rmsDbfs": -26.19,
+        "peakDbfs": -15.63,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 10.25,
+        "end": 10.5,
+        "rmsDbfs": -42.97,
+        "peakDbfs": -26.78,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 10.5,
+        "end": 10.75,
+        "rmsDbfs": -23.34,
+        "peakDbfs": -10.56,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 10.75,
+        "end": 11.0,
+        "rmsDbfs": -21.19,
+        "peakDbfs": -8.8,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.0,
+        "end": 11.25,
+        "rmsDbfs": -27.96,
+        "peakDbfs": -10.92,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.25,
+        "end": 11.5,
+        "rmsDbfs": -21.33,
+        "peakDbfs": -11.08,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.5,
+        "end": 11.75,
+        "rmsDbfs": -27.61,
+        "peakDbfs": -17.03,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.75,
+        "end": 12.0,
+        "rmsDbfs": -28.75,
+        "peakDbfs": -15.6,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 12.0,
+        "end": 12.25,
+        "rmsDbfs": -29.02,
+        "peakDbfs": -15.98,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 12.25,
+        "end": 12.5,
+        "rmsDbfs": -29.05,
+        "peakDbfs": -15.69,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 12.5,
+        "end": 12.75,
+        "rmsDbfs": -46.45,
+        "peakDbfs": -25.9,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 12.75,
+        "end": 13.0,
+        "rmsDbfs": -86.87,
+        "peakDbfs": -76.33,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 13.0,
+        "end": 13.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 13.25,
+        "end": 13.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 13.5,
+        "end": 13.75,
+        "rmsDbfs": -92.38,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 13.75,
+        "end": 14.0,
+        "rmsDbfs": -20.09,
+        "peakDbfs": -9.48,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.0,
+        "end": 14.25,
+        "rmsDbfs": -24.3,
+        "peakDbfs": -13.25,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.25,
+        "end": 14.5,
+        "rmsDbfs": -26.76,
+        "peakDbfs": -12.04,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.5,
+        "end": 14.75,
+        "rmsDbfs": -29.1,
+        "peakDbfs": -14.9,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.75,
+        "end": 15.0,
+        "rmsDbfs": -40.16,
+        "peakDbfs": -20.15,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 15.0,
+        "end": 15.25,
+        "rmsDbfs": -23.1,
+        "peakDbfs": -9.73,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 15.25,
+        "end": 15.5,
+        "rmsDbfs": -20.27,
+        "peakDbfs": -9.55,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 15.5,
+        "end": 15.75,
+        "rmsDbfs": -27.01,
+        "peakDbfs": -13.96,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 15.75,
+        "end": 16.0,
+        "rmsDbfs": -46.82,
+        "peakDbfs": -31.0,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 16.0,
+        "end": 16.25,
+        "rmsDbfs": -84.54,
+        "peakDbfs": -72.25,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 16.25,
+        "end": 16.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 16.5,
+        "end": 16.75,
+        "rmsDbfs": -94.97,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 16.75,
+        "end": 17.0,
+        "rmsDbfs": -24.02,
+        "peakDbfs": -12.12,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 17.0,
+        "end": 17.25,
+        "rmsDbfs": -22.34,
+        "peakDbfs": -10.65,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 17.25,
+        "end": 17.5,
+        "rmsDbfs": -25.38,
+        "peakDbfs": -11.72,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 17.5,
+        "end": 17.75,
+        "rmsDbfs": -27.59,
+        "peakDbfs": -16.09,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 17.75,
+        "end": 18.0,
+        "rmsDbfs": -47.17,
+        "peakDbfs": -25.03,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 18.0,
+        "end": 18.25,
+        "rmsDbfs": -85.65,
+        "peakDbfs": -71.22,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 18.25,
+        "end": 18.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 18.5,
+        "end": 18.75,
+        "rmsDbfs": -92.5,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 18.75,
+        "end": 19.0,
+        "rmsDbfs": -22.96,
+        "peakDbfs": -11.7,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 19.0,
+        "end": 19.25,
+        "rmsDbfs": -21.83,
+        "peakDbfs": -12.75,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 19.25,
+        "end": 19.5,
+        "rmsDbfs": -38.22,
+        "peakDbfs": -22.94,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 19.5,
+        "end": 19.75,
+        "rmsDbfs": -83.23,
+        "peakDbfs": -68.03,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 19.75,
+        "end": 20.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 20.0,
+        "end": 20.25,
+        "rmsDbfs": -94.85,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 20.25,
+        "end": 20.5,
+        "rmsDbfs": -26.41,
+        "peakDbfs": -9.03,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 20.5,
+        "end": 20.75,
+        "rmsDbfs": -22.05,
+        "peakDbfs": -9.91,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 20.75,
+        "end": 21.0,
+        "rmsDbfs": -25.69,
+        "peakDbfs": -12.61,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 21.0,
+        "end": 21.25,
+        "rmsDbfs": -28.36,
+        "peakDbfs": -14.57,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 21.25,
+        "end": 21.5,
+        "rmsDbfs": -23.82,
+        "peakDbfs": -15.39,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 21.5,
+        "end": 21.75,
+        "rmsDbfs": -36.31,
+        "peakDbfs": -18.68,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 21.75,
+        "end": 22.0,
+        "rmsDbfs": -79.22,
+        "peakDbfs": -66.79,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 22.0,
+        "end": 22.25,
+        "rmsDbfs": -89.84,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 22.25,
+        "end": 22.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 22.5,
+        "end": 22.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 22.75,
+        "end": 23.0,
+        "rmsDbfs": -89.78,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 23.0,
+        "end": 23.25,
+        "rmsDbfs": -21.53,
+        "peakDbfs": -10.13,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.25,
+        "end": 23.5,
+        "rmsDbfs": -26.9,
+        "peakDbfs": -16.26,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.5,
+        "end": 23.75,
+        "rmsDbfs": -37.54,
+        "peakDbfs": -25.41,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.75,
+        "end": 24.0,
+        "rmsDbfs": -23.46,
+        "peakDbfs": -8.35,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 24.0,
+        "end": 24.25,
+        "rmsDbfs": -22.78,
+        "peakDbfs": -11.16,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 24.25,
+        "end": 24.5,
+        "rmsDbfs": -28.07,
+        "peakDbfs": -14.57,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 24.5,
+        "end": 24.75,
+        "rmsDbfs": -39.62,
+        "peakDbfs": -21.92,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 24.75,
+        "end": 25.0,
+        "rmsDbfs": -82.14,
+        "peakDbfs": -69.48,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 25.0,
+        "end": 25.25,
+        "rmsDbfs": -97.11,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 25.25,
+        "end": 25.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 25.5,
+        "end": 25.75,
+        "rmsDbfs": -31.01,
+        "peakDbfs": -9.88,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 25.75,
+        "end": 26.0,
+        "rmsDbfs": -18.26,
+        "peakDbfs": -7.64,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.0,
+        "end": 26.25,
+        "rmsDbfs": -26.03,
+        "peakDbfs": -12.2,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.25,
+        "end": 26.5,
+        "rmsDbfs": -31.8,
+        "peakDbfs": -15.5,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.5,
+        "end": 26.75,
+        "rmsDbfs": -27.05,
+        "peakDbfs": -13.39,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.75,
+        "end": 27.0,
+        "rmsDbfs": -26.3,
+        "peakDbfs": -15.71,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 27.0,
+        "end": 27.25,
+        "rmsDbfs": -39.76,
+        "peakDbfs": -25.56,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 27.25,
+        "end": 27.5,
+        "rmsDbfs": -80.84,
+        "peakDbfs": -68.73,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 27.5,
+        "end": 27.75,
+        "rmsDbfs": -96.77,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 27.75,
+        "end": 28.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 28.0,
+        "end": 28.25,
+        "rmsDbfs": -31.9,
+        "peakDbfs": -12.7,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.25,
+        "end": 28.5,
+        "rmsDbfs": -21.47,
+        "peakDbfs": -9.08,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.5,
+        "end": 28.75,
+        "rmsDbfs": -23.29,
+        "peakDbfs": -13.19,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.75,
+        "end": 29.0,
+        "rmsDbfs": -28.24,
+        "peakDbfs": -16.02,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 29.0,
+        "end": 29.25,
+        "rmsDbfs": -39.01,
+        "peakDbfs": -25.8,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 29.25,
+        "end": 29.5,
+        "rmsDbfs": -79.95,
+        "peakDbfs": -66.79,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 29.5,
+        "end": 29.75,
+        "rmsDbfs": -98.96,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 29.75,
+        "end": 30.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 30.0,
+        "end": 30.25,
+        "rmsDbfs": -28.85,
+        "peakDbfs": -8.91,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.25,
+        "end": 30.5,
+        "rmsDbfs": -18.96,
+        "peakDbfs": -12.45,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.5,
+        "end": 30.75,
+        "rmsDbfs": -27.55,
+        "peakDbfs": -16.35,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.75,
+        "end": 31.0,
+        "rmsDbfs": -31.73,
+        "peakDbfs": -15.62,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 31.0,
+        "end": 31.25,
+        "rmsDbfs": -50.99,
+        "peakDbfs": -36.98,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.25,
+        "end": 31.5,
+        "rmsDbfs": -86.79,
+        "peakDbfs": -72.25,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.5,
+        "end": 31.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.75,
+        "end": 32.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 32.0,
+        "end": 32.25,
+        "rmsDbfs": -89.91,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 32.25,
+        "end": 32.5,
+        "rmsDbfs": -20.69,
+        "peakDbfs": -10.13,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 32.5,
+        "end": 32.75,
+        "rmsDbfs": -20.97,
+        "peakDbfs": -11.38,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 32.75,
+        "end": 33.0,
+        "rmsDbfs": -28.07,
+        "peakDbfs": -16.36,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.0,
+        "end": 33.25,
+        "rmsDbfs": -66.38,
+        "peakDbfs": -44.73,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 33.25,
+        "end": 33.5,
+        "rmsDbfs": -17.38,
+        "peakDbfs": -8.99,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.5,
+        "end": 33.75,
+        "rmsDbfs": -26.21,
+        "peakDbfs": -10.64,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.75,
+        "end": 34.0,
+        "rmsDbfs": -29.23,
+        "peakDbfs": -15.14,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 34.0,
+        "end": 34.25,
+        "rmsDbfs": -26.42,
+        "peakDbfs": -13.98,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 34.25,
+        "end": 34.5,
+        "rmsDbfs": -28.6,
+        "peakDbfs": -15.26,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 34.5,
+        "end": 34.75,
+        "rmsDbfs": -31.05,
+        "peakDbfs": -16.7,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 34.75,
+        "end": 35.0,
+        "rmsDbfs": -37.0,
+        "peakDbfs": -22.37,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 35.0,
+        "end": 35.25,
+        "rmsDbfs": -86.28,
+        "peakDbfs": -76.33,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 35.25,
+        "end": 35.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 35.5,
+        "end": 35.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 35.75,
+        "end": 36.0,
+        "rmsDbfs": -32.18,
+        "peakDbfs": -15.71,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 36.0,
+        "end": 36.25,
+        "rmsDbfs": -18.47,
+        "peakDbfs": -8.22,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 36.25,
+        "end": 36.5,
+        "rmsDbfs": -25.36,
+        "peakDbfs": -11.55,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 36.5,
+        "end": 36.75,
+        "rmsDbfs": -28.21,
+        "peakDbfs": -14.56,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 36.75,
+        "end": 37.0,
+        "rmsDbfs": -29.18,
+        "peakDbfs": -15.97,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 37.0,
+        "end": 37.25,
+        "rmsDbfs": -46.66,
+        "peakDbfs": -26.05,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 37.25,
+        "end": 37.5,
+        "rmsDbfs": -84.94,
+        "peakDbfs": -71.22,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 37.5,
+        "end": 37.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 37.75,
+        "end": 38.0,
+        "rmsDbfs": -93.04,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 38.0,
+        "end": 38.25,
+        "rmsDbfs": -26.64,
+        "peakDbfs": -12.84,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 38.25,
+        "end": 38.5,
+        "rmsDbfs": -22.88,
+        "peakDbfs": -11.63,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 38.5,
+        "end": 38.75,
+        "rmsDbfs": -22.4,
+        "peakDbfs": -12.09,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 38.75,
+        "end": 39.0,
+        "rmsDbfs": -26.66,
+        "peakDbfs": -13.76,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 39.0,
+        "end": 39.25,
+        "rmsDbfs": -37.24,
+        "peakDbfs": -21.18,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 39.25,
+        "end": 39.5,
+        "rmsDbfs": -76.71,
+        "peakDbfs": -58.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 39.5,
+        "end": 39.75,
+        "rmsDbfs": -89.06,
+        "peakDbfs": -73.41,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 39.75,
+        "end": 40.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 40.0,
+        "end": 40.128,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      }
+    ],
+    "peakDbfs": -5.48,
+    "nearFullScaleSamples": 0,
+    "limits": "RMS and peak of downmixed PCM are signal diagnostics, not LUFS, clipping proof, intelligibility or emotional-delivery scores.",
+    "sha256": "8c3e13481e88a120991074f582f1c816780e40725a5ecdceee5bdab8a5eb8909"
+  },
+  "frames": [
+    {
+      "id": "frame-0",
+      "time": 0.0,
+      "file": "frames/000.jpg",
+      "sha256": "c3b6e9cefd24d80d91798fd6526ac5b0adb46811e1692d1cbbcee3a181ee5da0"
+    },
+    {
+      "id": "frame-1",
+      "time": 0.033333,
+      "file": "frames/001.jpg",
+      "sha256": "3c7bcc32f86199efe1a57462cf3d81e5df2567935eb259f485ea6ded672d763a"
+    },
+    {
+      "id": "frame-2",
+      "time": 2.0,
+      "file": "frames/002.jpg",
+      "sha256": "7359a52a99597db2462c98e82f73fc30d05d184a2569527e90fc3b86a7fb0fab"
+    },
+    {
+      "id": "frame-3",
+      "time": 4.0,
+      "file": "frames/003.jpg",
+      "sha256": "a125e56c46994754536c2f0e623b12e1c7d6eaa695cbd2a7479417a961f2807b"
+    },
+    {
+      "id": "frame-4",
+      "time": 4.066667,
+      "file": "frames/004.jpg",
+      "sha256": "3ea17ec0a2b0758413286c614df1ffeb4349c8c791d56da9a3b4015615dd9d66"
+    },
+    {
+      "id": "frame-5",
+      "time": 4.1,
+      "file": "frames/005.jpg",
+      "sha256": "0c58998efd41251e5613bf54842b36065a8828ae2ebc0cd14d60d7f4214ea96c"
+    },
+    {
+      "id": "frame-6",
+      "time": 4.133333,
+      "file": "frames/006.jpg",
+      "sha256": "ec374716448ee97b6dc5839e3bc945ca28fce4c7c3e0fd0d5d5e01eae7d89977"
+    },
+    {
+      "id": "frame-7",
+      "time": 4.366667,
+      "file": "frames/007.jpg",
+      "sha256": "48568ca46a57a01a9194912dd9099bb077c0f60aaac8bd20d4445eee047d4556"
+    },
+    {
+      "id": "frame-8",
+      "time": 4.4,
+      "file": "frames/008.jpg",
+      "sha256": "8b35a6a318fe191956b670ad6fde4440dc8625fc670bd496718139e8b8194076"
+    },
+    {
+      "id": "frame-9",
+      "time": 4.433333,
+      "file": "frames/009.jpg",
+      "sha256": "84ad282a992e03e614dc89d11ce5c7edc07f9e52a71b3ede9f523b88c6e09fd0"
+    },
+    {
+      "id": "frame-10",
+      "time": 6.0,
+      "file": "frames/010.jpg",
+      "sha256": "c505dab8628a4f5eb5be62fafb5d4169ccd620100e4fb82efd4fb3e60b5f8f82"
+    },
+    {
+      "id": "frame-11",
+      "time": 6.1,
+      "file": "frames/011.jpg",
+      "sha256": "750612b00d5d8048bf23cac5ce50727be5992aecdbbc4281a96303331877de02"
+    },
+    {
+      "id": "frame-12",
+      "time": 6.133333,
+      "file": "frames/012.jpg",
+      "sha256": "7936a101027387ac1a47e1ebf0b65d1c814f13df43deac9bc306e3493adab033"
+    },
+    {
+      "id": "frame-13",
+      "time": 6.166667,
+      "file": "frames/013.jpg",
+      "sha256": "c237930163c5d1fc6f525a767ac48b72bb711fc514879d67eaf25aa0936b0d7b"
+    },
+    {
+      "id": "frame-14",
+      "time": 6.233333,
+      "file": "frames/014.jpg",
+      "sha256": "3794bfd0e410173474862503725597a8eca76499c2e279e4b4c085c1275aa996"
+    },
+    {
+      "id": "frame-15",
+      "time": 6.266667,
+      "file": "frames/015.jpg",
+      "sha256": "a566f75532906c7162f430644ce3527757c1bf28ee30c05f2c7b75e2447f9991"
+    },
+    {
+      "id": "frame-16",
+      "time": 6.3,
+      "file": "frames/016.jpg",
+      "sha256": "6da0d0770e3a19eae8dbbd5cc200f73306782ddd38af9dafb03abfc2345ed64e"
+    },
+    {
+      "id": "frame-17",
+      "time": 8.0,
+      "file": "frames/017.jpg",
+      "sha256": "2bdd77cff899b5c4f61e7077b1f2a64d448f4b12e0c272f78bad9371d690d70e"
+    },
+    {
+      "id": "frame-18",
+      "time": 8.866667,
+      "file": "frames/018.jpg",
+      "sha256": "9e4bc3cf162951d09eb226c1fb95d36c1b8f80c4d588e8bca155d3a87d4d3454"
+    },
+    {
+      "id": "frame-19",
+      "time": 8.9,
+      "file": "frames/019.jpg",
+      "sha256": "24cdc1c80b86745444b6dc066d22c6d451704167adfa7821c982c026c2b7bf00"
+    },
+    {
+      "id": "frame-20",
+      "time": 8.933333,
+      "file": "frames/020.jpg",
+      "sha256": "6b9e212d36d97be90a0e78e0d378cf32f7d5c64729a5ae753692bf7fdddcbef7"
+    },
+    {
+      "id": "frame-21",
+      "time": 9.0,
+      "file": "frames/021.jpg",
+      "sha256": "c4e084cae492c78cac5253ce9b8a72a26e24ff5e7c27ec77bbfef88f6586e56d"
+    },
+    {
+      "id": "frame-22",
+      "time": 9.033333,
+      "file": "frames/022.jpg",
+      "sha256": "a5f7c0747cde7abfb17f5e2e86b5a11e40c865abe5861e5f1d1b3fb3780b220d"
+    },
+    {
+      "id": "frame-23",
+      "time": 9.066667,
+      "file": "frames/023.jpg",
+      "sha256": "ac392cb5b08e59637311d2c303024f517aa1445c36b24a676a1ea617bbadc649"
+    },
+    {
+      "id": "frame-24",
+      "time": 10.0,
+      "file": "frames/024.jpg",
+      "sha256": "8281696161c1ce1cce78afb6083d556935fde1c81ed524b6f1c645a329a99f3e"
+    },
+    {
+      "id": "frame-25",
+      "time": 12.0,
+      "file": "frames/025.jpg",
+      "sha256": "b35eb76dcfdfcbf35a378b6a5076f46396f2fb0a80b4e53eb00299c0c455cd63"
+    },
+    {
+      "id": "frame-26",
+      "time": 13.1,
+      "file": "frames/026.jpg",
+      "sha256": "2c23c443b4df9678d27f87b0bfc7a16d5c1b40aa9303837183f6212afde3a9b8"
+    },
+    {
+      "id": "frame-27",
+      "time": 13.133333,
+      "file": "frames/027.jpg",
+      "sha256": "d6dd77d504421bd5cea9bbfb78014ff7cef746dcaacae5a5246e4ca5917bbcd2"
+    },
+    {
+      "id": "frame-28",
+      "time": 13.166667,
+      "file": "frames/028.jpg",
+      "sha256": "ba9bfe240a992a03e5c346ab01361f0b3da52c90f1a718fd15d7392e8d6a2dea"
+    },
+    {
+      "id": "frame-29",
+      "time": 13.4,
+      "file": "frames/029.jpg",
+      "sha256": "78ff9c4000e110a90635ab9b294a1f36f74ffea9961090811d81ff7b1f477918"
+    },
+    {
+      "id": "frame-30",
+      "time": 13.433333,
+      "file": "frames/030.jpg",
+      "sha256": "7f2817e3a67ccbc002036bf944addb9db6d58b07c70876daa25a51e207705988"
+    },
+    {
+      "id": "frame-31",
+      "time": 13.466667,
+      "file": "frames/031.jpg",
+      "sha256": "87fef40c2c122b04013a5e3323c49faae785a80e71d17a4f0f720b2fcb8bd55a"
+    },
+    {
+      "id": "frame-32",
+      "time": 14.0,
+      "file": "frames/032.jpg",
+      "sha256": "cfd0566cc4f901f67d1a6165e4a47c93520396f19368106843dec151a2bd7a13"
+    },
+    {
+      "id": "frame-33",
+      "time": 16.0,
+      "file": "frames/033.jpg",
+      "sha256": "a30df14cc40d1c98dd6c5300f544aa32f052ef33f389fde29a7032b1f8194ca7"
+    },
+    {
+      "id": "frame-34",
+      "time": 16.3,
+      "file": "frames/034.jpg",
+      "sha256": "564d480008f95c409137ddb4c224557cb3cb6ff254ccd98907bfcc1e78066758"
+    },
+    {
+      "id": "frame-35",
+      "time": 16.333333,
+      "file": "frames/035.jpg",
+      "sha256": "2609102b25c186741b074121d870aecfc5e2e142ccfa26040325a5bcd574a69b"
+    },
+    {
+      "id": "frame-36",
+      "time": 16.366667,
+      "file": "frames/036.jpg",
+      "sha256": "57efed694db18c6153f8e72866ec8a557b2011c1cfb7f5ada97c61167c189bd4"
+    },
+    {
+      "id": "frame-37",
+      "time": 16.433333,
+      "file": "frames/037.jpg",
+      "sha256": "1b6a7a03369e5996fde0c0e4226e92ec6b2ba06f270b6df804f545de12d68c91"
+    },
+    {
+      "id": "frame-38",
+      "time": 16.466667,
+      "file": "frames/038.jpg",
+      "sha256": "6030d00b5e10dbcd1667b153670a56d54c0ab3d4577915d4e89640b9e070e81e"
+    },
+    {
+      "id": "frame-39",
+      "time": 16.5,
+      "file": "frames/039.jpg",
+      "sha256": "42d353f03fb36d5557ab9343505246c5604831f59e952b30dbcdb39484c3464b"
+    },
+    {
+      "id": "frame-40",
+      "time": 18.0,
+      "file": "frames/040.jpg",
+      "sha256": "80d659e81f3ebb08f7b50d9e59bdad22f1c7e8a6e464e8dfaaa12d779c657ec3"
+    },
+    {
+      "id": "frame-41",
+      "time": 18.266667,
+      "file": "frames/041.jpg",
+      "sha256": "52804432a1421e687736c6a109c5dedc0999614adb49784c3fbba3acbcbb13ab"
+    },
+    {
+      "id": "frame-42",
+      "time": 18.3,
+      "file": "frames/042.jpg",
+      "sha256": "8018c4317edca238d4d137350f21aafe6a49deebf24bde84f314cd3b08aa7191"
+    },
+    {
+      "id": "frame-43",
+      "time": 18.333333,
+      "file": "frames/043.jpg",
+      "sha256": "614abc69b05c539059c64006cc62c7c6f508f8ef6bccddbd48c152eba1eccd77"
+    },
+    {
+      "id": "frame-44",
+      "time": 18.366667,
+      "file": "frames/044.jpg",
+      "sha256": "9074fad3ed769560573249910cb2335e1d9fcfdfb68fdc9a30dc33518ce1bf17"
+    },
+    {
+      "id": "frame-45",
+      "time": 18.4,
+      "file": "frames/045.jpg",
+      "sha256": "7e830e85459022953e66269936fd460e931cb1e6f2d3df00db3ea242f049de06"
+    },
+    {
+      "id": "frame-46",
+      "time": 18.433333,
+      "file": "frames/046.jpg",
+      "sha256": "0956bf8721b52d26adf89997e033ecee3f13935068f70c6fc52f88a738cf9faf"
+    },
+    {
+      "id": "frame-47",
+      "time": 19.8,
+      "file": "frames/047.jpg",
+      "sha256": "7614183e961ac0b0efe2db71649a9d9c50859ab43fc04f1dfe61777d57644f35"
+    },
+    {
+      "id": "frame-48",
+      "time": 19.833333,
+      "file": "frames/048.jpg",
+      "sha256": "0961453b03a381a8e9d8c39f6fcf284b0e08498651bbb4d980be2295459f5448"
+    },
+    {
+      "id": "frame-49",
+      "time": 19.866667,
+      "file": "frames/049.jpg",
+      "sha256": "f1f5440fc55dea2e4f1852c7d3f59374126502f445822fe9a8de2407a5f9a00b"
+    },
+    {
+      "id": "frame-50",
+      "time": 19.933333,
+      "file": "frames/050.jpg",
+      "sha256": "5b85b8d6c34105532263c07fe83595cb88ed1dc1a253aa1b1add847a63df2f87"
+    },
+    {
+      "id": "frame-51",
+      "time": 19.966667,
+      "file": "frames/051.jpg",
+      "sha256": "4a859d5aaa5963b84545bde2f546dd00bec2f7b18f44817bc0ddc19ca916bdec"
+    },
+    {
+      "id": "frame-52",
+      "time": 20.0,
+      "file": "frames/052.jpg",
+      "sha256": "174535b025103a97d8017f34e4fe72876c8d2f869ee2a4e6357c0577e434e735"
+    },
+    {
+      "id": "frame-53",
+      "time": 22.0,
+      "file": "frames/053.jpg",
+      "sha256": "22684d6786034049a8213ce6c38147fd5099c6df1add7b847c65b9c720737b6d"
+    },
+    {
+      "id": "frame-54",
+      "time": 22.233333,
+      "file": "frames/054.jpg",
+      "sha256": "fb04f588ee83eabe00c0c36e0e8a8bebfa7ab266fc064dccc43d71ab9335bbee"
+    },
+    {
+      "id": "frame-55",
+      "time": 22.266667,
+      "file": "frames/055.jpg",
+      "sha256": "61bdade2a6d6c9ecc2ef80970b1f3e758ac8e6c94becdbbe6e49c783e510dd10"
+    },
+    {
+      "id": "frame-56",
+      "time": 22.3,
+      "file": "frames/056.jpg",
+      "sha256": "d7ac54274835aec92cd5a8cb6bc4326c6b9c8987051d79c7a3e4e877ed874f8c"
+    },
+    {
+      "id": "frame-57",
+      "time": 22.533333,
+      "file": "frames/057.jpg",
+      "sha256": "1391e54023597910efb84c0f00cdd4384787a213dd3ebd996ffc4993c0a67329"
+    },
+    {
+      "id": "frame-58",
+      "time": 22.566667,
+      "file": "frames/058.jpg",
+      "sha256": "a7a9deff43989b87e8526219bed1d973f95f3e0a38b349d7d32fac1dc6074792"
+    },
+    {
+      "id": "frame-59",
+      "time": 22.6,
+      "file": "frames/059.jpg",
+      "sha256": "710cf4843d5c6447987f7a2c7841ad59a57a37a8b1f4037012d05f47137282c1"
+    },
+    {
+      "id": "frame-60",
+      "time": 24.0,
+      "file": "frames/060.jpg",
+      "sha256": "f4108f05d857f2c55ebc15625d5a3d926472e6c6471e185b219e2ba421c76ea4"
+    },
+    {
+      "id": "frame-61",
+      "time": 25.133333,
+      "file": "frames/061.jpg",
+      "sha256": "ff59c77ff909dfa6f1634ff73ec72614b16afe8c0904d6d92ea8739708304352"
+    },
+    {
+      "id": "frame-62",
+      "time": 25.166667,
+      "file": "frames/062.jpg",
+      "sha256": "d61fe557bca8f423f73c8ad1e271ac366eaf2a2252c282f2d8b2a1f4902bb92c"
+    },
+    {
+      "id": "frame-63",
+      "time": 25.2,
+      "file": "frames/063.jpg",
+      "sha256": "17bff84b89ab76518268ed63f099ded1f806f01e256e91eaa2316b2b7aca2ebd"
+    },
+    {
+      "id": "frame-64",
+      "time": 25.266667,
+      "file": "frames/064.jpg",
+      "sha256": "55e66bf58b3185233204425ef0dd71441c3b01b19793aedd495c04f29a7e8125"
+    },
+    {
+      "id": "frame-65",
+      "time": 25.3,
+      "file": "frames/065.jpg",
+      "sha256": "b1abcb6e3de50bc76ba770d005af3b02e62097622130d9b28eccdd36c7d091d2"
+    },
+    {
+      "id": "frame-66",
+      "time": 25.333333,
+      "file": "frames/066.jpg",
+      "sha256": "b157d7e7c29abe3abf817ab4e130956a2db0c898624d55a1a730858ee45d7cdf"
+    },
+    {
+      "id": "frame-67",
+      "time": 26.0,
+      "file": "frames/067.jpg",
+      "sha256": "89acfaae23e10f24c6bdaa903a00abb466cec63a4fc1b935fe64a16699932f25"
+    },
+    {
+      "id": "frame-68",
+      "time": 27.633333,
+      "file": "frames/068.jpg",
+      "sha256": "12a1b0b7d46fba14d0391016e67578b7b557e4869057d7136483b061abe39f49"
+    },
+    {
+      "id": "frame-69",
+      "time": 27.666667,
+      "file": "frames/069.jpg",
+      "sha256": "399f7b1830af595d0f027d38f4d57e90779c95c10f08e2bc1ceecb353a65e59f"
+    },
+    {
+      "id": "frame-70",
+      "time": 27.7,
+      "file": "frames/070.jpg",
+      "sha256": "27adf0ba44f439e228ae81c517c36afe6d6ff83404e20bf1efa13f3b100e45bf"
+    },
+    {
+      "id": "frame-71",
+      "time": 27.766667,
+      "file": "frames/071.jpg",
+      "sha256": "9fe93895e16ad27f582dbf906613dd220d991e22fab9f0421fd0a393a7146393"
+    },
+    {
+      "id": "frame-72",
+      "time": 27.8,
+      "file": "frames/072.jpg",
+      "sha256": "241b869f031185080548cf7491ed0da9f5b3256de3082847f6547f2f4dd8e01a"
+    },
+    {
+      "id": "frame-73",
+      "time": 27.833333,
+      "file": "frames/073.jpg",
+      "sha256": "6eae98a3f820feb8c65370fa80c271096afec40f37ff1d17d2598f1973195749"
+    },
+    {
+      "id": "frame-74",
+      "time": 28.0,
+      "file": "frames/074.jpg",
+      "sha256": "86ace517965fbdb2bcac6c995e54a1a69bbc854f1c69aef1ac138f4e8d8e0a46"
+    },
+    {
+      "id": "frame-75",
+      "time": 29.633333,
+      "file": "frames/075.jpg",
+      "sha256": "a944d380772be2153ee8c1006433b04a10680bbca13bfed876672eb58189d918"
+    },
+    {
+      "id": "frame-76",
+      "time": 29.666667,
+      "file": "frames/076.jpg",
+      "sha256": "87ec6ab9d689fc478accc1fb9971ec3b2ba7d14b8897cbf0b19deeaac91dd777"
+    },
+    {
+      "id": "frame-77",
+      "time": 29.7,
+      "file": "frames/077.jpg",
+      "sha256": "bc44caea5340b5410bc567af518760b7b8aa1b335f9293c946faf4cd0f044069"
+    },
+    {
+      "id": "frame-78",
+      "time": 29.766667,
+      "file": "frames/078.jpg",
+      "sha256": "fa125ddb303905d63d55bfa912c043c9a4aff1675b6b701112fe0a08f35d85d3"
+    },
+    {
+      "id": "frame-79",
+      "time": 29.8,
+      "file": "frames/079.jpg",
+      "sha256": "185b23f2e2aa463803b6729516e8305ac17482d5a9af640cc786b15d079290c4"
+    },
+    {
+      "id": "frame-80",
+      "time": 29.833333,
+      "file": "frames/080.jpg",
+      "sha256": "cb67b09e563b15cf592375c8996ab5de5b3cc6c42d77a2df08fe84e0fe09a6cf"
+    },
+    {
+      "id": "frame-81",
+      "time": 30.0,
+      "file": "frames/081.jpg",
+      "sha256": "9374c5b7c2a622efdfd3e90182646a8d868eeab836a54be36ca8c0d4a742e61c"
+    },
+    {
+      "id": "frame-82",
+      "time": 31.5,
+      "file": "frames/082.jpg",
+      "sha256": "7624ddae7d0d20605332ef0d70dbced61c81122c3ab148dd4ee1afe25ef9efa2"
+    },
+    {
+      "id": "frame-83",
+      "time": 31.533333,
+      "file": "frames/083.jpg",
+      "sha256": "5529868dd3a3599486e0eac623129e719ce49c230c2763d53c9c4a7f800cfcd3"
+    },
+    {
+      "id": "frame-84",
+      "time": 31.566667,
+      "file": "frames/084.jpg",
+      "sha256": "2d935d65c3c8688665d7fd3e48cc1d9b04e429460803240dccf5da4268b14742"
+    },
+    {
+      "id": "frame-85",
+      "time": 31.8,
+      "file": "frames/085.jpg",
+      "sha256": "31d49fd6a5d2b31213e934dba914529aefbf058ccdffd37acd14f7f1d60e690f"
+    },
+    {
+      "id": "frame-86",
+      "time": 31.833333,
+      "file": "frames/086.jpg",
+      "sha256": "7087fb153bd0f12d07fcdf40a9cb5b708784638a65ac8dcf436d1d81d67e7234"
+    },
+    {
+      "id": "frame-87",
+      "time": 31.866667,
+      "file": "frames/087.jpg",
+      "sha256": "d2a35d8cc7c7dd0340df365e10fb9a973f929e0ec60feb4b841df84db8ed6b93"
+    },
+    {
+      "id": "frame-88",
+      "time": 32.0,
+      "file": "frames/088.jpg",
+      "sha256": "e10aae27974a6211811aae29ca61cf965ebe193df1d806d041eb2b708cc7856c"
+    },
+    {
+      "id": "frame-89",
+      "time": 34.0,
+      "file": "frames/089.jpg",
+      "sha256": "698e5b4145e810e2094c9458e2a0690c218946becfd7808e7bb7d9ed7970eaf7"
+    },
+    {
+      "id": "frame-90",
+      "time": 35.366667,
+      "file": "frames/090.jpg",
+      "sha256": "3389f8a24fe17ef73f478b82526ec488109023ced4de13b14d1b1678fa50fd70"
+    },
+    {
+      "id": "frame-91",
+      "time": 35.4,
+      "file": "frames/091.jpg",
+      "sha256": "a78507b9b7956abf9628d71fad86dffbdc1586662d85b77823e8de9a93937d8d"
+    },
+    {
+      "id": "frame-92",
+      "time": 35.433333,
+      "file": "frames/092.jpg",
+      "sha256": "1f6adecc503b6820afcc734bcbbd74e3405e9e9134d98ffb3105d2b1e5ae7b3d"
+    },
+    {
+      "id": "frame-93",
+      "time": 35.5,
+      "file": "frames/093.jpg",
+      "sha256": "38a00216bf7e1b43f0fe28981f4917b83834b4de8a1eee12bc6ea86c2cac8717"
+    },
+    {
+      "id": "frame-94",
+      "time": 35.533333,
+      "file": "frames/094.jpg",
+      "sha256": "10311f88ae106a3ad92277107b3232185da8913382d4f6a97bf5688d4c91d420"
+    },
+    {
+      "id": "frame-95",
+      "time": 35.566667,
+      "file": "frames/095.jpg",
+      "sha256": "16b7c81cf74b815c940ee7234989805c9ca30bf977d719af4a80890852b5efc3"
+    },
+    {
+      "id": "frame-96",
+      "time": 36.0,
+      "file": "frames/096.jpg",
+      "sha256": "6e49de118ea367057e0e9c1741b2b95270c688238f413ea620a4efc4d886f757"
+    },
+    {
+      "id": "frame-97",
+      "time": 37.533333,
+      "file": "frames/097.jpg",
+      "sha256": "d6ab83b473f34cc221ef109f4746596a1d7d66ecb8d4c23e43095bd802421f5c"
+    },
+    {
+      "id": "frame-98",
+      "time": 37.566667,
+      "file": "frames/098.jpg",
+      "sha256": "9016fa3f3db670657a66a4209dfff0a93ca0390bd83fe3bf00cc5e3464c3ac03"
+    },
+    {
+      "id": "frame-99",
+      "time": 37.6,
+      "file": "frames/099.jpg",
+      "sha256": "e3318efa307290fe776e6f093335ce672b02817d643c2e48c1b939c1be89bb27"
+    },
+    {
+      "id": "frame-100",
+      "time": 37.666667,
+      "file": "frames/100.jpg",
+      "sha256": "3c39859a40232fb76e002aeed3576bc6d8971cebffd116e862058133268ba167"
+    },
+    {
+      "id": "frame-101",
+      "time": 37.7,
+      "file": "frames/101.jpg",
+      "sha256": "70270d498e5879774764ea3d3785b6ff88b8318848815ad7347d18a5e0c31edb"
+    },
+    {
+      "id": "frame-102",
+      "time": 37.733333,
+      "file": "frames/102.jpg",
+      "sha256": "c35d59412e972da4cd934d1313424642bdb7ccd7c7e9c7912a9c3291befc8f06"
+    },
+    {
+      "id": "frame-103",
+      "time": 38.0,
+      "file": "frames/103.jpg",
+      "sha256": "32647a07957782575cf092b3443210a7a55331e97b7d273ec10767f4fdab804c"
+    },
+    {
+      "id": "frame-104",
+      "time": 39.733333,
+      "file": "frames/104.jpg",
+      "sha256": "76b1454de0ea7b2cd77c7dcea6fa1eecd609b279ef8c1b62dc493533a7a460ea"
+    },
+    {
+      "id": "frame-105",
+      "time": 39.766667,
+      "file": "frames/105.jpg",
+      "sha256": "5c41b7fbd27c41f1ee3f16643249191fdcb81557a136e734de7c5f4af58e6335"
+    },
+    {
+      "id": "frame-106",
+      "time": 39.8,
+      "file": "frames/106.jpg",
+      "sha256": "56424f8ec9da1e2b1276293ff5818dcb3fa2202e6363390d99e423edc30fcc06"
+    },
+    {
+      "id": "frame-107",
+      "time": 40.0,
+      "file": "frames/107.jpg",
+      "sha256": "7aa3db23f21aed750bf001e1c72cc0bdefbb4c577b5eecb8161665c392e35165"
+    },
+    {
+      "id": "frame-108",
+      "time": 40.03323333333333,
+      "file": "frames/108.jpg",
+      "sha256": "103b715b480ed855fb31af74482c8e9831d322906bbeb784fe98150179bd3ddc"
+    }
+  ],
+  "intendedCues": [
+    {
+      "id": "cue-1",
+      "scene": 1,
+      "start": 0.0,
+      "end": 4.1,
+      "text": "Nina stopped opening the notes her father tucked into her lunch.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-2",
+      "scene": 2,
+      "start": 4.4,
+      "end": 6.133333333333334,
+      "text": "She was seventeen.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-3",
+      "scene": 2,
+      "start": 6.266666666666667,
+      "end": 8.9,
+      "text": "His little drawings felt embarrassing.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-4",
+      "scene": 2,
+      "start": 9.033333333333333,
+      "end": 13.133333333333333,
+      "text": "Each afternoon, she dropped the folded paper into a drawer.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-5",
+      "scene": 3,
+      "start": 13.433333333333334,
+      "end": 16.333333333333332,
+      "text": "On her first day at work, years later,",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-6",
+      "scene": 3,
+      "start": 16.466666666666665,
+      "end": 18.3,
+      "text": "she reached for a note.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-7",
+      "scene": 3,
+      "start": 18.4,
+      "end": 19.833333333333332,
+      "text": "There was none.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-8",
+      "scene": 3,
+      "start": 19.966666666666665,
+      "end": 22.266666666666666,
+      "text": "Her father had died that winter.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-9",
+      "scene": 4,
+      "start": 22.566666666666666,
+      "end": 25.166666666666668,
+      "text": "That evening, she opened the drawer.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-10",
+      "scene": 4,
+      "start": 25.3,
+      "end": 27.666666666666668,
+      "text": "Beneath the jokes was one line,",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-11",
+      "scene": 4,
+      "start": 27.8,
+      "end": 29.666666666666668,
+      "text": "written again and again:",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-12",
+      "scene": 4,
+      "start": 29.8,
+      "end": 31.533333333333335,
+      "text": "I am proud of you.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-13",
+      "scene": 5,
+      "start": 31.833333333333332,
+      "end": 35.4,
+      "text": "The next morning, Nina packed her little brother's lunch.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-14",
+      "scene": 5,
+      "start": 35.53333333333333,
+      "end": 37.56666666666667,
+      "text": "She could not draw like Dad.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-15",
+      "scene": 5,
+      "start": 37.7,
+      "end": 39.766666666666666,
+      "text": "She folded a note anyway.",
+      "evidenceType": "intended_script_not_asr"
+    }
+  ],
+  "intendedScenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 4.4
+    },
+    {
+      "scene": 2,
+      "start": 4.4,
+      "end": 13.433333333333334
+    },
+    {
+      "scene": 3,
+      "start": 13.433333333333334,
+      "end": 22.566666666666666
+    },
+    {
+      "scene": 4,
+      "start": 22.566666666666666,
+      "end": 31.833333333333332
+    },
+    {
+      "scene": 5,
+      "start": 31.833333333333332,
+      "end": 40.06666666666667
+    }
+  ],
+  "transcript": {
+    "status": "not_available",
+    "segments": [],
+    "languageVerified": false
+  },
+  "propsSha256": "b4903bf6a9d6ec014df17cd7dd0071280b1c45083e99f2d7deeb9d414e6a6407",
+  "review": {
+    "listened": false,
+    "visuallyReviewed": false,
+    "aiQaRun": false
+  },
+  "limits": [
+    "Sample timestamps are requested seek positions, rounded to a decoded frame; not every-frame inspection.",
+    "Intended cues are source timing, not recognized speech, OCR or proof of a visible reveal.",
+    "Imported ASR can be wrong. English declaration is not independent language verification.",
+    "Keyword search retrieves text. No semantic model, generated answers or creative score runs.",
+    "No new media generation, API call or upload is performed."
+  ]
+}

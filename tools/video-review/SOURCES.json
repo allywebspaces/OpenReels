@@ -1,0 +1,45 @@
++{
+  "reviewedOn": "2026-10-18",
+  "networkDuringReviewRuntime": false,
+  "newDependenciesInstalled": false,
+  "sources": [
+    {
+      "repo": "AtaUllahB/Python-Video-Audio-QA-System",
+      "commit": "fff796f66914775ccbe1a8e30211a90afdd6e93f",
+      "license": "No license detected in inspected tree",
+      "mode": "reference_only_no_third_party_code_copied"
+    },
+    {
+      "repo": "venkatavinayvijjapu/Video-analysis-and-QA-using-LLM",
+      "commit": "80c5a7fb94685ebaffbcaa73e7b7656e14725c51",
+      "license": "No license detected in inspected tree",
+      "mode": "reference_only_no_third_party_code_copied"
+    },
+    {
+      "repo": "vilsonrodrigues/youtube-retrieval-qa",
+      "commit": "c9ba7ec68f94773aa3f00eb60055845949eada42",
+      "license": "No license detected in inspected tree",
+      "mode": "reference_only_no_third_party_code_copied"
+    },
+    {
+      "repo": "chakravarthi589/Video-Question-Answering_Resources",
+      "commit": "6479363be6bd77bfa779e61ab4a8b95e73aadecb",
+      "license": "Apache-2.0",
+      "mode": "reference_only_no_third_party_code_copied"
+    },
+    {
+      "repo": "doc-doc/NExT-QA",
+      "commit": "2432e9724f88ed9f40010e2989f104570a91de4e",
+      "license": "MIT",
+      "mode": "reference_only_no_third_party_code_copied"
+    },
+    {
+      "url": "https://github.com/topics/video-rag",
+      "type": "mutable_discovery_page",
+      "observedRepositoryCount": 22,
+      "observedOn": "2026-10-18",
+      "mode": "reference_only_not_an_installable_repository",
+      "license": "Each linked repository requires separate review"
+    }
+  ]
+}

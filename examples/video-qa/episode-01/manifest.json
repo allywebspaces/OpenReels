@@ -1,0 +1,2351 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-18T20:57:44.062063+00:00",
+  "generatorSha256": "2c9faee81460eaebd4c4a769f6e4ce8bae64da67a4b4dac127790109271e2f15",
+  "templateSha256": "96b119c3faa158d89838ffac6defd3d4066a466edb7d59b2d02ced4ded7aa0b3",
+  "video": {
+    "sha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+    "file": "video.mp4",
+    "duration": 46.464,
+    "width": 720,
+    "height": 1280,
+    "fps": 30.0,
+    "pictureDuration": 46.4
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+    "ffprobe": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers"
+  },
+  "checks": {
+    "fullDecode": true,
+    "decodeOptions": "-v error -xerror; video and optional audio mapped; stderr must be empty"
+  },
+  "audio": {
+    "status": "measured_mono_16khz_pcm",
+    "windows": [
+      {
+        "start": 0.0,
+        "end": 0.25,
+        "rmsDbfs": -121.56,
+        "peakDbfs": -90.31,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 0.25,
+        "end": 0.5,
+        "rmsDbfs": -31.95,
+        "peakDbfs": -14.17,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 0.5,
+        "end": 0.75,
+        "rmsDbfs": -22.08,
+        "peakDbfs": -12.96,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 0.75,
+        "end": 1.0,
+        "rmsDbfs": -25.35,
+        "peakDbfs": -11.48,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.0,
+        "end": 1.25,
+        "rmsDbfs": -42.94,
+        "peakDbfs": -20.2,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.25,
+        "end": 1.5,
+        "rmsDbfs": -20.21,
+        "peakDbfs": -6.15,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.5,
+        "end": 1.75,
+        "rmsDbfs": -22.29,
+        "peakDbfs": -12.8,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 1.75,
+        "end": 2.0,
+        "rmsDbfs": -26.32,
+        "peakDbfs": -12.49,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.0,
+        "end": 2.25,
+        "rmsDbfs": -24.48,
+        "peakDbfs": -11.2,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.25,
+        "end": 2.5,
+        "rmsDbfs": -32.68,
+        "peakDbfs": -18.45,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.5,
+        "end": 2.75,
+        "rmsDbfs": -26.55,
+        "peakDbfs": -11.29,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 2.75,
+        "end": 3.0,
+        "rmsDbfs": -25.75,
+        "peakDbfs": -13.24,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 3.0,
+        "end": 3.25,
+        "rmsDbfs": -28.52,
+        "peakDbfs": -17.38,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 3.25,
+        "end": 3.5,
+        "rmsDbfs": -46.03,
+        "peakDbfs": -25.89,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 3.5,
+        "end": 3.75,
+        "rmsDbfs": -86.25,
+        "peakDbfs": -73.41,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 3.75,
+        "end": 4.0,
+        "rmsDbfs": -101.57,
+        "peakDbfs": -80.77,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.0,
+        "end": 4.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.25,
+        "end": 4.5,
+        "rmsDbfs": -57.09,
+        "peakDbfs": -37.78,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 4.5,
+        "end": 4.75,
+        "rmsDbfs": -20.33,
+        "peakDbfs": -10.15,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 4.75,
+        "end": 5.0,
+        "rmsDbfs": -26.45,
+        "peakDbfs": -15.2,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.0,
+        "end": 5.25,
+        "rmsDbfs": -41.56,
+        "peakDbfs": -26.27,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.25,
+        "end": 5.5,
+        "rmsDbfs": -21.54,
+        "peakDbfs": -11.15,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.5,
+        "end": 5.75,
+        "rmsDbfs": -22.68,
+        "peakDbfs": -10.62,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 5.75,
+        "end": 6.0,
+        "rmsDbfs": -27.4,
+        "peakDbfs": -11.87,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 6.0,
+        "end": 6.25,
+        "rmsDbfs": -41.25,
+        "peakDbfs": -21.6,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 6.25,
+        "end": 6.5,
+        "rmsDbfs": -80.48,
+        "peakDbfs": -67.39,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 6.5,
+        "end": 6.75,
+        "rmsDbfs": -101.42,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 6.75,
+        "end": 7.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 7.0,
+        "end": 7.25,
+        "rmsDbfs": -96.81,
+        "peakDbfs": -80.77,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 7.25,
+        "end": 7.5,
+        "rmsDbfs": -27.02,
+        "peakDbfs": -12.06,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 7.5,
+        "end": 7.75,
+        "rmsDbfs": -19.5,
+        "peakDbfs": -11.95,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 7.75,
+        "end": 8.0,
+        "rmsDbfs": -34.35,
+        "peakDbfs": -19.84,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 8.0,
+        "end": 8.25,
+        "rmsDbfs": -45.16,
+        "peakDbfs": -25.54,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 8.25,
+        "end": 8.5,
+        "rmsDbfs": -90.56,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 8.5,
+        "end": 8.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 8.75,
+        "end": 9.0,
+        "rmsDbfs": -90.15,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 9.0,
+        "end": 9.25,
+        "rmsDbfs": -18.78,
+        "peakDbfs": -8.02,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 9.25,
+        "end": 9.5,
+        "rmsDbfs": -23.89,
+        "peakDbfs": -13.67,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 9.5,
+        "end": 9.75,
+        "rmsDbfs": -29.47,
+        "peakDbfs": -14.54,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 9.75,
+        "end": 10.0,
+        "rmsDbfs": -29.82,
+        "peakDbfs": -16.98,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 10.0,
+        "end": 10.25,
+        "rmsDbfs": -45.2,
+        "peakDbfs": -25.28,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 10.25,
+        "end": 10.5,
+        "rmsDbfs": -79.96,
+        "peakDbfs": -67.39,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 10.5,
+        "end": 10.75,
+        "rmsDbfs": -111.14,
+        "peakDbfs": -84.29,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 10.75,
+        "end": 11.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 11.0,
+        "end": 11.25,
+        "rmsDbfs": -24.95,
+        "peakDbfs": -9.28,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.25,
+        "end": 11.5,
+        "rmsDbfs": -22.99,
+        "peakDbfs": -10.83,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.5,
+        "end": 11.75,
+        "rmsDbfs": -21.87,
+        "peakDbfs": -13.61,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 11.75,
+        "end": 12.0,
+        "rmsDbfs": -29.61,
+        "peakDbfs": -14.29,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 12.0,
+        "end": 12.25,
+        "rmsDbfs": -35.84,
+        "peakDbfs": -21.14,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 12.25,
+        "end": 12.5,
+        "rmsDbfs": -77.86,
+        "peakDbfs": -57.84,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 12.5,
+        "end": 12.75,
+        "rmsDbfs": -91.28,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 12.75,
+        "end": 13.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 13.0,
+        "end": 13.25,
+        "rmsDbfs": -89.79,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 13.25,
+        "end": 13.5,
+        "rmsDbfs": -23.36,
+        "peakDbfs": -9.81,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 13.5,
+        "end": 13.75,
+        "rmsDbfs": -22.34,
+        "peakDbfs": -14.4,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 13.75,
+        "end": 14.0,
+        "rmsDbfs": -41.78,
+        "peakDbfs": -25.66,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.0,
+        "end": 14.25,
+        "rmsDbfs": -21.54,
+        "peakDbfs": -10.37,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.25,
+        "end": 14.5,
+        "rmsDbfs": -24.57,
+        "peakDbfs": -11.19,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.5,
+        "end": 14.75,
+        "rmsDbfs": -28.63,
+        "peakDbfs": -14.58,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 14.75,
+        "end": 15.0,
+        "rmsDbfs": -41.83,
+        "peakDbfs": -26.46,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 15.0,
+        "end": 15.25,
+        "rmsDbfs": -81.9,
+        "peakDbfs": -70.31,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 15.25,
+        "end": 15.5,
+        "rmsDbfs": -98.9,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 15.5,
+        "end": 15.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 15.75,
+        "end": 16.0,
+        "rmsDbfs": -100.26,
+        "peakDbfs": -80.77,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 16.0,
+        "end": 16.25,
+        "rmsDbfs": -23.87,
+        "peakDbfs": -10.18,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 16.25,
+        "end": 16.5,
+        "rmsDbfs": -22.9,
+        "peakDbfs": -14.22,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 16.5,
+        "end": 16.75,
+        "rmsDbfs": -31.88,
+        "peakDbfs": -16.84,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 16.75,
+        "end": 17.0,
+        "rmsDbfs": -77.5,
+        "peakDbfs": -59.18,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 17.0,
+        "end": 17.25,
+        "rmsDbfs": -93.31,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 17.25,
+        "end": 17.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 17.5,
+        "end": 17.75,
+        "rmsDbfs": -27.65,
+        "peakDbfs": -7.74,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 17.75,
+        "end": 18.0,
+        "rmsDbfs": -21.94,
+        "peakDbfs": -9.09,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 18.0,
+        "end": 18.25,
+        "rmsDbfs": -22.36,
+        "peakDbfs": -11.19,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 18.25,
+        "end": 18.5,
+        "rmsDbfs": -32.69,
+        "peakDbfs": -19.02,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 18.5,
+        "end": 18.75,
+        "rmsDbfs": -36.94,
+        "peakDbfs": -21.67,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 18.75,
+        "end": 19.0,
+        "rmsDbfs": -83.36,
+        "peakDbfs": -70.31,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 19.0,
+        "end": 19.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 19.25,
+        "end": 19.5,
+        "rmsDbfs": -96.87,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 19.5,
+        "end": 19.75,
+        "rmsDbfs": -22.89,
+        "peakDbfs": -5.76,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 19.75,
+        "end": 20.0,
+        "rmsDbfs": -19.29,
+        "peakDbfs": -10.59,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 20.0,
+        "end": 20.25,
+        "rmsDbfs": -26.69,
+        "peakDbfs": -15.03,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 20.25,
+        "end": 20.5,
+        "rmsDbfs": -27.52,
+        "peakDbfs": -14.62,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 20.5,
+        "end": 20.75,
+        "rmsDbfs": -29.3,
+        "peakDbfs": -14.35,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 20.75,
+        "end": 21.0,
+        "rmsDbfs": -28.14,
+        "peakDbfs": -13.92,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 21.0,
+        "end": 21.25,
+        "rmsDbfs": -41.89,
+        "peakDbfs": -20.95,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 21.25,
+        "end": 21.5,
+        "rmsDbfs": -80.88,
+        "peakDbfs": -68.73,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 21.5,
+        "end": 21.75,
+        "rmsDbfs": -99.72,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 21.75,
+        "end": 22.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 22.0,
+        "end": 22.25,
+        "rmsDbfs": -65.06,
+        "peakDbfs": -44.29,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 22.25,
+        "end": 22.5,
+        "rmsDbfs": -18.68,
+        "peakDbfs": -7.04,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 22.5,
+        "end": 22.75,
+        "rmsDbfs": -23.9,
+        "peakDbfs": -13.4,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 22.75,
+        "end": 23.0,
+        "rmsDbfs": -31.06,
+        "peakDbfs": -17.34,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.0,
+        "end": 23.25,
+        "rmsDbfs": -25.74,
+        "peakDbfs": -13.6,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.25,
+        "end": 23.5,
+        "rmsDbfs": -27.84,
+        "peakDbfs": -17.08,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.5,
+        "end": 23.75,
+        "rmsDbfs": -33.16,
+        "peakDbfs": -17.98,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 23.75,
+        "end": 24.0,
+        "rmsDbfs": -46.29,
+        "peakDbfs": -26.46,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 24.0,
+        "end": 24.25,
+        "rmsDbfs": -84.69,
+        "peakDbfs": -72.25,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 24.25,
+        "end": 24.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 24.5,
+        "end": 24.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 24.75,
+        "end": 25.0,
+        "rmsDbfs": -92.85,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 25.0,
+        "end": 25.25,
+        "rmsDbfs": -20.99,
+        "peakDbfs": -7.18,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 25.25,
+        "end": 25.5,
+        "rmsDbfs": -22.99,
+        "peakDbfs": -14.07,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 25.5,
+        "end": 25.75,
+        "rmsDbfs": -27.92,
+        "peakDbfs": -11.9,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 25.75,
+        "end": 26.0,
+        "rmsDbfs": -26.07,
+        "peakDbfs": -17.1,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.0,
+        "end": 26.25,
+        "rmsDbfs": -30.65,
+        "peakDbfs": -16.5,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.25,
+        "end": 26.5,
+        "rmsDbfs": -38.58,
+        "peakDbfs": -21.17,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 26.5,
+        "end": 26.75,
+        "rmsDbfs": -82.48,
+        "peakDbfs": -71.22,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 26.75,
+        "end": 27.0,
+        "rmsDbfs": -104.45,
+        "peakDbfs": -80.77,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 27.0,
+        "end": 27.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 27.25,
+        "end": 27.5,
+        "rmsDbfs": -26.11,
+        "peakDbfs": -11.68,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 27.5,
+        "end": 27.75,
+        "rmsDbfs": -19.86,
+        "peakDbfs": -10.67,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 27.75,
+        "end": 28.0,
+        "rmsDbfs": -23.02,
+        "peakDbfs": -12.59,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.0,
+        "end": 28.25,
+        "rmsDbfs": -30.43,
+        "peakDbfs": -15.01,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.25,
+        "end": 28.5,
+        "rmsDbfs": -29.37,
+        "peakDbfs": -19.66,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.5,
+        "end": 28.75,
+        "rmsDbfs": -44.07,
+        "peakDbfs": -30.39,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 28.75,
+        "end": 29.0,
+        "rmsDbfs": -85.23,
+        "peakDbfs": -71.22,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 29.0,
+        "end": 29.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 29.25,
+        "end": 29.5,
+        "rmsDbfs": -94.41,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 29.5,
+        "end": 29.75,
+        "rmsDbfs": -25.2,
+        "peakDbfs": -10.07,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 29.75,
+        "end": 30.0,
+        "rmsDbfs": -24.06,
+        "peakDbfs": -12.23,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.0,
+        "end": 30.25,
+        "rmsDbfs": -23.05,
+        "peakDbfs": -11.8,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.25,
+        "end": 30.5,
+        "rmsDbfs": -26.33,
+        "peakDbfs": -12.77,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.5,
+        "end": 30.75,
+        "rmsDbfs": -36.77,
+        "peakDbfs": -21.13,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 30.75,
+        "end": 31.0,
+        "rmsDbfs": -66.19,
+        "peakDbfs": -46.39,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.0,
+        "end": 31.25,
+        "rmsDbfs": -90.05,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.25,
+        "end": 31.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.5,
+        "end": 31.75,
+        "rmsDbfs": -90.59,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 31.75,
+        "end": 32.0,
+        "rmsDbfs": -20.33,
+        "peakDbfs": -7.84,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 32.0,
+        "end": 32.25,
+        "rmsDbfs": -26.17,
+        "peakDbfs": -9.79,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 32.25,
+        "end": 32.5,
+        "rmsDbfs": -23.32,
+        "peakDbfs": -13.91,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 32.5,
+        "end": 32.75,
+        "rmsDbfs": -37.61,
+        "peakDbfs": -23.79,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 32.75,
+        "end": 33.0,
+        "rmsDbfs": -22.66,
+        "peakDbfs": -11.28,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.0,
+        "end": 33.25,
+        "rmsDbfs": -26.68,
+        "peakDbfs": -14.83,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.25,
+        "end": 33.5,
+        "rmsDbfs": -26.67,
+        "peakDbfs": -14.06,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.5,
+        "end": 33.75,
+        "rmsDbfs": -33.07,
+        "peakDbfs": -19.17,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 33.75,
+        "end": 34.0,
+        "rmsDbfs": -56.96,
+        "peakDbfs": -37.54,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 34.0,
+        "end": 34.25,
+        "rmsDbfs": -88.34,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 34.25,
+        "end": 34.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 34.5,
+        "end": 34.75,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 34.75,
+        "end": 35.0,
+        "rmsDbfs": -89.87,
+        "peakDbfs": -72.25,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 35.0,
+        "end": 35.25,
+        "rmsDbfs": -19.86,
+        "peakDbfs": -10.05,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 35.25,
+        "end": 35.5,
+        "rmsDbfs": -25.73,
+        "peakDbfs": -11.11,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 35.5,
+        "end": 35.75,
+        "rmsDbfs": -26.66,
+        "peakDbfs": -13.52,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 35.75,
+        "end": 36.0,
+        "rmsDbfs": -26.8,
+        "peakDbfs": -15.8,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 36.0,
+        "end": 36.25,
+        "rmsDbfs": -35.61,
+        "peakDbfs": -21.38,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 36.25,
+        "end": 36.5,
+        "rmsDbfs": -47.97,
+        "peakDbfs": -28.4,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 36.5,
+        "end": 36.75,
+        "rmsDbfs": -87.09,
+        "peakDbfs": -73.41,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 36.75,
+        "end": 37.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 37.0,
+        "end": 37.25,
+        "rmsDbfs": -93.17,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 37.25,
+        "end": 37.5,
+        "rmsDbfs": -19.97,
+        "peakDbfs": -8.77,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 37.5,
+        "end": 37.75,
+        "rmsDbfs": -21.6,
+        "peakDbfs": -12.0,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 37.75,
+        "end": 38.0,
+        "rmsDbfs": -29.08,
+        "peakDbfs": -16.14,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 38.0,
+        "end": 38.25,
+        "rmsDbfs": -34.69,
+        "peakDbfs": -17.99,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 38.25,
+        "end": 38.5,
+        "rmsDbfs": -80.15,
+        "peakDbfs": -68.03,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 38.5,
+        "end": 38.75,
+        "rmsDbfs": -93.21,
+        "peakDbfs": -76.33,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 38.75,
+        "end": 39.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 39.0,
+        "end": 39.25,
+        "rmsDbfs": -71.61,
+        "peakDbfs": -48.73,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 39.25,
+        "end": 39.5,
+        "rmsDbfs": -20.54,
+        "peakDbfs": -8.23,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 39.5,
+        "end": 39.75,
+        "rmsDbfs": -20.83,
+        "peakDbfs": -13.25,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 39.75,
+        "end": 40.0,
+        "rmsDbfs": -27.03,
+        "peakDbfs": -14.85,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 40.0,
+        "end": 40.25,
+        "rmsDbfs": -30.06,
+        "peakDbfs": -19.0,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 40.25,
+        "end": 40.5,
+        "rmsDbfs": -33.21,
+        "peakDbfs": -16.82,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 40.5,
+        "end": 40.75,
+        "rmsDbfs": -49.45,
+        "peakDbfs": -34.23,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 40.75,
+        "end": 41.0,
+        "rmsDbfs": -84.21,
+        "peakDbfs": -71.22,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 41.0,
+        "end": 41.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 41.25,
+        "end": 41.5,
+        "rmsDbfs": -96.0,
+        "peakDbfs": -78.27,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 41.5,
+        "end": 41.75,
+        "rmsDbfs": -24.49,
+        "peakDbfs": -9.85,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 41.75,
+        "end": 42.0,
+        "rmsDbfs": -25.01,
+        "peakDbfs": -15.91,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 42.0,
+        "end": 42.25,
+        "rmsDbfs": -30.31,
+        "peakDbfs": -18.14,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 42.25,
+        "end": 42.5,
+        "rmsDbfs": -19.41,
+        "peakDbfs": -8.39,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 42.5,
+        "end": 42.75,
+        "rmsDbfs": -24.22,
+        "peakDbfs": -10.12,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 42.75,
+        "end": 43.0,
+        "rmsDbfs": -29.28,
+        "peakDbfs": -15.11,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 43.0,
+        "end": 43.25,
+        "rmsDbfs": -37.69,
+        "peakDbfs": -23.01,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 43.25,
+        "end": 43.5,
+        "rmsDbfs": -61.92,
+        "peakDbfs": -36.76,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 43.5,
+        "end": 43.75,
+        "rmsDbfs": -91.11,
+        "peakDbfs": -74.75,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 43.75,
+        "end": 44.0,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 44.0,
+        "end": 44.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 44.25,
+        "end": 44.5,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 44.5,
+        "end": 44.75,
+        "rmsDbfs": -28.79,
+        "peakDbfs": -11.5,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 44.75,
+        "end": 45.0,
+        "rmsDbfs": -19.79,
+        "peakDbfs": -8.22,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 45.0,
+        "end": 45.25,
+        "rmsDbfs": -25.68,
+        "peakDbfs": -10.18,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 45.25,
+        "end": 45.5,
+        "rmsDbfs": -30.54,
+        "peakDbfs": -17.6,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 45.5,
+        "end": 45.75,
+        "rmsDbfs": -38.66,
+        "peakDbfs": -20.55,
+        "belowMinus45Dbfs": false
+      },
+      {
+        "start": 45.75,
+        "end": 46.0,
+        "rmsDbfs": -84.69,
+        "peakDbfs": -69.48,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 46.0,
+        "end": 46.25,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      },
+      {
+        "start": 46.25,
+        "end": 46.464,
+        "rmsDbfs": null,
+        "peakDbfs": null,
+        "belowMinus45Dbfs": true
+      }
+    ],
+    "peakDbfs": -5.76,
+    "nearFullScaleSamples": 0,
+    "limits": "RMS and peak of downmixed PCM are signal diagnostics, not LUFS, clipping proof, intelligibility or emotional-delivery scores.",
+    "sha256": "69696dddf9fbb87822e7e929fd6e10de70fee242a3a5d5aa0d245d8e92432330"
+  },
+  "frames": [
+    {
+      "id": "frame-0",
+      "time": 0.0,
+      "file": "frames/000.jpg",
+      "sha256": "d38624af46b55ac46c131bb9739a9489688b02fba0e06a40d9d4fdb1372f2da4"
+    },
+    {
+      "id": "frame-1",
+      "time": 0.033333,
+      "file": "frames/001.jpg",
+      "sha256": "75774fc68c3474353705eb2dbc139490f44b98d6a7cd397a65d6b8e825254a78"
+    },
+    {
+      "id": "frame-2",
+      "time": 2.0,
+      "file": "frames/002.jpg",
+      "sha256": "48d69fa0d88f3e0661af3631e55830623b86de0a8a4a7b1bd3954b4df8b0b5bd"
+    },
+    {
+      "id": "frame-3",
+      "time": 3.866667,
+      "file": "frames/003.jpg",
+      "sha256": "7111fd82c5c7e69bdf604f5f601692693834b8b747d162ebc202f9878c8c8522"
+    },
+    {
+      "id": "frame-4",
+      "time": 3.9,
+      "file": "frames/004.jpg",
+      "sha256": "01a5013f1f29267825969859dc9f13b343c7bbcdb7a3ba979b91abc09c988437"
+    },
+    {
+      "id": "frame-5",
+      "time": 3.933333,
+      "file": "frames/005.jpg",
+      "sha256": "9a7a0c50b4650e6def25aaede38f474c124177529e9caa1803cdca60fb2a88b7"
+    },
+    {
+      "id": "frame-6",
+      "time": 4.0,
+      "file": "frames/006.jpg",
+      "sha256": "32277286668b3c8c52784d240fd2d4d150cf8c4e7a9a4e88ab5b8c3f331746d9"
+    },
+    {
+      "id": "frame-7",
+      "time": 4.033333,
+      "file": "frames/007.jpg",
+      "sha256": "ea5d6a6000ebbc16be91f1aeb9fea1a6088e7b4918f3bc0f3d7d42a8e2d9b654"
+    },
+    {
+      "id": "frame-8",
+      "time": 4.066667,
+      "file": "frames/008.jpg",
+      "sha256": "12dd178c9457dbd70886e6572696a6024473390eafc657c8d48ca6f06d4f3b36"
+    },
+    {
+      "id": "frame-9",
+      "time": 6.0,
+      "file": "frames/009.jpg",
+      "sha256": "a232219c3e5870af294d73dbb7b9b5b0d542a7d2800fa24c5a1cf6f61473fa39"
+    },
+    {
+      "id": "frame-10",
+      "time": 6.633333,
+      "file": "frames/010.jpg",
+      "sha256": "da725b59858ce7a4fde558d7e7afd66f227981f471e113cab887ef381f222606"
+    },
+    {
+      "id": "frame-11",
+      "time": 6.666667,
+      "file": "frames/011.jpg",
+      "sha256": "db920245135c763c2767f8b90242f334b93d2d719eb3fa2aad2089e79c8c3050"
+    },
+    {
+      "id": "frame-12",
+      "time": 6.7,
+      "file": "frames/012.jpg",
+      "sha256": "e1d7610fa1d7aba877d8bf6dc912b2d14dccedd8c18bb6d890bccfbe4cb7fa21"
+    },
+    {
+      "id": "frame-13",
+      "time": 6.933333,
+      "file": "frames/013.jpg",
+      "sha256": "72c7b81fc1ea24edb52b8536022f10a721ac8054e27e33984eedbb52c595bdfe"
+    },
+    {
+      "id": "frame-14",
+      "time": 6.966667,
+      "file": "frames/014.jpg",
+      "sha256": "3876b99d0ba0e9ca4575da2f6b21e5241666fe77b8af3fc257e670fa4f4c0ef8"
+    },
+    {
+      "id": "frame-15",
+      "time": 7.0,
+      "file": "frames/015.jpg",
+      "sha256": "5c9a1937cf8b147358df5a1ee02cfb4eca3157697b1131d782e78713585b87aa"
+    },
+    {
+      "id": "frame-16",
+      "time": 8.0,
+      "file": "frames/016.jpg",
+      "sha256": "db465783988684b517c556c8f783f1f30795dcdd37c1542b1a54964e11baf231"
+    },
+    {
+      "id": "frame-17",
+      "time": 8.433333,
+      "file": "frames/017.jpg",
+      "sha256": "2b2fd73921c64d771f9d3215c1c9e811226fef82bd367e718c741f002f442845"
+    },
+    {
+      "id": "frame-18",
+      "time": 8.466667,
+      "file": "frames/018.jpg",
+      "sha256": "d238077f9013e01946ad84e1c77d09e629f01c1aaa6bef5a63b32d45b7364c8d"
+    },
+    {
+      "id": "frame-19",
+      "time": 8.5,
+      "file": "frames/019.jpg",
+      "sha256": "b6c4a9e3b9298ff0780f1b702f871a3c30726221bdc9424b2ea0af1617900692"
+    },
+    {
+      "id": "frame-20",
+      "time": 8.566667,
+      "file": "frames/020.jpg",
+      "sha256": "e7f1daf28189128458c370f90614e0509e2fc291370bfbeb1fa01dd5af2cd338"
+    },
+    {
+      "id": "frame-21",
+      "time": 8.6,
+      "file": "frames/021.jpg",
+      "sha256": "0e053b7720fd02c3a72144c0c264a6ee56f6897b85c2071a5e780fb314354b1b"
+    },
+    {
+      "id": "frame-22",
+      "time": 8.633333,
+      "file": "frames/022.jpg",
+      "sha256": "8ffd74fd4005183eee3b8cc1c807f8d6f8ba4981defd24ae3d1fa56b7bdceaca"
+    },
+    {
+      "id": "frame-23",
+      "time": 10.0,
+      "file": "frames/023.jpg",
+      "sha256": "16b07c4086a77a6b2cbf88b194e430bbb0ccc85a6faf173cb383bbf552288aa7"
+    },
+    {
+      "id": "frame-24",
+      "time": 10.633333,
+      "file": "frames/024.jpg",
+      "sha256": "cafca9304a2f7ee71c219e275bb612137a7d7ddfdb110991918216f7cebf86a1"
+    },
+    {
+      "id": "frame-25",
+      "time": 10.666667,
+      "file": "frames/025.jpg",
+      "sha256": "76ed7ee46b38a91b6c4eba9997f8bf4ddc5a39efea02291c4c6f4fc956d03b5d"
+    },
+    {
+      "id": "frame-26",
+      "time": 10.7,
+      "file": "frames/026.jpg",
+      "sha256": "9194f00546b3394530a3f17efaca4c29822b48f977bcc79d76d2f766a5494cc9"
+    },
+    {
+      "id": "frame-27",
+      "time": 10.733333,
+      "file": "frames/027.jpg",
+      "sha256": "3ece8ef2cc1c64007b1b70457266f3a3abf339e6040dbc357ae97075c5458f89"
+    },
+    {
+      "id": "frame-28",
+      "time": 10.766667,
+      "file": "frames/028.jpg",
+      "sha256": "b41401cf4c577f3414e19d0c9a9434dee31332459336cb5fb9d6da0811c6c8e1"
+    },
+    {
+      "id": "frame-29",
+      "time": 10.8,
+      "file": "frames/029.jpg",
+      "sha256": "9ad8c8872edce8a64a86e51600a3a5ef918ad084750e3b19dfc11d27d3c18f76"
+    },
+    {
+      "id": "frame-30",
+      "time": 12.0,
+      "file": "frames/030.jpg",
+      "sha256": "e15408568e53f1a424280fd9e089834c5da9506ba9638bc5236376fd16291d9e"
+    },
+    {
+      "id": "frame-31",
+      "time": 12.7,
+      "file": "frames/031.jpg",
+      "sha256": "a44feb52f9e2d0242754c50a82713b39c585c1314a310250367623db57bd4381"
+    },
+    {
+      "id": "frame-32",
+      "time": 12.733333,
+      "file": "frames/032.jpg",
+      "sha256": "11514159e785c4eea75bfee948b0720b3681faf7eb79b3c443875adb435fa297"
+    },
+    {
+      "id": "frame-33",
+      "time": 12.766667,
+      "file": "frames/033.jpg",
+      "sha256": "0bb0639f1646be748b6ae554fb92fac9d4eb04c98bde67948d68b1759504c88e"
+    },
+    {
+      "id": "frame-34",
+      "time": 12.8,
+      "file": "frames/034.jpg",
+      "sha256": "b057ff9f857290eace1051cf80beeec3c766bb2a35adf100031b35770e1782df"
+    },
+    {
+      "id": "frame-35",
+      "time": 12.833333,
+      "file": "frames/035.jpg",
+      "sha256": "204f000597dd3cd397337ef037f09ada5574e7508dbe5bb431bea19752278ac9"
+    },
+    {
+      "id": "frame-36",
+      "time": 12.866667,
+      "file": "frames/036.jpg",
+      "sha256": "58ebed834bc6449d1d1c783304701fe0149ec8b66b16dae22c24796a4c5ff216"
+    },
+    {
+      "id": "frame-37",
+      "time": 14.0,
+      "file": "frames/037.jpg",
+      "sha256": "edec374b696150d7034812653ff4e0dd431b3b5ff3abe8ee6887bd2ab640162d"
+    },
+    {
+      "id": "frame-38",
+      "time": 15.4,
+      "file": "frames/038.jpg",
+      "sha256": "3713871eb15149a908081f8097c070f4d4f5605d7f2a4209ac9854a4ed3ef11e"
+    },
+    {
+      "id": "frame-39",
+      "time": 15.433333,
+      "file": "frames/039.jpg",
+      "sha256": "ca6ce1b4dc167dc98eaba8e743482a72646429d473f250d715bcac2186986687"
+    },
+    {
+      "id": "frame-40",
+      "time": 15.466667,
+      "file": "frames/040.jpg",
+      "sha256": "663b164869be140c0e9160535b4a4820415c00b9c84a83d4bdd66f4292d78bb1"
+    },
+    {
+      "id": "frame-41",
+      "time": 15.7,
+      "file": "frames/041.jpg",
+      "sha256": "96ca4d4496bdbafd4948637e542b1110ba3e7095d79971b27d0fa9652828ecb6"
+    },
+    {
+      "id": "frame-42",
+      "time": 15.733333,
+      "file": "frames/042.jpg",
+      "sha256": "36f77420feab3abfce789642bc26ba8311809dc6836c484c222c1135aa6ef7f1"
+    },
+    {
+      "id": "frame-43",
+      "time": 15.766667,
+      "file": "frames/043.jpg",
+      "sha256": "78f2e165e8fa7da698ddae35f918f44d1094ffe2f86a720f7c76f8c7c51538cb"
+    },
+    {
+      "id": "frame-44",
+      "time": 16.0,
+      "file": "frames/044.jpg",
+      "sha256": "92c8ffa57618097d229bcbc9eb968a09a5ff558ebdd4e45887feb746559e2c02"
+    },
+    {
+      "id": "frame-45",
+      "time": 17.166667,
+      "file": "frames/045.jpg",
+      "sha256": "4161a42e7cd11576166c043da2183c205b85b48e415a67d138c880a45d96c935"
+    },
+    {
+      "id": "frame-46",
+      "time": 17.2,
+      "file": "frames/046.jpg",
+      "sha256": "94d819c389f9aa2ea311f9a634f6e221fee39d32fe639a332be8a9bebc268b68"
+    },
+    {
+      "id": "frame-47",
+      "time": 17.233333,
+      "file": "frames/047.jpg",
+      "sha256": "95d363dbd3f43b5c6f40dfc1c724110ff59f20a785f8739fd3e8bdf8e091b0d0"
+    },
+    {
+      "id": "frame-48",
+      "time": 17.3,
+      "file": "frames/048.jpg",
+      "sha256": "7481e4382da8e9524df2eaae63385da5c9cf4052a8b577a2dd2be6a7805ee4c5"
+    },
+    {
+      "id": "frame-49",
+      "time": 17.333333,
+      "file": "frames/049.jpg",
+      "sha256": "cfcb0e6e37f9697b28f4ccecf819c837521b8b7a3b19625d2bf1bb958f0bf7c2"
+    },
+    {
+      "id": "frame-50",
+      "time": 17.366667,
+      "file": "frames/050.jpg",
+      "sha256": "ffc680e2df32b1a26cf8dd90010c54c05bf092c478b56f146ba548d99131b0c9"
+    },
+    {
+      "id": "frame-51",
+      "time": 18.0,
+      "file": "frames/051.jpg",
+      "sha256": "43f0f482876ace0da9f737dd09c5edea6dfe6b6604c3e703d1f2c0f74419180e"
+    },
+    {
+      "id": "frame-52",
+      "time": 19.1,
+      "file": "frames/052.jpg",
+      "sha256": "62ec95db419d75cde0d9b59b76d6fc25e90c9c3ac00e72db0a5841dae3e4f24d"
+    },
+    {
+      "id": "frame-53",
+      "time": 19.133333,
+      "file": "frames/053.jpg",
+      "sha256": "751e668d42ac6b5e2b4c8afb1644cfe2c569e54f0561310db5b76101f5f53b4b"
+    },
+    {
+      "id": "frame-54",
+      "time": 19.166667,
+      "file": "frames/054.jpg",
+      "sha256": "3424e1b1eb57e77d1aeb45411bd0c134e5666094cbb09a4212d97e32667a4d75"
+    },
+    {
+      "id": "frame-55",
+      "time": 19.2,
+      "file": "frames/055.jpg",
+      "sha256": "ae83de69ac619ba1310c002fb694fc48df3aeb8948765ae1f48ae85bb62c49b3"
+    },
+    {
+      "id": "frame-56",
+      "time": 19.233333,
+      "file": "frames/056.jpg",
+      "sha256": "0f0b6d8bc57c14caeb49192db66faecaaa241313b7d16c6cc4171eb0fe5fb756"
+    },
+    {
+      "id": "frame-57",
+      "time": 19.266667,
+      "file": "frames/057.jpg",
+      "sha256": "f4e2317c66ec431f3c3c33f9a9b668fe0b6312a3cb6c9fbeddc639abfb420977"
+    },
+    {
+      "id": "frame-58",
+      "time": 20.0,
+      "file": "frames/058.jpg",
+      "sha256": "75f614d78246fba1e6cfd4550c2bd24653aec0f8b3f7a631775884793e99c3c5"
+    },
+    {
+      "id": "frame-59",
+      "time": 21.633333,
+      "file": "frames/059.jpg",
+      "sha256": "abd9e061d0e1b1fec7fb656046fefd2891cf0183166271062cf1176acf39bfa5"
+    },
+    {
+      "id": "frame-60",
+      "time": 21.666667,
+      "file": "frames/060.jpg",
+      "sha256": "a2c8c9fff54a1434bead5c8e2e5c27be646732f9434849b098c14f2c6b7ee7ee"
+    },
+    {
+      "id": "frame-61",
+      "time": 21.7,
+      "file": "frames/061.jpg",
+      "sha256": "a2dd84b59a9562aecf6a8f8aefe4b806b1d6d621f2e88fc4be91eadb889a6365"
+    },
+    {
+      "id": "frame-62",
+      "time": 21.766667,
+      "file": "frames/062.jpg",
+      "sha256": "5451ca87def03045465d49dbe7077287d2087b87c1c53971f490d17311086f0a"
+    },
+    {
+      "id": "frame-63",
+      "time": 21.8,
+      "file": "frames/063.jpg",
+      "sha256": "d1608872dca07c4cca402161ac39d6146cf620d7b70ac09312483c0ca01f7e7c"
+    },
+    {
+      "id": "frame-64",
+      "time": 21.833333,
+      "file": "frames/064.jpg",
+      "sha256": "897158df4516446a4d98bd2027064b20b26c1a42b3726a7dfa71d5b87f8fe679"
+    },
+    {
+      "id": "frame-65",
+      "time": 22.0,
+      "file": "frames/065.jpg",
+      "sha256": "6282458308945c9e14e21ee84f71a8d460d9b24113e9b7303a582e9c68c6eb65"
+    },
+    {
+      "id": "frame-66",
+      "time": 24.0,
+      "file": "frames/066.jpg",
+      "sha256": "4f5d4066bfdd38fde6b3cb728e67ce1498082dbe28606485163708ae718de92d"
+    },
+    {
+      "id": "frame-67",
+      "time": 24.333333,
+      "file": "frames/067.jpg",
+      "sha256": "bcb17518cd9d7f89a2ce36acee89bf6fa921fa20b8037187ce2640e53e2e45f0"
+    },
+    {
+      "id": "frame-68",
+      "time": 24.366667,
+      "file": "frames/068.jpg",
+      "sha256": "bc18631a827ce69b70d3a0978412a43f76a0204525f4ffd7b04af1202aced93a"
+    },
+    {
+      "id": "frame-69",
+      "time": 24.4,
+      "file": "frames/069.jpg",
+      "sha256": "844f20dceb914287d48f946ea4ac3a1d650d08f74e0968f9255aa9abdf005291"
+    },
+    {
+      "id": "frame-70",
+      "time": 24.633333,
+      "file": "frames/070.jpg",
+      "sha256": "7bc4b9b746b2072a4889abedfee025398bda6dac7733413afc7c43ab1bafbee2"
+    },
+    {
+      "id": "frame-71",
+      "time": 24.666667,
+      "file": "frames/071.jpg",
+      "sha256": "c5578bef0a361551bff2424e80d619cdcec6b26032f61647206becfaa6845d38"
+    },
+    {
+      "id": "frame-72",
+      "time": 24.7,
+      "file": "frames/072.jpg",
+      "sha256": "262ec348c1915ef5bb89110db4284074e66b05286952016c4785e974591e5927"
+    },
+    {
+      "id": "frame-73",
+      "time": 26.0,
+      "file": "frames/073.jpg",
+      "sha256": "70f03e4b50e6bac85d23ac9240f7e057bff7325a2d2f5f3ec351a2ba838197a4"
+    },
+    {
+      "id": "frame-74",
+      "time": 26.866667,
+      "file": "frames/074.jpg",
+      "sha256": "bdcaffbe86b8e44ae5c0d74912d846cafd473193555e4568f6f749b78b9e0d47"
+    },
+    {
+      "id": "frame-75",
+      "time": 26.9,
+      "file": "frames/075.jpg",
+      "sha256": "ddc4bdc479ef7beb99beee3801254a26b6c2d9569e136b9f6c6495964debd07a"
+    },
+    {
+      "id": "frame-76",
+      "time": 26.933333,
+      "file": "frames/076.jpg",
+      "sha256": "dc740ba0e936399fdff429e74654f9f0b6f86f5728ee778d061d695d7d96bd43"
+    },
+    {
+      "id": "frame-77",
+      "time": 27.0,
+      "file": "frames/077.jpg",
+      "sha256": "8be2e8c2594fd44b0518ef935f24a1891e56b3f7d94c92948170c97e25dffadc"
+    },
+    {
+      "id": "frame-78",
+      "time": 27.033333,
+      "file": "frames/078.jpg",
+      "sha256": "a9d9276a7d439e9fb5109f1c8974785897d74b9c121213f98318fae8f7f41a5f"
+    },
+    {
+      "id": "frame-79",
+      "time": 27.066667,
+      "file": "frames/079.jpg",
+      "sha256": "2dc3f06661452a81a3ab15ea4900f70a73fa303d8f7c2fafe27ecbb331ce3988"
+    },
+    {
+      "id": "frame-80",
+      "time": 28.0,
+      "file": "frames/080.jpg",
+      "sha256": "c4cd49ca610b854b1b0aaa120c68d8c9d0c529e4c668df507da7c117049c63e6"
+    },
+    {
+      "id": "frame-81",
+      "time": 29.033333,
+      "file": "frames/081.jpg",
+      "sha256": "6d70acb52ea80846c62240d4c90d1d8d718f8f3bed53c026730d0019c387e230"
+    },
+    {
+      "id": "frame-82",
+      "time": 29.066667,
+      "file": "frames/082.jpg",
+      "sha256": "9227a9b86915d78596493fff457fed6bd2048848d2dfb4265c9add1d244326d8"
+    },
+    {
+      "id": "frame-83",
+      "time": 29.1,
+      "file": "frames/083.jpg",
+      "sha256": "ed39d59e4d30a93374e2ab00e009b11522ead999b78656bc6b13fedda90ca585"
+    },
+    {
+      "id": "frame-84",
+      "time": 29.166667,
+      "file": "frames/084.jpg",
+      "sha256": "d9aad512c80d91c742df68f9cc16b337d5a9367e9cc49a54fc5bc52ce8820182"
+    },
+    {
+      "id": "frame-85",
+      "time": 29.2,
+      "file": "frames/085.jpg",
+      "sha256": "7a484683ba777e99cb32571b04cee4beadffabff16fe056664de41c348fa4b68"
+    },
+    {
+      "id": "frame-86",
+      "time": 29.233333,
+      "file": "frames/086.jpg",
+      "sha256": "91b57cdf7b421f18f39f006a6d6b06ca12a409fa7f1825f926ea5417ddbce85a"
+    },
+    {
+      "id": "frame-87",
+      "time": 30.0,
+      "file": "frames/087.jpg",
+      "sha256": "080ac2510619ab05a13f81311aa46ffe69bbc5a640eccf7d3567185fb1b72a2d"
+    },
+    {
+      "id": "frame-88",
+      "time": 31.2,
+      "file": "frames/088.jpg",
+      "sha256": "f4890a04648488b1b7b75bdb960f3d80c279b8c2748accec408f0a928a4428d7"
+    },
+    {
+      "id": "frame-89",
+      "time": 31.233333,
+      "file": "frames/089.jpg",
+      "sha256": "389051d372d4fe592ea5bcc2269789c48856483e8418d76fc9a7d640a77f76f3"
+    },
+    {
+      "id": "frame-90",
+      "time": 31.266667,
+      "file": "frames/090.jpg",
+      "sha256": "362e0658093d0e25c1d61056153f98a32d61247f30b217770f5366bee1c6ae4d"
+    },
+    {
+      "id": "frame-91",
+      "time": 31.333333,
+      "file": "frames/091.jpg",
+      "sha256": "61c39e778dfd53e1d5b5c587874c751ca68e5548ca2143e4104c5eae60816ed0"
+    },
+    {
+      "id": "frame-92",
+      "time": 31.366667,
+      "file": "frames/092.jpg",
+      "sha256": "088dc8f1ba9b5f744bad7bc3e2bac4788612070e95104f2e99030701c840a097"
+    },
+    {
+      "id": "frame-93",
+      "time": 31.4,
+      "file": "frames/093.jpg",
+      "sha256": "422aa9214ce1e79ab0f25c2f4621505e8c5fb741e57ee69a8386c941d175c5b9"
+    },
+    {
+      "id": "frame-94",
+      "time": 32.0,
+      "file": "frames/094.jpg",
+      "sha256": "a0107abdf5bc4eec141db13dd85e84a69dec4c11f9a5fed44b1408ce0de7e251"
+    },
+    {
+      "id": "frame-95",
+      "time": 34.0,
+      "file": "frames/095.jpg",
+      "sha256": "943e9317e02be4bd7ffbc748f93c7c8cea34092a3345a2bdd77358b45ff3954b"
+    },
+    {
+      "id": "frame-96",
+      "time": 34.266667,
+      "file": "frames/096.jpg",
+      "sha256": "60a7dc5cda391f9d8e85adf515681f3b1d0d66ba9e0848ef6a5764996bd025a9"
+    },
+    {
+      "id": "frame-97",
+      "time": 34.3,
+      "file": "frames/097.jpg",
+      "sha256": "699c358a82f76b49bf056f44bb36ed76956d370e8a6053c877078ec695f3972c"
+    },
+    {
+      "id": "frame-98",
+      "time": 34.333333,
+      "file": "frames/098.jpg",
+      "sha256": "246f1e5df831c0db527c4d5c81a783d8e5d98b6285ae75ca69e95bfaf50071e1"
+    },
+    {
+      "id": "frame-99",
+      "time": 34.566667,
+      "file": "frames/099.jpg",
+      "sha256": "4e34885b45d67a4696797496d76cfcbbe5aa10e86b051321c6aa92842e487cce"
+    },
+    {
+      "id": "frame-100",
+      "time": 34.6,
+      "file": "frames/100.jpg",
+      "sha256": "3769e859ca515f352708a0b896b7afbe9ceacb191c613da1fbc08c4005eaa9ec"
+    },
+    {
+      "id": "frame-101",
+      "time": 34.633333,
+      "file": "frames/101.jpg",
+      "sha256": "cfbb18c18a07337771f97ffc02a8a10b3c514961124ebd659ff2ae267f3dd2bf"
+    },
+    {
+      "id": "frame-102",
+      "time": 36.0,
+      "file": "frames/102.jpg",
+      "sha256": "35c6b0c2e64ff68c9b34fea532a64e7f98719607e7212d27f29c91ac9cb489c4"
+    },
+    {
+      "id": "frame-103",
+      "time": 36.766667,
+      "file": "frames/103.jpg",
+      "sha256": "07567525a28b183a1351ece544145b511bc32541ccd8f077edf0059be380ee33"
+    },
+    {
+      "id": "frame-104",
+      "time": 36.8,
+      "file": "frames/104.jpg",
+      "sha256": "facbe28aac7ce2115275e6e26e4c4f2e804d3407dbdb69bf92c8318a749586d5"
+    },
+    {
+      "id": "frame-105",
+      "time": 36.833333,
+      "file": "frames/105.jpg",
+      "sha256": "24b1d201780267659ddf1fd82c8c9f3f7d144bb0fecf386443346c2097d3b05e"
+    },
+    {
+      "id": "frame-106",
+      "time": 36.866667,
+      "file": "frames/106.jpg",
+      "sha256": "e48a35230acf85a9fa1b46c579c58efc783dcc8634421f139d684b2bcd435ee5"
+    },
+    {
+      "id": "frame-107",
+      "time": 36.9,
+      "file": "frames/107.jpg",
+      "sha256": "3a28f56b81d47b92188190885f7c1f59db4fc27730f25192408e59cbe1d9bc1e"
+    },
+    {
+      "id": "frame-108",
+      "time": 36.933333,
+      "file": "frames/108.jpg",
+      "sha256": "1813535b356bbb63e66650e8d3955a10fc12924ad2604bd9fcd0880ce4680f95"
+    },
+    {
+      "id": "frame-109",
+      "time": 38.0,
+      "file": "frames/109.jpg",
+      "sha256": "7ce2ff08310a2b05d7fed2e579d1b2c17307b5c582e830a11b98f44d6d6f7a57"
+    },
+    {
+      "id": "frame-110",
+      "time": 38.666667,
+      "file": "frames/110.jpg",
+      "sha256": "283bbb6f26b3116c729eaca812c4f3c0f0d45c7a141389626f0cf904c9ab725c"
+    },
+    {
+      "id": "frame-111",
+      "time": 38.7,
+      "file": "frames/111.jpg",
+      "sha256": "78af72b58a0678c0f5fa50da30e01b27fffd6653d5aa60f623d9fae494c126db"
+    },
+    {
+      "id": "frame-112",
+      "time": 38.733333,
+      "file": "frames/112.jpg",
+      "sha256": "15e420ed46771d25a3a78e5eab69cf6d9d8b4984c22f86413ffa2c3498856cb4"
+    },
+    {
+      "id": "frame-113",
+      "time": 38.8,
+      "file": "frames/113.jpg",
+      "sha256": "e51e838ff1203dcf7486d658ce4ae8432e45808121a4dbc3aa2ab5a11b10d298"
+    },
+    {
+      "id": "frame-114",
+      "time": 38.833333,
+      "file": "frames/114.jpg",
+      "sha256": "13d524e5f9477fd551fc154d56451f015ed517e33cb5009ab3bd67538dcac978"
+    },
+    {
+      "id": "frame-115",
+      "time": 38.866667,
+      "file": "frames/115.jpg",
+      "sha256": "2a5c6078adaaedfbd0e9d2e084cede961c2195a308982a28cb7e9757ae1a2246"
+    },
+    {
+      "id": "frame-116",
+      "time": 40.0,
+      "file": "frames/116.jpg",
+      "sha256": "133c9976de1c825b255ba8f7ca48887bf2c113e10e42ca93b14c2c458903bad8"
+    },
+    {
+      "id": "frame-117",
+      "time": 41.066667,
+      "file": "frames/117.jpg",
+      "sha256": "6fe9ece5507cc9d9ac68aff44025813dc12bd794e290158bae462f6e2c56945e"
+    },
+    {
+      "id": "frame-118",
+      "time": 41.1,
+      "file": "frames/118.jpg",
+      "sha256": "5b79023c51d5f802e7b9336c66368fc339e4b5f61652c314583bc00fd26d733d"
+    },
+    {
+      "id": "frame-119",
+      "time": 41.133333,
+      "file": "frames/119.jpg",
+      "sha256": "ce704dc5a172d0c201d323dce76eef2cd645af9369f81787eacb1df1eb37572f"
+    },
+    {
+      "id": "frame-120",
+      "time": 41.2,
+      "file": "frames/120.jpg",
+      "sha256": "7bbd04d2678889c5d1f86afb5f10a16f063a0e25cc7b3101403a707620136f69"
+    },
+    {
+      "id": "frame-121",
+      "time": 41.233333,
+      "file": "frames/121.jpg",
+      "sha256": "28cb7dddfbce938a0c119b5dddb453d444397f7f12d0c8978a6ca537a619ecee"
+    },
+    {
+      "id": "frame-122",
+      "time": 41.266667,
+      "file": "frames/122.jpg",
+      "sha256": "3ee3d9b47b38345688532e4686b8353a42225b6136375e393cc87b5ea80580d1"
+    },
+    {
+      "id": "frame-123",
+      "time": 42.0,
+      "file": "frames/123.jpg",
+      "sha256": "a88b68aac4290f4003a49414793f0c6749a6ed7ca70badf271188e8714d8fefc"
+    },
+    {
+      "id": "frame-124",
+      "time": 43.7,
+      "file": "frames/124.jpg",
+      "sha256": "27b2110370fcea187b81e8182c0b662d1848919b7f68d89edb0ab87d872264b8"
+    },
+    {
+      "id": "frame-125",
+      "time": 43.733333,
+      "file": "frames/125.jpg",
+      "sha256": "2dd071e410975fd3d2f3d4e2961fd593ba41d9dc2dd2cbb8017904e01ed0d54d"
+    },
+    {
+      "id": "frame-126",
+      "time": 43.766667,
+      "file": "frames/126.jpg",
+      "sha256": "813d66887c9b68ba9bc46682f43c9436bf0a60fa263e9a7cfe238d2f556d0571"
+    },
+    {
+      "id": "frame-127",
+      "time": 44.0,
+      "file": "frames/127.jpg",
+      "sha256": "138a33cd27e8aff511dad110846872ad8896aa022ea98d6d7c9618aeb698982d"
+    },
+    {
+      "id": "frame-128",
+      "time": 44.233333,
+      "file": "frames/128.jpg",
+      "sha256": "a3a50189070947744fd1fbbe876f4b4a60dd6f334d096e904e1ba1811d2ed526"
+    },
+    {
+      "id": "frame-129",
+      "time": 44.266667,
+      "file": "frames/129.jpg",
+      "sha256": "36270faf2de3fd46ce9e2d1c055398c9ffd0794449960fc1f52919a97dabb81f"
+    },
+    {
+      "id": "frame-130",
+      "time": 44.3,
+      "file": "frames/130.jpg",
+      "sha256": "c8154607ebe44de1ff10a4b157b4929e1167bfc8d6027f54d27ad8ce6e40a6d1"
+    },
+    {
+      "id": "frame-131",
+      "time": 46.0,
+      "file": "frames/131.jpg",
+      "sha256": "5d0c91e6c735c08f9b745108989a1eeeb39e331c0922070ec151ef913554d9d2"
+    },
+    {
+      "id": "frame-132",
+      "time": 46.066667,
+      "file": "frames/132.jpg",
+      "sha256": "1b51d0f4d94ebc6fa50838a427d5b23543203b34c1c1241fe14e99c2931080b6"
+    },
+    {
+      "id": "frame-133",
+      "time": 46.1,
+      "file": "frames/133.jpg",
+      "sha256": "db57a38e7c14692f80d914b681cb3b277e2d0fd23ae85215a8e04a072393b10c"
+    },
+    {
+      "id": "frame-134",
+      "time": 46.133333,
+      "file": "frames/134.jpg",
+      "sha256": "9899c61efbe3d53c755020d0505386b7149b51a8f7beed8325bd7a093f7aace6"
+    },
+    {
+      "id": "frame-135",
+      "time": 46.366566666666664,
+      "file": "frames/135.jpg",
+      "sha256": "32a6a3e5a7bfd58b5d52833eaf059b7746c2dea99a6734329bdd1914d10cb4a4"
+    }
+  ],
+  "intendedCues": [
+    {
+      "id": "cue-1",
+      "scene": 1,
+      "start": 0.0,
+      "end": 3.9,
+      "text": "At midnight, Maya received a message from her own number.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-2",
+      "scene": 1,
+      "start": 4.033333333333333,
+      "end": 6.666666666666667,
+      "text": "Four words: Don't open the door.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-3",
+      "scene": 2,
+      "start": 6.966666666666667,
+      "end": 8.466666666666667,
+      "text": "Three knocks.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-4",
+      "scene": 2,
+      "start": 8.6,
+      "end": 10.666666666666666,
+      "text": "Maya reached for the lock.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-5",
+      "scene": 2,
+      "start": 10.766666666666667,
+      "end": 12.733333333333333,
+      "text": "Her phone lit up again.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-6",
+      "scene": 2,
+      "start": 12.833333333333334,
+      "end": 15.433333333333334,
+      "text": "This time, it was a photograph.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-7",
+      "scene": 3,
+      "start": 15.733333333333333,
+      "end": 17.2,
+      "text": "Her hallway.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-8",
+      "scene": 3,
+      "start": 17.333333333333332,
+      "end": 19.133333333333333,
+      "text": "The crooked picture.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-9",
+      "scene": 3,
+      "start": 19.233333333333334,
+      "end": 21.666666666666668,
+      "text": "The blue slipper she had just dropped.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-10",
+      "scene": 3,
+      "start": 21.8,
+      "end": 24.366666666666667,
+      "text": "Whoever sent it was already inside.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-11",
+      "scene": 4,
+      "start": 24.666666666666668,
+      "end": 26.9,
+      "text": "Then came the final message.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-12",
+      "scene": 4,
+      "start": 27.033333333333335,
+      "end": 29.066666666666666,
+      "text": "You opened it last time.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-13",
+      "scene": 4,
+      "start": 29.2,
+      "end": 31.233333333333334,
+      "text": "The clock flickered backward.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-14",
+      "scene": 4,
+      "start": 31.366666666666667,
+      "end": 34.3,
+      "text": "Maya finally understood the warning.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-15",
+      "scene": 5,
+      "start": 34.6,
+      "end": 36.8,
+      "text": "She left the lock untouched.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-16",
+      "scene": 5,
+      "start": 36.9,
+      "end": 38.7,
+      "text": "Midnight returned.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-17",
+      "scene": 5,
+      "start": 38.833333333333336,
+      "end": 41.1,
+      "text": "Her own warning appeared again.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-18",
+      "scene": 5,
+      "start": 41.233333333333334,
+      "end": 43.733333333333334,
+      "text": "This time, the knocking stopped.",
+      "evidenceType": "intended_script_not_asr"
+    },
+    {
+      "id": "cue-19",
+      "scene": 5,
+      "start": 44.266666666666666,
+      "end": 46.1,
+      "text": "Would you open it?",
+      "evidenceType": "intended_script_not_asr"
+    }
+  ],
+  "intendedScenes": [
+    {
+      "scene": 1,
+      "start": 0.0,
+      "end": 6.966666666666667
+    },
+    {
+      "scene": 2,
+      "start": 6.966666666666667,
+      "end": 15.733333333333333
+    },
+    {
+      "scene": 3,
+      "start": 15.733333333333333,
+      "end": 24.666666666666668
+    },
+    {
+      "scene": 4,
+      "start": 24.666666666666668,
+      "end": 34.6
+    },
+    {
+      "scene": 5,
+      "start": 34.6,
+      "end": 46.4
+    }
+  ],
+  "transcript": {
+    "status": "not_available",
+    "segments": [],
+    "languageVerified": false
+  },
+  "propsSha256": "e6dc7d3ba748e64d571467179442fee68d5848b89953884d664fd2847b46c11b",
+  "review": {
+    "listened": false,
+    "visuallyReviewed": false,
+    "aiQaRun": false
+  },
+  "limits": [
+    "Sample timestamps are requested seek positions, rounded to a decoded frame; not every-frame inspection.",
+    "Intended cues are source timing, not recognized speech, OCR or proof of a visible reveal.",
+    "Imported ASR can be wrong. English declaration is not independent language verification.",
+    "Keyword search retrieves text. No semantic model, generated answers or creative score runs.",
+    "No new media generation, API call or upload is performed."
+  ]
+}

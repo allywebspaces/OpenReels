@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-16",
+  "updatedOn": "2026-10-19",
   "branch": "experiment/video-quality",
   "preservedBranch": "build/five-channel-starter",
   "goal": "Three original English micro-drama pilots for private review with reproducible free rendering and evidence-backed reviews",
@@ -79,10 +79,10 @@
     }
   ],
   "next": {
-    "id": "private_pilot_creative_review",
-    "status": "awaiting_review_no_automatic_build",
-    "evidence": "PRIVATE_PILOT_REVIEW.md",
-    "instructions": "The three-original-pilot target is met. Stop generating new work, pause continuation and preserve all media/baseline. User may review videos and listening quality; do not resume features, more pilots, paid inference or social publication without new direction. If pause confirmation is still pending, complete only that checkpoint action."
+    "id": "timestamped_full_watch_diagnosis",
+    "status": "awaiting_creative_review_with_local_evidence_viewer",
+    "evidence": "VIDEO_QA_INTEGRATION.md",
+    "instructions": "New user direction authorized video diagnosis. Review generated local packs with sound and record evidence-linked issues. Three-pilot acceptance remains met and schedule paused. Do not regenerate media, claim AI QA/transcription or enable paid providers/public posting from tool tests alone."
   },
   "later": [],
   "deferredOptionalNotAutomatic": [
@@ -103,7 +103,9 @@
     "No new listening/retention assessment",
     "Episode02 has 21 inspected MP4 frame samples, not every-frame review; no listening, final ASR or user approval",
     "Episode03 has 18 inspected MP4 frame samples; prop-only art and final-caption paraphrase documented, no listening/final ASR/user approval",
-    "Local network-interface blocker persists; GitHub rendering verified"
+    "Local network-interface blocker persists; GitHub rendering verified",
+    "New video review tool exercised on SHA-matched MP4s; 340 samples extracted, only nine preliminary samples inspected this turn; no new listening/ASR/AI QA.",
+    "Browser smoke probe blocked by absent Chromium executable. Playback, search/seek/note-export UI and phone layout require browser validation."
   ],
   "acceptance": {
     "assessedOn": "2026-10-16",
@@ -113,5 +115,17 @@
     "publicationApproved": false,
     "stopFeatureExpansion": true,
     "pauseConfirmed": true
+  },
+  "userDirectedFollowUp": {
+    "id": "actual_video_review_integration",
+    "authorizedOn": "2026-10-19",
+    "status": "implemented_and_exercised_on_archived_media_browser_listening_unverified",
+    "evidence": "VIDEO_QA_VALIDATION.md",
+    "integrationDesign": "VIDEO_QA_INTEGRATION.md",
+    "thirdPartyRuntimeIntegrations": 0,
+    "sourceEntriesAssessed": 6,
+    "mediaChanged": false,
+    "transcriptionRun": false,
+    "paidInferenceRun": false
   }
 }
