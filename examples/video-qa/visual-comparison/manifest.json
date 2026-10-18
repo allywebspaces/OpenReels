@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "kind": "comparison_of_existing_videos_not_a_new_pilot",
+  "language": "English",
+  "sources": [
+    {
+      "label": "Approved original",
+      "path": "examples/micro-drama/episode-01-question-revision/pilot.mp4",
+      "sha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+      "aacAdtsSha256": "1ef27a4437db92cae385763b67bb56fbf266c5f6d6fa1f8231eacaaed8a4493e"
+    },
+    {
+      "label": "Existing visual alternative",
+      "path": "examples/micro-drama/episode-01-visual-experiment/pilot.mp4",
+      "sha256": "44b16bea81cf5eecb3e2686a2e2e94d30e45e0e584c3b6c4b40b6c239fb8c40b",
+      "aacAdtsSha256": "1ef27a4437db92cae385763b67bb56fbf266c5f6d6fa1f8231eacaaed8a4493e"
+    }
+  ],
+  "generatorSha256": "dde0b588807eaa30ea287b1f120bec4f4140b08b2c3cd98c8c6acde24382faa9",
+  "outputSha256": "21a5bc364ed8dadf764987fd8e65f39e2c864b1e917d301f5380d4f30d869b58",
+  "outputAacAdtsSha256": "1ef27a4437db92cae385763b67bb56fbf266c5f6d6fa1f8231eacaaed8a4493e",
+  "encodedAudioIdentical": true,
+  "fullDecode": true,
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1440,
+        "height": 1344,
+        "coded_width": 1440,
+        "coded_height": 1344,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "15:14",
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 712704,
+        "duration": "46.400000",
+        "bit_rate": "442178",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1392",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2230272,
+        "duration": "46.464000",
+        "bit_rate": "317375",
+        "nb_frames": "2178",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "comparison.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "46.464000",
+      "size": "4460205",
+      "bit_rate": "767941",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf60.16.100",
+        "comment": "Made with Remotion 4.0.441"
+      }
+    }
+  },
+  "samples": [
+    {
+      "time": 0,
+      "file": "comparison-0.000.jpg",
+      "sha256": "7e25659711fdd6d3924910ff0a074efe3f3a5f6f3e5132334a6ec3b9a08fe737"
+    },
+    {
+      "time": 4.033333,
+      "file": "comparison-4.033.jpg",
+      "sha256": "18a1473163808078f8409f6f7fc4be75789f795af145242f23b0fb7380bbbb9a"
+    },
+    {
+      "time": 17.333333,
+      "file": "comparison-17.333.jpg",
+      "sha256": "e8666c5a5beab087278b4bd74b21bbbcf4e404e15ae1f4a9b1da314c419faaa0"
+    },
+    {
+      "time": 19.233333,
+      "file": "comparison-19.233.jpg",
+      "sha256": "0e760b7d3060ceb7fe08349cdaf7a262657731c65fb350a61b0b76f4c2fe758c"
+    },
+    {
+      "time": 44.266667,
+      "file": "comparison-44.267.jpg",
+      "sha256": "fdbb675a06a3b8bac91385e008e6751fae01a9424513a4309627471cc1f2f9ec"
+    },
+    {
+      "time": 45.5,
+      "file": "comparison-45.500.jpg",
+      "sha256": "a26a9e129362b1e9042ed8a55059c03f578bd42980ce54e1817b06983b5b549b"
+    }
+  ],
+  "completeWatch": false,
+  "listeningAssessed": false,
+  "limits": [
+    "Comparison presents existing visual changes. It does not establish audience preference.",
+    "Side-by-side scaling on a phone reduces apparent text size. Original videos remain available.",
+    "Same encoded audio does not prove emotional delivery or phone audibility."
+  ]
+}

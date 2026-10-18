@@ -2,6 +2,8 @@
 
 Goal: establish original English micro-drama shorts first; user selected this focus on 14 October 2026.
 
+Continuation checkpoint (19 October India): a labeled side-by-side comparison of the existing approved and alternative episode01 is rendered, decoded and sampled at six times, with identical encoded AAC preserved. See VISUAL_COMPARISON_REVIEW.md. Both supported desktop/cloud browser attempts could not reach execution-host loopback, so viewer UI and full listening remain unverified. A character-reaction visual audition is proposed, not created. No original media/baseline, paid-provider setting or paused schedule was changed.
+
 Latest user direction (19 October 2026 India): diagnose the completed videos using six supplied Video QA references. An original local evidence viewer is implemented and exercised on all three unchanged MP4s. See VIDEO_QA_INTEGRATION.md and VIDEO_QA_VALIDATION.md. No upstream apps installed/copied, ASR/AI-QA run or complete listening performed. Browser smoke testing is blocked by absent Chromium. The next step is a browser watch with sound and timestamped issues. Original three-pilot acceptance remains met and scheduled continuation remains paused. This new instruction authorizes the bounded review-tool milestone, not paid inference or publication.
 
 | Entity | Retrieve when |
