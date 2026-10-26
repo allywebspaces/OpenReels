@@ -168,5 +168,21 @@
       "Node/Python syntax checks"
     ],
     "endToEndFreshSpeechRenderRetested": false
+  },
+  "n8nDeployment": {
+    "status": "installed_owner_setup_required",
+    "provider": "Hostinger",
+    "region": "India",
+    "timezone": "Asia/Kolkata",
+    "observedContainers": [
+      "n8n",
+      "Traefik"
+    ],
+    "httpsPageVerified": true,
+    "ownerAccountCreated": false,
+    "workflowsImported": false,
+    "credentialsConnected": false,
+    "publishingActive": false,
+    "evidence": "N8N_HOSTINGER_SETUP.md"
   }
 }
