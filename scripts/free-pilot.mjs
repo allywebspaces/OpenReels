@@ -73,7 +73,11 @@ try {
     sceneStart += scene.durationInFrames;
   }
   await renderMedia({serveUrl,composition,inputProps,codec:'h264',outputLocation:resolve(output,'pilot.mp4'),concurrency:2});
+  // Keep the reviewed source render and produce the upload copy separately.
+  execFileSync('python3', [resolve(root,'scripts/brand-video.py'), '--input', resolve(output,'pilot.mp4'), '--output', resolve(output,'pilot-branded.mp4')], {stdio:'inherit'});
   const report={mode:'free-pilot',preset:presetName,title:pilot.title,language:'English',paidApiCalls:0,paidApiCostUsd:0,reviewedScriptHash:config.scriptHash,reviewedVisualHash:config.visualHash,width:composition.width,height:composition.height,fps:composition.fps,durationSeconds:composition.durationInFrames/composition.fps,voice:'local Kokoro af_bella', voiceSpeed:1.1,visuals:presetName==='micro-drama'?'original illustrated phone, clock and door mystery':presetName==='emotional-drama'?'original illustrated lunchbox, drawer and folded notes':presetName==='twist-drama'?'original illustrated waiting-room bench, toolbox, founder badge and notebook':'original fictional meeting notes, extraction prompt and action table',captions:presetName!=='productivity'?'sentence captions at measured speech-clip boundaries; not word-level transcription':'scene text synchronized to each scene audio; not word-level transcription',questionDelivery:presetName==='micro-drama'?{speed:1,pauseBeforeMs:550,phoneticStress:'you',separateClip:true}:null,script:'fixed reviewed English preset',comparisonSamples:['comparison-calm.mp3','comparison-energetic.mp3'],published:false};
+  report.uploadFile='pilot-branded.mp4';
+  report.brandingReport='pilot-branded.branding.json';
   await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
   console.log(`Saved ${resolve(output,'pilot.mp4')}`);
 } catch(error) {

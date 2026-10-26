@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-19",
+  "updatedOn": "2026-10-27",
   "branch": "experiment/video-quality",
   "preservedBranch": "build/five-channel-starter",
   "goal": "Three original English micro-drama pilots for private review with reproducible free rendering and evidence-backed reviews",
@@ -152,5 +152,21 @@
       "userApproved": false,
       "originalMediaUnchanged": true
     }
+  },
+  "branding": {
+    "status": "implemented_rendered_sampled",
+    "evidence": "WATERMARK_EXPORT.md",
+    "uploadFile": "pilot-branded.mp4",
+    "entireVideo": true,
+    "originalPreserved": true,
+    "previewSha256": "63fbb87296b8df91621e4e3fc5668ea081903d3be041e575053b6937a493bdc9",
+    "checks": [
+      "Full decode",
+      "1392 frames preserved",
+      "AAC stream identical",
+      "Six actual frame samples inspected",
+      "Node/Python syntax checks"
+    ],
+    "endToEndFreshSpeechRenderRetested": false
   }
 }

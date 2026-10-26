@@ -1,0 +1,20 @@
+{
+  "sourceSha256": "9b438dff1eece70ea902c04921d6bdca61c90815288cc587bfb2ea6f2a3053c7",
+  "outputSha256": "63fbb87296b8df91621e4e3fc5668ea081903d3be041e575053b6937a493bdc9",
+  "assetSha256": "b34c007a7b6b37c66ebe9106ecf8cbcf24f6af626949a15ff8710ccc8de398c0",
+  "placement": {
+    "x": 24,
+    "y": 280,
+    "size": 72,
+    "opacity": 0.65
+  },
+  "entireVideo": true,
+  "audioStreamIdentical": true,
+  "aacAdtsSha256": "1ef27a4437db92cae385763b67bb56fbf266c5f6d6fa1f8231eacaaed8a4493e",
+  "fullDecode": true,
+  "frames": "1392",
+  "limits": [
+    "Placement reviewed for existing prop-led episode01 template; future shots need visual clearance review.",
+    "Encoding checks do not prove platform UI clearance, listening or audience quality."
+  ]
+}
