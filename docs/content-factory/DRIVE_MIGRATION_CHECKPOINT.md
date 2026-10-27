@@ -15,7 +15,14 @@ Executed the three Code nodes sequentially in a local Node VM. Checked new Drive
 
 The original export was byte-identical at migration time; its later deliberate reference update changes its hash. The manifest records this distinction.
 
+## Live n8n update — 28 October 2026 (India)
+
+Connected Chrome was available. Inspected the existing Hostinger preflight before editing; it still contained deleted-source references and an empty backup hash. Updated the existing configuration and validator Code nodes from the private Drive export whose SHA-256 independently matched d5793a0588bc4dd046116a9fcc3f771b79c728f4a8d50ddf8301541323bd866d. No duplicate workflow was created. Manual trigger, summary, note and connections retained.
+
+Manual n8n execution succeeded. Output inspected: blockerCount=9, ready=false, publishEnabled=false, metadataReady=false. BACKUP_REFERENCE, BACKUP_HASH and BACKUP_HASH_MISMATCH absent. Reloaded the page and confirmed the migrated root remained in saved configuration. This is metadata consistency evidence, not live Drive/media verification.
+
 ## Pending
-Live Hostinger workflow has NOT been updated in this turn. The local Chrome extension tool is unavailable; no signed-in session has been reused or independently verified. Live workflow may still reference deleted source IDs. Do not run it as an operational backup/publishing pipeline. It remains a manual setup diagnostic with no publisher or daily schedule.
-Google Drive connector access is not n8n Google OAuth. Connect n8n to allywebspaces@gmail.com through its credential manager; any new grant must be completed through the actual authorization screen. No credentials belong in chat or Git.
-Next: restore connected Chrome access, inspect current live workflow before editing, apply the configured export without creating duplicates, save/execute manually and inspect output. Existing source templates retain private-ID placeholders; preserved baseline unchanged.
+
+n8n credential manager lists no saved credentials. Opened Google Drive OAuth2 setup: required Client ID and Client Secret are blank; Save disabled. No credential saved and no OAuth grant completed. Account for eventual Google authorization is allywebspaces@gmail.com. Enter client configuration directly in n8n; never chat or Git. Callback is the instance's /rest/oauth2-credential/callback endpoint.
+
+Publishing remains disabled; no publisher or daily schedule added. Workflow remains a manual setup diagnostic. Next: configure Google OAuth client securely in n8n, authorize the project account through the actual Google screen, then implement and verify live Drive access separately.
