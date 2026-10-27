@@ -1,5 +1,7 @@
 # Project memory — read this first
 
+27 October Drive migration: six backups recreated under allywebspaces@gmail.com, destination ownership verified, all original/copy bytes compared before six source files deleted. Empty source folders remain. Saved private workflow now uses new Drive IDs and backup SHA-256; local Code-node execution yields nine blockers and ready=false, Drive readback matches. Live n8n still has old references and needs updating; Chrome tool unavailable this turn. No new n8n OAuth grant, scheduling or public posting. See DRIVE_MIGRATION_CHECKPOINT.md.
+
 27 October checkpoint: entire-video watermark export implemented via scripts/brand-video.py and wired after free-pilot rendering; separate pilot-branded.mp4 keeps original. Full episode01 export decoded,1392 frames/AAC preserved,six actual frames inspected. See WATERMARK_EXPORT.md. n8n/account/Drive publishing integration remains pending; schedule paused.
 
 27 October: initial manual-only n8n metadata preflight imported and executed successfully on Hostinger2.44.7. Seven local Node tests passed. Dated Drive backup uploaded/listed via connected Drive, not n8n. Google Drive OAuth client configuration missing in n8n; Instagram signed out; YouTube handle/name edits observed unsaved. No public posting or daily schedule active. See N8N_PREFLIGHT_CHECKPOINT.md. 
