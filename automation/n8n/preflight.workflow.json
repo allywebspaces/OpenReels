@@ -1,0 +1,112 @@
+{
+  "name": "OpenReels — Publishing setup preflight",
+  "nodes": [
+    {
+      "id": "manual",
+      "name": "Manual preflight",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "config",
+      "name": "Known episode and missing connections",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{\"episodeId\":\"episode01-message-at-midnight\",\"mode\":\"draft-only\",\"language\":\"English\",\"reviewed\":true,\"approved\":false,\"media\":{\"sha256\":\"63fbb87296b8df91621e4e3fc5668ea081903d3be041e575053b6937a493bdc9\",\"width\":720,\"height\":1280,\"videoCodec\":\"h264\",\"audioCodec\":\"aac\",\"durationSeconds\":46.4,\"audioReviewed\":false,\"subtitlesReviewed\":true,\"watermarkReviewed\":true,\"framesReviewed\":true},\"aiDisclosure\":{\"reviewed\":false,\"required\":null,\"youtubeValue\":false,\"instagramPlan\":\"\"},\"backup\":{\"rootFolderId\":\"CONFIGURE_DRIVE_ROOT_FOLDER\",\"folderId\":\"CONFIGURE_EPISODE_FOLDER\",\"fileId\":\"CONFIGURE_BACKUP_FILE\",\"sha256\":\"\"},\"accounts\":{\"youtubeChannelId\":\"UC22bRh9oEI6GSrNHTswVw0A\",\"authenticatedYoutubeChannelId\":\"\",\"youtubeIdentityConfirmed\":false,\"instagramAccountId\":\"\",\"authenticatedInstagramAccountId\":\"\",\"instagramIdentityConfirmed\":false},\"credentials\":{\"youtubeConnected\":false,\"instagramConnected\":false,\"driveConnected\":false},\"context\":{\"brand\":\"midnightstories.originals\",\"sampledFrames\":6,\"driveBackup\":\"Uploaded and listed via ChatGPT connector; not a verified n8n OAuth connection or downloaded hash check\",\"youtubeIdentity\":\"Handle entered in unsaved Studio profile; public identity not confirmed\",\"instagram\":\"Signed-out login screen observed; account type not verified\"}}}];"
+      }
+    },
+    {
+      "id": "validate",
+      "name": "Check supplied metadata only",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        540,
+        0
+      ],
+      "parameters": {
+        "jsCode": "function validate(input) {\n  const c = input && typeof input === 'object' ? input : {};\n  const m = c.media || {}, b = c.backup || {}, a = c.accounts || {}, d = c.aiDisclosure || {}, k = c.credentials || {};\n  const blockers = [];\n  const requireCheck = (ok, code, message) => { if (!ok) blockers.push({code, message}); };\n  const text = v => typeof v === 'string' && v.trim().length > 0;\n  const hash = v => typeof v === 'string' && /^[a-f0-9]{64}$/i.test(v);\n  const expectedChannel = 'UC22bRh9oEI6GSrNHTswVw0A';\n  requireCheck(text(c.episodeId), 'EPISODE_ID', 'Supply a stable unique episode ID; no duplicate ledger is queried here.');\n  requireCheck(c.language === 'English' && c.reviewed === true, 'SCRIPT_REVIEW', 'Supply explicit human review of the English script.');\n  requireCheck(c.approved === true, 'PUBLICATION_APPROVAL', 'Publication approval has not been supplied.');\n  requireCheck((c.mode || 'draft-only') === 'draft-only', 'DRAFT_MODE_REQUIRED', 'This workflow accepts draft-only mode.');\n  requireCheck(hash(m.sha256), 'MEDIA_HASH', 'Supply the SHA-256 of the actual final watermarked MP4.');\n  requireCheck(Number.isInteger(m.width) && Number.isInteger(m.height) && m.width >= 720 && m.width * 16 === m.height * 9 && m.videoCodec === 'h264' && m.audioCodec === 'aac' && Number.isFinite(m.durationSeconds) && m.durationSeconds > 0 && m.durationSeconds <= 60, 'MEDIA_FORMAT', 'Supply inspected 9:16 portrait H.264/AAC (at least720px wide) media, 0–60 seconds (this pilot profile).');\n  requireCheck(m.audioReviewed === true && m.subtitlesReviewed === true && m.watermarkReviewed === true && m.framesReviewed === true, 'MEDIA_REVIEW', 'Audio, subtitles, final watermark and frames need explicit review assertions.');\n  requireCheck(d.reviewed === true, 'AI_DISCLOSURE_REVIEW', 'Review realistic synthetic-content disclosure requirements.');\n  requireCheck(typeof d.required === 'boolean', 'AI_DISCLOSURE_DECISION', 'Record whether AI disclosure is required.');\n  requireCheck(d.required !== true || (d.youtubeValue === true && text(d.instagramPlan)), 'AI_DISCLOSURE_PLAN', 'Required disclosure needs a YouTube setting and an Instagram disclosure plan.');\n  requireCheck(b.rootFolderId === 'CONFIGURE_DRIVE_ROOT_FOLDER' && text(b.folderId) && text(b.fileId), 'BACKUP_REFERENCE', 'Supply the backup file ID in the configured Drive folder.');\n  requireCheck(hash(b.sha256), 'BACKUP_HASH', 'Supply the backup SHA-256; this workflow does not read Drive.');\n  requireCheck(hash(m.sha256) && hash(b.sha256) && m.sha256.toLowerCase() === b.sha256.toLowerCase(), 'BACKUP_HASH_MISMATCH', 'Final export and backup SHA-256 values must match.');\n  requireCheck(a.youtubeChannelId === expectedChannel && a.authenticatedYoutubeChannelId === expectedChannel, 'YOUTUBE_CHANNEL_MISMATCH', 'Target and OAuth identity must both match the observed YouTube channel ID.');\n  requireCheck(a.youtubeIdentityConfirmed === true, 'YOUTUBE_IDENTITY_REVIEW', 'Confirm channel identity; the proposed editor handle is not proof of a published identity.');\n  requireCheck(text(a.instagramAccountId) && a.instagramAccountId === a.authenticatedInstagramAccountId && a.instagramIdentityConfirmed === true, 'INSTAGRAM_IDENTITY', 'Supply matching target/OAuth Instagram account IDs and identity review.');\n  requireCheck(k.youtubeConnected === true && k.instagramConnected === true && k.driveConnected === true, 'CREDENTIAL_ASSERTIONS', 'YouTube, Instagram and Drive credential connection assertions are missing.');\n  const metadataReady = blockers.length === 0;\n  blockers.push({code:'LIVE_VERIFICATION_UNAVAILABLE',message:'No media bytes, Drive hashes, OAuth identities, token validity, publication eligibility, disclosures, or duplicate ledger have been verified by this manual workflow. Connect actual verifiers before a publishing workflow can establish readiness.'});\n  return {episodeId:c.episodeId || null,project:'OpenReels',proposedBrand:'midnightstories.originals',mode:'draft-only',ready:false,publishEnabled:false,metadataReady,\n    evidenceBasis:'user-supplied metadata; no media, Drive, OAuth or platform requests performed',\n    checkType:'local metadata consistency only',blockers,\n    nextAction:metadataReady ? 'Metadata is internally consistent. Implement and run live evidence checks; publication remains disabled.' : 'Resolve the listed metadata blockers, then run actual evidence checks; publication remains disabled.'};\n}\n\nreturn $input.all().map(item => ({json:validate(item.json)}));"
+      }
+    },
+    {
+      "id": "summary",
+      "name": "Report remaining setup",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        820,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return $input.all().map(item => ({json:{...item.json,blockerCount:item.json.blockers.length,summary:\"Preflight executed. No rendering, backup, OAuth or publishing requests were made.\"}}));"
+      }
+    },
+    {
+      "id": "note",
+      "name": "Scope and next steps",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        80,
+        -320
+      ],
+      "parameters": {
+        "width": 1000,
+        "height": 250,
+        "content": "## OpenReels — setup diagnostic only\nManual run checks supplied metadata, not video bytes or live credentials. It always reports ready=false.\n\n**Completed separately:** Hostinger n8n/HTTPS, English pilot, watermark export, one dated Drive backup.\n\n**Still to implement/connect:** reviewed queue, render worker, live media/Drive verification, OAuth, platform publishing/disclosures, durable delivery ledger/recovery, daily schedule. No paid fallback. No public posting in this workflow."
+      }
+    }
+  ],
+  "connections": {
+    "Manual preflight": {
+      "main": [
+        [
+          {
+            "node": "Known episode and missing connections",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Known episode and missing connections": {
+      "main": [
+        [
+          {
+            "node": "Check supplied metadata only",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check supplied metadata only": {
+      "main": [
+        [
+          {
+            "node": "Report remaining setup",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata"
+  },
+  "pinData": {},
+  "tags": []
+}

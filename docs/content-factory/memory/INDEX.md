@@ -2,6 +2,8 @@
 
 27 October checkpoint: entire-video watermark export implemented via scripts/brand-video.py and wired after free-pilot rendering; separate pilot-branded.mp4 keeps original. Full episode01 export decoded,1392 frames/AAC preserved,six actual frames inspected. See WATERMARK_EXPORT.md. n8n/account/Drive publishing integration remains pending; schedule paused.
 
+27 October: initial manual-only n8n metadata preflight imported and executed successfully on Hostinger2.44.7. Seven local Node tests passed. Dated Drive backup uploaded/listed via connected Drive, not n8n. Google Drive OAuth client configuration missing in n8n; Instagram signed out; YouTube handle/name edits observed unsaved. No public posting or daily schedule active. See N8N_PREFLIGHT_CHECKPOINT.md. 
+
 Goal: establish original English micro-drama shorts first; user selected this focus on 14 October 2026.
 
 Continuation checkpoint (19 October India): the user-approved 12.83-second character-reaction format test is implemented, rendered, fully decoded and sampled at14 actual encoded frames. Same narration PCM excerpt; encoded control/candidate AAC identical, re-encoded from original. Caption cut-boundary defect fixed with frame-based drawtext and regression coverage. Host ImageGen artwork plus camera moves, not acted footage. See REACTION_ANIMATIC_REVIEW.md. Original media/baseline intact; no paid project provider call or publication, schedule stays paused. Next: subjective viewing before expansion; listening remains unverified.

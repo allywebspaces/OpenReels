@@ -170,7 +170,7 @@
     "endToEndFreshSpeechRenderRetested": false
   },
   "n8nDeployment": {
-    "status": "installed_owner_setup_required",
+    "status": "manual_setup_preflight_created_and_executed",
     "provider": "Hostinger",
     "region": "India",
     "timezone": "Asia/Kolkata",
@@ -179,10 +179,28 @@
       "Traefik"
     ],
     "httpsPageVerified": true,
-    "ownerAccountCreated": false,
-    "workflowsImported": false,
+    "ownerAccountCreated": true,
+    "workflowsImported": true,
     "credentialsConnected": false,
     "publishingActive": false,
-    "evidence": "N8N_HOSTINGER_SETUP.md"
+    "evidence": "N8N_PREFLIGHT_CHECKPOINT.md",
+    "observedVersion": "2.44.7",
+    "manualExecutionSuccessful": true
+  },
+  "driveBackup": {
+    "status": "manual_connector_upload_completed_and_listed",
+    "datedFolder": true,
+    "files": [
+      "branded pilot MP4",
+      "script JSON",
+      "caption cues JSON",
+      "watermark PNG",
+      "branding evidence JSON",
+      "setup workflow export (date folder)"
+    ],
+    "n8nOAuthConnected": false,
+    "videoBytes": 3267822,
+    "videoLocalSha256": "63fbb87296b8df91621e4e3fc5668ea081903d3be041e575053b6937a493bdc9",
+    "remoteHashVerified": false
   }
 }
